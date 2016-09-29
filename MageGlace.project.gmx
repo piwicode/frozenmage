@@ -14,15 +14,21 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_move.gml</script>
+    <script>scripts\scr_move_init.gml</script>
+    <script>scripts\scr_accelerate.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\obj_mage</object>
-    <object>objects\obj_stone</object>
     <object>objects\obj_orc</object>
     <object>objects\obj_spark</object>
     <object>objects\obj_icecube</object>
+    <object>objects\obj_nocolide</object>
     <object>objects\obj_freezable</object>
     <object>objects\obj_frozen_content</object>
-    <object>objects\obj_nocolide</object>
+    <object>objects\obj_wall</object>
+    <object>objects\obj_solid</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_lvl01</room>

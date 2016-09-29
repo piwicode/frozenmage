@@ -25,13 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Speeds over x and y.
-xs = 0;
-ys = 0;
-// Acceleration: gravity is a vertical acceleration toward the bottom.
-yss = .6;
-// Maximum absolute value of the speed on both axis.
-max_speed = 30;
+            <string>scr_move_init()
 // Horizontal speed when walking.
 walk_speed = 4;
 // Vertical speed set when jumping.
@@ -41,7 +35,7 @@ jump_speed = 10;
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="3" enumb="2">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -63,31 +57,17 @@ x_ctrl = keyboard_check(vk_right) - keyboard_check(vk_left);
 jump_ctrl = keyboard_check_pressed(vk_space);
 fire_ctrl = keyboard_check_pressed(vk_control);
 
-
-// Apply the acceleration to the current speed, up to some a maximum speed.
-ys = clamp(ys + yss, -max_speed, max_speed);
+scr_accelerate();
 xs = x_ctrl * walk_speed;
 
 // If jump has just been pressed and there is something solid just below
 // the object.
-if jump_ctrl &amp;&amp; place_meeting(x, y + 1, obj_stone) {
+if jump_ctrl &amp;&amp; place_meeting(x, y + 1, obj_solid) {
   ys = -jump_speed;
 }
 
 // Detect collisions with walls
-if place_meeting(x + xs, y, obj_stone) {
-  while(!place_meeting(x + sign(xs), y, obj_stone)) x += sign(xs);
-  xs = 0;
-}
-
-if place_meeting(x, y + ys, obj_stone) {
-  while(!place_meeting(x , y + sign(ys), obj_stone)) y += sign(ys);
-  ys = 0;
-}
-
-// Apply speed corrected by collision to the sprite.
-x += xs;
-y += ys;
+scr_move();
 
 // Horizontal flip the sprite according to the command.
 if x_ctrl != 0 {
@@ -100,6 +80,36 @@ if (fire_ctrl) {
     hspeed = sign(other.image_xscale) * max_speed;
   }
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>x_ctrl = keyboard_check(vk_right) - keyboard_check(vk_left);
+xs = x_ctrl * walk_speed;
+
+if xs != 0 &amp;&amp; place_meeting(x + sign(xs), y, obj_icecube) { 
+  var block = instance_place(x + sign(xs), y, obj_icecube);
+  block.xs = xs;
+}
+
 </string>
           </argument>
         </arguments>

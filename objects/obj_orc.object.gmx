@@ -65,13 +65,13 @@ xs = x_ctrl * walk_speed;
 
 // If jump has just been pressed and there is something solid just below
 // the object.
-if jump_ctrl &amp;&amp; place_meeting(x, y + 1, obj_stone) {
+if jump_ctrl &amp;&amp; place_meeting(x, y + 1, obj_solid) {
   ys = -jump_speed;
 }
 
 // Detect collisions
-if place_meeting(x + xs, y, obj_stone) {
-  while(!place_meeting(x + sign(xs), y, obj_stone)) x += sign(xs);
+if place_meeting(x + xs, y, obj_solid) {
+  while(!place_meeting(x + sign(xs), y, obj_solid)) x += sign(xs);
   xs = 0;
   x_ctrl *= -1; // Go the other direction
 } else {
@@ -81,20 +81,16 @@ if place_meeting(x + xs, y, obj_stone) {
   // collision detection.
   if(!position_meeting((bbox_left * (2 - sign(xs)) + bbox_right * (2 + sign(xs))) / 4,
                        bbox_bottom + 1,
-                       obj_stone)) {
+                       obj_solid)) {
       x_ctrl *= -1; // Go the other direction
   }
   
 }
 
-if place_meeting(x, y + ys, obj_stone) {
-  while(!place_meeting(x , y + sign(ys), obj_stone)) y += sign(ys);
+if place_meeting(x, y + ys, obj_solid) {
+  while(!place_meeting(x , y + sign(ys), obj_solid)) y += sign(ys);
   ys = 0;
 }
-
-
-
-
 
 // Apply speed corrected by collision to the sprite.
 x += xs
