@@ -9,13 +9,20 @@
     <sprite>sprites\sp_mage</sprite>
     <sprite>sprites\sp_stone</sprite>
     <sprite>sprites\sp_orc</sprite>
+    <sprite>sprites\sp_spark</sprite>
+    <sprite>sprites\sp_icecube</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <objects name="objects">
-    <object>objects\obj_stone</object>
     <object>objects\obj_mage</object>
+    <object>objects\obj_stone</object>
     <object>objects\obj_orc</object>
+    <object>objects\obj_spark</object>
+    <object>objects\obj_icecube</object>
+    <object>objects\obj_freezable</object>
+    <object>objects\obj_frozen_content</object>
+    <object>objects\obj_nocolide</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_lvl01</room>
