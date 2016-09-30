@@ -60,8 +60,8 @@ fire_ctrl = keyboard_check_pressed(vk_control);
 scr_accelerate();
 xs = x_ctrl * walk_speed;
 
-// If jump has just been pressed and there is something solid just below
-// the object.
+// If jump key has just been pressed and there is something solid just below
+// the object, then jump.
 if jump_ctrl &amp;&amp; place_meeting(x, y + 1, obj_solid) {
   ys = -jump_speed;
 }

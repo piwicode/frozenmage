@@ -11,6 +11,8 @@
     <sprite>sprites\sp_orc</sprite>
     <sprite>sprites\sp_spark</sprite>
     <sprite>sprites\sp_icecube</sprite>
+    <sprite>sprites\sp_explode</sprite>
+    <sprite>sprites\sp_door</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -29,9 +31,12 @@
     <object>objects\obj_frozen_content</object>
     <object>objects\obj_wall</object>
     <object>objects\obj_solid</object>
+    <object>objects\obj_explode</object>
+    <object>objects\obj_door</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_lvl01</room>
+    <room>rooms\rm_lvl02</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

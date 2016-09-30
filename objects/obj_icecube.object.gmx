@@ -49,6 +49,30 @@
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>// Speed variation beyond which the ice breaks.
+// Should not be greater than the max_speed.
+max_jitter = 12;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="2" enumb="0">
       <action>
@@ -100,13 +124,35 @@ instance_destroy()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_accelerate();
+            <string>// Capture the speed before and after collision test
+// to detect the shock intensity if any.
+var delta_xs = xs;
+var delta_ys = ys;
+
+// Apply usual movement.
+scr_accelerate();
 scr_move();
 
+// Measure the speed variation over this frame, and
+// deduce the intencity of the shock.
+delta_xs -= xs; delta_ys -= ys;
+var jitter = delta_xs * delta_xs + delta_ys * delta_ys
+if (jitter &gt;= max_jitter * max_jitter) {
+  if (frozen_object) { with(frozen_object) instance_destroy(); }
+  if (frozen_image) { with(frozen_image) instance_destroy(); }
+  instance_change(obj_explode, true);
+  exit;  
+}
+
 // Move the frozen object along with the ice cube.
-frozen_image.x = x;
-frozen_image.y = y;
-xs = 0;
+if (frozen_object) {
+  frozen_image.x = x;
+  frozen_image.y = y;
+}
+
+// Stop an ongoing push.
+// Todo: use a separate variable for push
+xs = 0
 </string>
           </argument>
         </arguments>

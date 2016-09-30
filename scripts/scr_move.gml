@@ -1,6 +1,9 @@
 // scr_move()
 
 // Detect collisions with solid objects
+// It is not possible to use move_contact_xxx with a spcific object class
+// Using instance_meeting only retunrs one instance which does not make possible
+// to compute the distance to a safe place in the case two object are colliding.
 if place_meeting(x + xs, y, obj_solid) {
   while(!place_meeting(x + sign(xs), y, obj_solid)) x += sign(xs);
   xs = 0;
