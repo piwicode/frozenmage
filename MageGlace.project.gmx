@@ -13,6 +13,11 @@
     <sprite>sprites\sp_icecube</sprite>
     <sprite>sprites\sp_explode</sprite>
     <sprite>sprites\sp_door</sprite>
+    <sprite>sprites\spr_text</sprite>
+    <sprite>sprites\sp_plate</sprite>
+    <sprite>sprites\sp_fence</sprite>
+    <sprite>sprites\sp_label_a</sprite>
+    <sprite>sprites\sp_aim_arrow</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -21,22 +26,35 @@
     <script>scripts\scr_move_init.gml</script>
     <script>scripts\scr_accelerate.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_arial</font>
+  </fonts>
   <objects name="objects">
-    <object>objects\obj_mage</object>
-    <object>objects\obj_orc</object>
     <object>objects\obj_spark</object>
-    <object>objects\obj_icecube</object>
     <object>objects\obj_nocolide</object>
     <object>objects\obj_freezable</object>
     <object>objects\obj_frozen_content</object>
-    <object>objects\obj_wall</object>
-    <object>objects\obj_solid</object>
     <object>objects\obj_explode</object>
     <object>objects\obj_door</object>
+    <object>objects\obj_text</object>
+    <object>objects\obj_plate</object>
+    <object>objects\obj_fence</object>
+    <objects name="entity">
+      <object>objects\obj_entity</object>
+      <object>objects\obj_mage</object>
+      <object>objects\obj_orc</object>
+      <objects name="solid">
+        <object>objects\obj_solid</object>
+        <object>objects\obj_icecube</object>
+        <object>objects\obj_wall</object>
+      </objects>
+    </objects>
+    <object>objects\obj_label_a</object>
+    <object>objects\obj_aim_arrow</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_lvl01</room>
     <room>rooms\rm_lvl02</room>
+    <room>rooms\rm_lvl01</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

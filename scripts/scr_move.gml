@@ -14,6 +14,6 @@ if place_meeting(x, y + ys, obj_solid) {
   ys = 0;
 }
 
-// Apply speed corrected by collision to the sprite.
+// Apply the correcteed speed to the object coordinates.
 x += xs;
 y += ys;

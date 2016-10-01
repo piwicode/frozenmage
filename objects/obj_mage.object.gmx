@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>obj_entity</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -30,6 +30,9 @@
 walk_speed = 4;
 // Vertical speed set when jumping.
 jump_speed = 10;
+
+aim_arrow = instance_create(x, y, obj_aim_arrow)
+aim_arrow.visible = false
 </string>
           </argument>
         </arguments>
@@ -53,9 +56,10 @@ jump_speed = 10;
           <argument>
             <kind>1</kind>
             <string>// Get user inputs
-x_ctrl = keyboard_check(vk_right) - keyboard_check(vk_left);
+
 jump_ctrl = keyboard_check_pressed(vk_space);
-fire_ctrl = keyboard_check_pressed(vk_control);
+fire_pressed = keyboard_check(vk_control);
+fire_released = keyboard_check_released(vk_control);
 
 scr_accelerate();
 xs = x_ctrl * walk_speed;
@@ -64,6 +68,10 @@ xs = x_ctrl * walk_speed;
 // the object, then jump.
 if jump_ctrl &amp;&amp; place_meeting(x, y + 1, obj_solid) {
   ys = -jump_speed;
+}
+// Fly
+if(keyboard_check(vk_shift)) {
+ ys += y_ctrl;
 }
 
 // Detect collisions with walls
@@ -74,10 +82,20 @@ if x_ctrl != 0 {
   image_xscale = x_ctrl;
 }
 
-if (fire_ctrl) {
+// -y_ctrl because vertical axis is inverted between atan and the screen.
+// use image_scale to remember the current facing position. 
+var aim_direction = radtodeg(arctan2(-y_ctrl, image_xscale));
+aim_arrow.visible = fire_pressed;
+aim_arrow.x = x 
+aim_arrow.y = y
+aim_arrow.image_angle = aim_direction;
+
+
+if (fire_released) {
   spark = instance_create(x, y, obj_spark);
   with (spark) {
-    hspeed = sign(other.image_xscale) * max_speed;
+    direction = aim_direction;
+    speed = max_speed;
   }
 }
 </string>
@@ -103,6 +121,8 @@ if (fire_ctrl) {
           <argument>
             <kind>1</kind>
             <string>x_ctrl = keyboard_check(vk_right) - keyboard_check(vk_left);
+y_ctrl = keyboard_check(vk_down) - keyboard_check(vk_up);
+
 xs = x_ctrl * walk_speed;
 
 if xs != 0 &amp;&amp; place_meeting(x + sign(xs), y, obj_icecube) { 
@@ -110,6 +130,58 @@ if xs != 0 &amp;&amp; place_meeting(x + sign(xs), y, obj_icecube) {
   block.xs = xs;
 }
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_icecube">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>// Is icecube falling on the mage
+if (other.ys &gt; 0) {
+  instance_destroy();
+  instance_create(x, y, obj_explode);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_orc">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>// Enemy collision
+instance_destroy();
+instance_create(x, y, obj_explode);
 </string>
           </argument>
         </arguments>
