@@ -27,9 +27,9 @@
             <kind>1</kind>
             <string>scr_move_init()
 // Horizontal speed when walking.
-walk_speed = 4;
+walk_speed = 3;
 // Vertical speed set when jumping.
-jump_speed = 10;
+jump_speed = 6;
 
 aim_arrow = instance_create(x, y, obj_aim_arrow)
 aim_arrow.visible = false
@@ -66,7 +66,7 @@ scr_accelerate();
 is_standing = place_meeting(x, y + 1, obj_solid)
 
 // The mage walks horizontaly except when aiming.
-if(fire_pressed == 1) {
+if(fire_pressed) {
   if(is_standing) { // When aiming and on the ground stop moving.
     // Apply friction.
     xs = Approach(xs, 0., const_aim_x_friction) ; 
@@ -105,8 +105,8 @@ aim_arrow.x = x
 aim_arrow.y = y
 aim_arrow.image_angle = aim_direction;
 
-
-if (fire_released) { 
+// Use fire_pressed_start to change the aim style.
+if (fire_pressed_start) {  
   spark = instance_create(x, y, obj_spark);
   with (spark) {
     direction = aim_direction;
@@ -137,11 +137,15 @@ if (fire_released) {
             <kind>1</kind>
             <string>// Get user inputs.
 jump_ctrl = keyboard_check_pressed(vk_space);
+fire_pressed_start = keyboard_check_pressed(vk_control);
 fire_pressed = keyboard_check(vk_control);
 fire_released = keyboard_check_released(vk_control);
 x_ctrl = keyboard_check(vk_right) - keyboard_check(vk_left);
 y_ctrl = keyboard_check(vk_down) - keyboard_check(vk_up);
 
+if(fire_pressed_start) fire_frame_count = 0;
+if(fire_pressed) fire_frame_count += 1;
+if(fire_released) show_debug_message("fire duration " + string(fire_frame_count))
 
 var x_push = 0;
 if(fire_pressed == 0) {

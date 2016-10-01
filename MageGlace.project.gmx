@@ -3,9 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <NewExtensions>
-    <extension index="0">extensions\Action-Platformer Engine 1</extension>
-  </NewExtensions>
+  <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\sp_mage</sprite>
@@ -57,8 +55,9 @@
     <object>objects\obj_aim_arrow</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_lvl01</room>
     <room>rooms\rm_lvl02</room>
+    <room>rooms\rm_aim_test</room>
+    <room>rooms\rm_lvl01</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
