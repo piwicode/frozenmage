@@ -15,10 +15,11 @@
     <sprite>sprites\sp_door</sprite>
     <sprite>sprites\spr_text</sprite>
     <sprite>sprites\sp_plate</sprite>
-    <sprite>sprites\sp_fence</sprite>
+    <sprite>sprites\sp_fence_close</sprite>
     <sprite>sprites\sp_label_a</sprite>
     <sprite>sprites\sp_aim_arrow</sprite>
     <sprite>sprites\sp_mage2</sprite>
+    <sprite>sprites\sp_fence_open</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -28,6 +29,7 @@
     <script>scripts\scr_accelerate.gml</script>
     <script>scripts\scr_room_init.gml</script>
     <script>scripts\Approach.gml</script>
+    <script>scripts\scr_col_icecube_crush.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_arial</font>
@@ -41,7 +43,8 @@
     <object>objects\obj_door</object>
     <object>objects\obj_text</object>
     <object>objects\obj_plate</object>
-    <object>objects\obj_fence</object>
+    <object>objects\obj_fence_open</object>
+    <object>objects\obj_fence_close</object>
     <objects name="entity">
       <object>objects\obj_entity</object>
       <object>objects\obj_mage</object>
