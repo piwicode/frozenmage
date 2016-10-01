@@ -28,6 +28,7 @@
     <script>scripts\scr_accelerate.gml</script>
     <script>scripts\scr_room_init.gml</script>
     <script>scripts\Approach.gml</script>
+    <script>scripts\scr_col_icecube_crush.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_arial</font>
@@ -57,6 +58,9 @@
     <object>objects\obj_aim_arrow</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_lvl02</room>
+    <room>rooms\rm_aim_test</room>
+    <room>rooms\rm_lvl01</room>
     <room>rooms\rm_lvl02</room>
     <room>rooms\rm_aim_test</room>
     <room>rooms\rm_lvl01</room>
