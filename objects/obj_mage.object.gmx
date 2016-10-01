@@ -181,11 +181,7 @@ if x_push != 0 &amp;&amp; place_meeting(x + sign(x_push), y, obj_icecube) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Is icecube falling on the mage
-if (other.ys &gt; 0) {
-  instance_destroy();
-  instance_create(x, y, obj_explode);
-}
+            <string>scr_col_icecube_crush()
 </string>
           </argument>
         </arguments>
