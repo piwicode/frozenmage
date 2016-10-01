@@ -71,20 +71,24 @@ if jump_ctrl &amp;&amp; place_meeting(x, y + 1, obj_solid) {
 }
 // Fly
 if(keyboard_check(vk_shift)) {
- ys += y_ctrl;
+ ys -= 1;
 }
 
 // Detect collisions with walls
 scr_move();
 
 // Horizontal flip the sprite according to the command.
-if x_ctrl != 0 {
+if (x_ctrl != 0) {
   image_xscale = x_ctrl;
 }
 
 // -y_ctrl because vertical axis is inverted between atan and the screen.
 // use image_scale to remember the current facing position. 
-var aim_direction = radtodeg(arctan2(-y_ctrl, image_xscale));
+if (x_ctrl == 0 &amp;&amp; y_ctrl == 0) {
+  var aim_direction = radtodeg(arctan2(-y_ctrl, image_xscale));
+} else {
+  var aim_direction = radtodeg(arctan2(-y_ctrl, x_ctrl));
+}
 aim_arrow.visible = fire_pressed;
 aim_arrow.x = x 
 aim_arrow.y = y

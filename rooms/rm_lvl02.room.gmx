@@ -176,17 +176,18 @@
     <instance objName="obj_wall" x="0" y="704" name="inst_8813E35F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="64" y="304" name="inst_BCED4039" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="96" y="304" name="inst_05CC7470" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_mage" x="96" y="288" name="inst_E60BBC31" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_icecube" x="96" y="224" name="inst_B444F1C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mage" x="80" y="288" name="inst_E60BBC31" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_icecube" x="80" y="224" name="inst_B444F1C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_text" x="96" y="416" name="inst_4E1AF526" locked="0" code="text = &quot;orc kills mage&quot;&#xA;" scaleX="8" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_text" x="96" y="320" name="inst_A7C19DC3" locked="0" code="text = &quot;falling icecube kill mage&quot;&#xA;" scaleX="8" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="obj_icecube" x="480" y="48" name="inst_A343A3CB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="96" y="128" name="inst_FE73CA40" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="32" y="128" name="inst_256A375B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="64" y="128" name="inst_F63FBD68" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="128" y="128" name="inst_45C30A9C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_plate" x="80" y="128" name="inst_C4BAA58E" locked="0" code="label = 1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fence" x="144" y="64" name="inst_06527F38" locked="0" code="label = 1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_icecube" x="112" y="224" name="inst_D0F6212A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_orc" x="112" y="288" name="inst_21167D1E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
