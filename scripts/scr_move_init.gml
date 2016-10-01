@@ -6,3 +6,5 @@ yss = .6;
 
 // Maximum absolute value of the speed on both axis.
 max_speed = 30;
+
+const_aim_x_friction = .5;

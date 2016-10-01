@@ -3,7 +3,9 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <NewExtensions/>
+  <NewExtensions>
+    <extension index="0">extensions\Action-Platformer Engine 1</extension>
+  </NewExtensions>
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\sp_mage</sprite>
@@ -26,6 +28,7 @@
     <script>scripts\scr_move_init.gml</script>
     <script>scripts\scr_accelerate.gml</script>
     <script>scripts\scr_room_init.gml</script>
+    <script>scripts\Approach.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_arial</font>
@@ -54,8 +57,8 @@
     <object>objects\obj_aim_arrow</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_lvl02</room>
     <room>rooms\rm_lvl01</room>
+    <room>rooms\rm_lvl02</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

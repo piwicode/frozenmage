@@ -55,23 +55,34 @@ aim_arrow.visible = false
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Get user inputs
-
-jump_ctrl = keyboard_check_pressed(vk_space);
-fire_pressed = keyboard_check(vk_control);
-fire_released = keyboard_check_released(vk_control);
+            <string>
 
 scr_accelerate();
-xs = x_ctrl * walk_speed;
+
 
 // If jump key has just been pressed and there is something solid just below
 // the object, then jump.
-if jump_ctrl &amp;&amp; place_meeting(x, y + 1, obj_solid) {
+
+is_standing = place_meeting(x, y + 1, obj_solid)
+
+// The mage walks horizontaly except when aiming.
+if(fire_pressed == 1) {
+  if(is_standing) { // When aiming and on the ground stop moving.
+    // Apply friction.
+    xs = Approach(xs, 0., const_aim_x_friction) ; 
+  } // When aiming and in the air keep moving until reaching the ground.
+} else { // When not aiming, horizontal speed is controled by keyboard.
+  xs = x_ctrl * walk_speed; 
+}
+
+if (jump_ctrl &amp;&amp; is_standing) {
   ys = -jump_speed;
 }
+
+
 // Fly
 if(keyboard_check(vk_shift)) {
- ys -= 1;
+  ys -= 1;
 }
 
 // Detect collisions with walls
@@ -95,7 +106,7 @@ aim_arrow.y = y
 aim_arrow.image_angle = aim_direction;
 
 
-if (fire_released) {
+if (fire_released) { 
   spark = instance_create(x, y, obj_spark);
   with (spark) {
     direction = aim_direction;
@@ -124,14 +135,24 @@ if (fire_released) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x_ctrl = keyboard_check(vk_right) - keyboard_check(vk_left);
+            <string>// Get user inputs.
+jump_ctrl = keyboard_check_pressed(vk_space);
+fire_pressed = keyboard_check(vk_control);
+fire_released = keyboard_check_released(vk_control);
+x_ctrl = keyboard_check(vk_right) - keyboard_check(vk_left);
 y_ctrl = keyboard_check(vk_down) - keyboard_check(vk_up);
 
-xs = x_ctrl * walk_speed;
 
-if xs != 0 &amp;&amp; place_meeting(x + sign(xs), y, obj_icecube) { 
-  var block = instance_place(x + sign(xs), y, obj_icecube);
-  block.xs = xs;
+var x_push = 0;
+if(fire_pressed == 0) {
+  // The mage walks horizontaly except when aiming
+  x_push = x_ctrl * walk_speed;
+}
+
+// Push a block when the mage is in contact with it.
+if x_push != 0 &amp;&amp; place_meeting(x + sign(x_push), y, obj_icecube) { 
+  var block = instance_place(x + sign(x_push), y, obj_icecube);
+  block.xs = x_push;
 }
 
 </string>

@@ -13,4 +13,4 @@ if(zoom != 1) {
 }
 
 // Initialization of the room framerate.
-var room_speed = 60;
+room_speed = 60;
