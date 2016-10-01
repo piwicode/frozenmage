@@ -18,6 +18,7 @@
     <sprite>sprites\sp_fence</sprite>
     <sprite>sprites\sp_label_a</sprite>
     <sprite>sprites\sp_aim_arrow</sprite>
+    <sprite>sprites\sp_mage2</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
