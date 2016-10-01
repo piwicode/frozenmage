@@ -21,7 +21,9 @@
     <sprite>sprites\sp_mage2</sprite>
     <sprite>sprites\sp_fence_open</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\background</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_move.gml</script>
