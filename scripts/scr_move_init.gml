@@ -1,5 +1,7 @@
 // Speed over x and y axes.
 xs = 0; ys = 0;
+// Non integer position of the object.
+xx = x; yy = y;
 
 // Acceleration: gravity is a vertical acceleration toward the bottom.
 yss = .3
