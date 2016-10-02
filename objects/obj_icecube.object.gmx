@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_move_init()
+            <string>
+event_inherited();
+scr_move_init();
 
 // Speed variation beyond which the ice breaks.
 // Should not be greater than the max_speed.

@@ -21,6 +21,7 @@
     <sprite>sprites\sp_mage2</sprite>
     <sprite>sprites\sp_fence_open</sprite>
     <sprite>sprites\sprite14</sprite>
+    <sprite>sprites\sp_water</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background</background>
@@ -38,28 +39,34 @@
     <font>fonts\fnt_arial</font>
   </fonts>
   <objects name="objects">
-    <object>objects\obj_spark</object>
-    <object>objects\obj_nocolide</object>
-    <object>objects\obj_freezable</object>
-    <object>objects\obj_frozen_content</object>
-    <object>objects\obj_explode</object>
     <object>objects\obj_door</object>
-    <object>objects\obj_text</object>
     <object>objects\obj_plate</object>
     <object>objects\obj_fence_open</object>
     <object>objects\obj_fence_close</object>
+    <object>objects\obj_water</object>
     <objects name="entity">
-      <object>objects\obj_entity</object>
       <object>objects\obj_mage</object>
       <object>objects\obj_orc</object>
-      <objects name="solid">
-        <object>objects\obj_solid</object>
-        <object>objects\obj_icecube</object>
-        <object>objects\obj_wall</object>
-      </objects>
+      <object>objects\obj_icecube</object>
+      <object>objects\obj_wall</object>
     </objects>
-    <object>objects\obj_aim_arrow</object>
-    <object>objects\obj_debug_tool</object>
+    <objects name="parent">
+      <object>objects\obj_collidable</object>
+      <object>objects\obj_dangerous</object>
+      <object>objects\obj_entity</object>
+      <object>objects\obj_not_collidable</object>
+      <object>objects\obj_solid</object>
+    </objects>
+    <objects name="effect">
+      <object>objects\obj_spark</object>
+      <object>objects\obj_aim_arrow</object>
+      <object>objects\obj_explode</object>
+      <object>objects\obj_frozen_content</object>
+    </objects>
+    <objects name="dbg">
+      <object>objects\obj_text</object>
+      <object>objects\obj_debug_tool</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_init</room>

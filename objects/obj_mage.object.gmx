@@ -172,6 +172,31 @@ if x_push != 0 &amp;&amp; place_meeting(x + sign(x_push), y, obj_icecube) {
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="obj_collidable">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Kill the mage
+instance_create(x, y, obj_explode);
+instance_destroy();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="obj_icecube">
       <action>
         <libid>1</libid>
@@ -190,31 +215,6 @@ if x_push != 0 &amp;&amp; place_meeting(x + sign(x_push), y, obj_icecube) {
           <argument>
             <kind>1</kind>
             <string>scr_col_icecube_crush()
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_orc">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>// Enemy collision
-instance_destroy();
-instance_create(x, y, obj_explode);
 </string>
           </argument>
         </arguments>

@@ -27,8 +27,7 @@
             <kind>1</kind>
             <string>/// Set default variables
 
-// label of the corresponding plates.
-label = 0
+event_inherited();
 
 // 0 means the door stay closed.
 // 1 means the door is going to open in the next cycle.
