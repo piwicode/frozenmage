@@ -20,6 +20,7 @@
     <sprite>sprites\sp_aim_arrow</sprite>
     <sprite>sprites\sp_mage2</sprite>
     <sprite>sprites\sp_fence_open</sprite>
+    <sprite>sprites\sprite14</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background</background>
@@ -57,13 +58,14 @@
         <object>objects\obj_wall</object>
       </objects>
     </objects>
-    <object>objects\obj_label_a</object>
     <object>objects\obj_aim_arrow</object>
+    <object>objects\obj_debug_tool</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_init</room>
+    <room>rooms\rm_lvl01</room>
     <room>rooms\rm_lvl02</room>
     <room>rooms\rm_aim_test</room>
-    <room>rooms\rm_lvl01</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
