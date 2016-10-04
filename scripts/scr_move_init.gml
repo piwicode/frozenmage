@@ -5,7 +5,7 @@ xs = 0; ys = 0;
 xx = x; yy = y;
 
 // Acceleration: gravity is a vertical acceleration toward the bottom.
-yss = 1.1
+yss = .3;
 
 // Maximum absolute value of the horizontal and vertical speed.
 max_speed = 30;
@@ -13,4 +13,4 @@ max_speed = 30;
 // Horizontal friction applied when aiming.
 const_aim_x_friction = .5;
 
-do_die = 0
+do_die = 0;

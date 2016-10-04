@@ -93,17 +93,14 @@ instance_destroy()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Capture the speed before and after collision test
-// to detect the shock intensity if any.
-var delta_xs = xs;
-var delta_ys = ys;
-
-// Apply usual movement and collision.
+            <string>// Apply usual movement and collision.
 scr_move();
 
-// Measure the speed variation over this frame, and
-// deduce the intencity of the shock.
-delta_xs -= xs; delta_ys -= ys;
+if (abs(delta_ys) &gt; 0) {
+  with(instance_place(x, y + 2, obj_mage)) do_die = 1;
+  with(instance_place(x, y + 2, obj_orc)) do_die = 1;
+}
+
 var jitter = delta_xs * delta_xs + delta_ys * delta_ys
 if (jitter &gt;= max_jitter * max_jitter) {
   if (frozen_object) { with(frozen_object) instance_destroy(); }

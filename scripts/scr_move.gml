@@ -1,14 +1,9 @@
 /// scr_move()
 
-// Detect collisions with solid objects.
-
-// It is not possible to use move_contact_xxx with a spcific object class
-// Using instance_meeting only retunrs one instance which does not make
-// possible to compute the distance to a safe place in the case two object
-// are colliding.
-
-// All collision operations are performed on rounded coordinate to avoid
-// entering the walls.
+// Capture the speed before and after collision test
+// to detect the shock intensity if any.
+delta_xs = xs;
+delta_ys = ys;
 
 // Apply the acceleration to the current speed.
 ys += yss;
@@ -46,9 +41,13 @@ if (xs != 0) {
   }
 }
 xx = xx_target;
+
 // Integer position of the object rounded down the the nearest integer.
 // This is used to display pixel art sprites alligned with eachother.
 // We do not use 'round' because it implementes bankers rounding which is not
-// relevant to game simulation given that it would cause aninmation jittering.
-
+// relevant to game simulation given that it would cause annimation jittering.
 x = floor(xx); y = floor(yy);
+
+// Measure the speed variation over this frame, and
+// deduce the intencity of the shock.
+delta_xs -= xs; delta_ys -= ys;
