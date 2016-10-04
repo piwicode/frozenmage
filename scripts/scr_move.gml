@@ -12,6 +12,26 @@ ys += yss;
 ys = clamp(ys, -max_speed, max_speed);
 xs = clamp(xs, -max_speed, max_speed);
 
+if(true){
+var xst = xs; var yst = ys;
+if(yst > 0) {yst = max(yst, 1);}
+var made_progress = true;
+var x_colide = false; var y_colide = false;
+while (made_progress) {
+  made_progress = false;
+  if (abs(yst) >= 1) {
+    y_colide = place_meeting(floor(xx), floor(yy) + sign(yst), obj_entity);
+    if (!y_colide) { yy += sign(yst); yst -= sign(yst); made_progress = true; }
+  }  
+  if (abs(xst) >= 1) {
+    x_colide = place_meeting(floor(xx) + sign(xst), floor(yy), obj_entity);
+    if (!x_colide) { xx += sign(xst); xst -= sign(xst); made_progress = true; }
+  }
+}
+if x_colide { xs = 0; }
+if y_colide { ys = 0; }
+
+} else {
 var yy_target = yy + ys;
 if (ys != 0) {
   // Integer position equal or beyond the reached point.
@@ -41,10 +61,10 @@ if (xs != 0) {
   }
 }
 xx = xx_target;
-
+}
 // Integer position of the object rounded down the the nearest integer.
 // This is used to display pixel art sprites alligned with eachother.
-// We do not use 'round' because it implementes bankers rounding which is not
+// We do not use 'round' because it implements bankers rounding which is not
 // relevant to game simulation given that it would cause annimation jittering.
 x = floor(xx); y = floor(yy);
 

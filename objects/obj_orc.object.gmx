@@ -59,14 +59,15 @@ walk_speed = 1;
           <argument>
             <kind>1</kind>
             <string>// Detect obstacle in fron of the sprite or absence of a platform at the feet of the sprite.
-if (place_meeting(x + x_ctrl, y, obj_solid) ||
-    !position_meeting(((bbox_left * (2 - x_ctrl)) + bbox_right * (2 + x_ctrl)) / 4,
-                      bbox_bottom + 1, obj_solid)) {
-  // if swithcing direction would be better.
-  if(!place_meeting(x - x_ctrl, y, obj_solid)) {
+if (place_meeting(x + x_ctrl, y, obj_solid) &amp;&amp; !place_meeting(x - x_ctrl, y, obj_solid)) {
+  x_ctrl *= -1;
+} else if (
+  !position_meeting(((bbox_left * (2 - x_ctrl)) + bbox_right * (2 + x_ctrl)) / 4, bbox_bottom + 1, obj_solid) &amp;&amp;
+  position_meeting(((bbox_left * (2 + x_ctrl)) + bbox_right * (2 - x_ctrl)) / 4, bbox_bottom + 1, obj_solid) &amp;&amp; 
+  !place_meeting(x - x_ctrl, y, obj_solid)) {
     x_ctrl *= -1; // Go the other direction         
-  }
 }
+
 
 xs = x_ctrl * walk_speed;
 

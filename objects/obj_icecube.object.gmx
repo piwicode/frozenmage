@@ -30,7 +30,7 @@ scr_move_init();
 
 // Speed variation beyond which the ice breaks.
 // Should not be greater than the max_speed.
-max_jitter = 12;
+max_jitter = 8;
 
 // No frozen content by default.
 frozen_object = 0;
@@ -96,7 +96,7 @@ instance_destroy()
             <string>// Apply usual movement and collision.
 scr_move();
 
-if (abs(delta_ys) &gt; 0) {
+if (abs(delta_ys) &gt; 1) {
   with(instance_place(x, y + 2, obj_mage)) do_die = 1;
   with(instance_place(x, y + 2, obj_orc)) do_die = 1;
 }
