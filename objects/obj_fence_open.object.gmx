@@ -53,8 +53,8 @@ do_open = 1;
           <argument>
             <kind>1</kind>
             <string>// If the door is no longer open, and there is nothing in the way.
-var solething_in_th_way = place_meeting(x, y, obj_entity);
-if (do_open == 0 &amp;&amp; !solething_in_th_way) {
+var something_in_the_way = place_meeting(x, y, obj_entity);
+if (do_open == 0 &amp;&amp; !something_in_the_way) {
   instance_change(obj_fence_close, true);
 }
 </string>

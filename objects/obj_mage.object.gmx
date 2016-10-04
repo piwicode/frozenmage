@@ -35,7 +35,14 @@ aim_arrow = instance_create(x, y, obj_aim_arrow)
 aim_arrow.visible = false
 
 const_image_speed_walk = 12 / room_speed // 8 per seconds
-image_speed = 0 // No animation by default.
+
+image_speed = 0; // No animation by default.
+
+// Override user inputs for test purpose. Set the following vars with instance
+// initialization script.
+// Name of a script with no argument executed on the mage after input handling.
+input_override_script = false; // Set to true in conjunction
+
 </string>
           </argument>
         </arguments>
@@ -58,68 +65,49 @@ image_speed = 0 // No animation by default.
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-
-scr_accelerate();
-
-
-// If jump key has just been pressed and there is something solid just below
-// the object, then jump.
-
-is_standing = place_meeting(x, y + 1, obj_solid)
-
-// The mage walks horizontaly except when aiming.
-if(fire_pressed) {
-  if(is_standing) { // When aiming and on the ground stop moving.
-    // Apply friction.
-    xs = Approach(xs, 0., const_aim_x_friction) ; 
-  } // When aiming and in the air keep moving until reaching the ground.
-} else { // When not aiming, horizontal speed is controled by keyboard.
-  xs = x_ctrl * walk_speed; 
-}
-
-if (jump_ctrl &amp;&amp; is_standing) {
-  ys = -jump_speed;
-}
-
-
-// Fly
-if(keyboard_check(vk_shift)) {
-  ys -= 1;
-}
-
-// Detect collisions with walls
+            <string>// Detect collisions with walls
 scr_move();
 
 // Horizontal flip the sprite according to the command.
 if (x_ctrl != 0) {
   image_xscale = x_ctrl;
 }
-
 // Play the walk animation only when the mage is moving horizontally.
 image_speed = const_image_speed_walk * (xs != 0);
 
 
-
 // -y_ctrl because vertical axis is inverted between atan and the screen.
 // use image_scale to remember the current facing position. 
+var x_fire = (bbox_right + bbox_left) * .5;
+var y_fire = (bbox_top + bbox_bottom) * .5;
 if (x_ctrl == 0 &amp;&amp; y_ctrl == 0) {
   var aim_direction = radtodeg(arctan2(-y_ctrl, image_xscale));
 } else {
   var aim_direction = radtodeg(arctan2(-y_ctrl, x_ctrl));
 }
-aim_arrow.visible = fire_pressed;
-aim_arrow.x = x 
-aim_arrow.y = y
+aim_arrow.visible = fire_check_ctrl;
+aim_arrow.x = x_fire 
+aim_arrow.y = y_fire
 aim_arrow.image_angle = aim_direction;
 
 // Use fire_pressed_start to change the aim style.
-if (fire_pressed_start) {  
-  spark = instance_create(x, y, obj_spark);
+if (fire_released_ctrl) {  
+  spark = instance_create(x_fire, y_fire, obj_spark);
   with (spark) {
     direction = aim_direction;
     speed = max_speed;
   }
+}
+
+// Kill the mage
+if (place_meeting(x + 1, y + 1, obj_dangerous) ||
+    place_meeting(x - 1, y - 1, obj_dangerous)) {
+  do_die = 1
+}
+
+if (do_die) {
+  instance_create(x, y, obj_explode);
+  instance_destroy();
 }
 </string>
           </argument>
@@ -145,53 +133,54 @@ if (fire_pressed_start) {
             <kind>1</kind>
             <string>// Get user inputs.
 jump_ctrl = keyboard_check_pressed(vk_space);
-fire_pressed_start = keyboard_check_pressed(vk_control);
-fire_pressed = keyboard_check(vk_control);
-fire_released = keyboard_check_released(vk_control);
+fire_pressed_ctrl = keyboard_check_pressed(vk_control);
+fire_check_ctrl = keyboard_check(vk_control);
+fire_released_ctrl = keyboard_check_released(vk_control);
 x_ctrl = keyboard_check(vk_right) - keyboard_check(vk_left);
 y_ctrl = keyboard_check(vk_down) - keyboard_check(vk_up);
 
-if(fire_pressed_start) fire_frame_count = 0;
-if(fire_pressed) fire_frame_count += 1;
-if(fire_released) show_debug_message("fire duration " + string(fire_frame_count))
+// Apply input override for test only.
+if (input_override_script) {
+  script_execute(input_override_script);
+}
 
-var x_push = 0;
-if(fire_pressed == 0) {
-  // The mage walks horizontaly except when aiming
-  x_push = x_ctrl * walk_speed;
+// ## Display debug information. To be removed.
+if(fire_pressed_ctrl) fire_frame_count = 0;
+if(fire_check_ctrl) fire_frame_count += 1;
+if(fire_released_ctrl) show_debug_message("fire duration " + string(fire_frame_count))
+
+
+// Tells if the object lies on something or not.
+is_standing = place_meeting(floor(x), floor(y) + 1, obj_solid)
+
+// The mage walks horizontaly except when aiming.
+if(fire_check_ctrl) {
+  if(is_standing) { // When aiming and on the ground stop moving.
+    // Apply friction.
+    xs = Approach(xs, 0., const_aim_x_friction) ; 
+  } // When aiming and in the air keep moving until reaching the ground.
+} else { // When not aiming, horizontal speed is controled by keyboard.
+  xs = x_ctrl * walk_speed; 
+}
+
+// If jump key has just been pressed and there is something solid just below
+// the object, then jump.
+if (jump_ctrl &amp;&amp; is_standing) {
+  ys = -jump_speed;
+}
+
+// Fly cheet
+if(keyboard_check(vk_shift)) {
+  ys -= 1;
 }
 
 // Push a block when the mage is in contact with it.
-if x_push != 0 &amp;&amp; place_meeting(x + sign(x_push), y, obj_icecube) { 
-  var block = instance_place(x + sign(x_push), y, obj_icecube);
-  block.xs = x_push;
+var x_push = xs; // Horizontal displacement transmited to a pusheable object.
+if x_push != 0 &amp;&amp; place_meeting(floor(xx + sign(x_push)), floor(yy), obj_icecube) { 
+  var block = instance_place(floor(xx + sign(x_push)), floor(yy), obj_icecube);
+  block.xs = x_push; // Set the horizontal speed of the block.
 }
 
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_collidable">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// Kill the mage
-instance_create(x, y, obj_explode);
-instance_destroy();
 </string>
           </argument>
         </arguments>
