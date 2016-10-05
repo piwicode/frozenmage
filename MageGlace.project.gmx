@@ -18,10 +18,12 @@
     <sprite>sprites\sp_fence_close</sprite>
     <sprite>sprites\sp_label_a</sprite>
     <sprite>sprites\sp_aim_arrow</sprite>
-    <sprite>sprites\sp_mage2</sprite>
     <sprite>sprites\sp_fence_open</sprite>
     <sprite>sprites\sprite14</sprite>
     <sprite>sprites\sp_water</sprite>
+    <sprite>sprites\sp_mage_32</sprite>
+    <sprite>sprites\sp_mage_48</sprite>
+    <sprite>sprites\sp_mage_64</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background_feu</background>
