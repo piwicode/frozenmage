@@ -24,7 +24,8 @@
     <sprite>sprites\sp_water</sprite>
   </sprites>
   <backgrounds name="background">
-    <background>background\background</background>
+    <background>background\background_feu</background>
+    <background>background\Tile_Feu</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -69,6 +70,7 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\room4</room>
     <room>rooms\rm_init</room>
     <room>rooms\rm_lvl01</room>
     <room>rooms\rm_lvl02</room>

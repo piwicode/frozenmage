@@ -13,7 +13,7 @@
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>320</width>
-  <height>240</height>
-  <data>images\background.png</data>
+  <width>640</width>
+  <height>480</height>
+  <data>images\background_feu.png</data>
 </background>

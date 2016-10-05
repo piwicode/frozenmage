@@ -27,14 +27,14 @@
             <kind>1</kind>
             <string>scr_move_init()
 // Horizontal speed when walking.
-walk_speed = 2;
+walk_speed = 3;
 // Vertical speed set when jumping.
 jump_speed = 7;
 
 aim_arrow = instance_create(x, y, obj_aim_arrow)
 aim_arrow.visible = false
 
-const_image_speed_walk = 12 / room_speed // 8 per seconds
+const_image_speed_walk = 10 / room_speed // 8 per seconds
 image_speed = 0 // No animation by default.
 </string>
           </argument>
