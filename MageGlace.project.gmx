@@ -24,9 +24,9 @@
     <sprite>sprites\sp_mage_32</sprite>
     <sprite>sprites\sp_mage_48</sprite>
     <sprite>sprites\sp_mage_64</sprite>
-    <sprite>sprites\sp_block_D</sprite>
-    <sprite>sprites\sp_block_G</sprite>
     <sprite>sprites\sp_block_LONG</sprite>
+    <sprite>sprites\sp_block_Brd_G</sprite>
+    <sprite>sprites\sp_block_Brd_D</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background_feu</background>
@@ -55,9 +55,9 @@
       <object>objects\obj_orc</object>
       <object>objects\obj_icecube</object>
       <object>objects\obj_wall</object>
-      <object>objects\obj_block_G</object>
-      <object>objects\obj_block_D</object>
       <object>objects\obj_block_LONG</object>
+      <object>objects\obj_block_Bord_D</object>
+      <object>objects\obj_block_Bord_G</object>
     </objects>
     <objects name="parent">
       <object>objects\obj_collidable</object>
