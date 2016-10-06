@@ -11,6 +11,7 @@
     <sprite>sprites\sp_orc</sprite>
     <sprite>sprites\sp_spark</sprite>
     <sprite>sprites\sp_icecube</sprite>
+    <sprite>sprites\sp_water</sprite>
     <sprite>sprites\sp_explode</sprite>
     <sprite>sprites\sp_door</sprite>
     <sprite>sprites\spr_text</sprite>
@@ -20,7 +21,6 @@
     <sprite>sprites\sp_aim_arrow</sprite>
     <sprite>sprites\sp_fence_open</sprite>
     <sprite>sprites\sprite14</sprite>
-    <sprite>sprites\sp_water</sprite>
     <sprite>sprites\sp_mage_32</sprite>
     <sprite>sprites\sp_mage_48</sprite>
     <sprite>sprites\sp_mage_64</sprite>
