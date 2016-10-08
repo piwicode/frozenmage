@@ -14,25 +14,28 @@
     <sprite>sprites\sp_water</sprite>
     <sprite>sprites\sp_explode</sprite>
     <sprite>sprites\sp_door</sprite>
-    <sprite>sprites\spr_text</sprite>
     <sprite>sprites\sp_plate</sprite>
     <sprite>sprites\sp_fence_close</sprite>
-    <sprite>sprites\sp_label_a</sprite>
     <sprite>sprites\sp_aim_arrow</sprite>
     <sprite>sprites\sp_fence_open</sprite>
-    <sprite>sprites\sprite14</sprite>
     <sprite>sprites\sp_mage_32</sprite>
     <sprite>sprites\sp_mage_48</sprite>
     <sprite>sprites\sp_mage_64</sprite>
-    <sprite>sprites\sp_block_LONG</sprite>
-    <sprite>sprites\sp_block_8x8</sprite>
-    <sprite>sprites\sp_block_16x16</sprite>
-    <sprite>sprites\sp_block_Brd_G</sprite>
-    <sprite>sprites\sp_block_Brd_D</sprite>
-    <sprite>sprites\sp_go_next_level</sprite>
     <sprite>sprites\sprite24</sprite>
-    <sprite>sprites\sp_obj_talk</sprite>
     <sprite>sprites\sp_block_pierre</sprite>
+    <sprites name="control">
+      <sprite>sprites\sp_debug</sprite>
+      <sprite>sprites\sp_text</sprite>
+      <sprite>sprites\sp_label_a</sprite>
+      <sprite>sprites\sp_go_next_level</sprite>
+      <sprite>sprites\sp_block_8x8</sprite>
+      <sprite>sprites\sp_obj_talk</sprite>
+      <sprite>sprites\sp_block_16x16</sprite>
+    </sprites>
+    <sprites name="dialog">
+      <sprite>sprites\sp_dlg_mage</sprite>
+      <sprite>sprites\sp_dlg_parchment</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background_feu</background>
@@ -82,11 +85,12 @@
       <object>objects\obj_explode</object>
       <object>objects\obj_frozen_content</object>
     </objects>
-    <objects name="dbg">
+    <objects name="control">
       <object>objects\obj_text</object>
       <object>objects\obj_debug_tool</object>
       <object>objects\go_next_level</object>
       <object>objects\obj_talk</object>
+      <object>objects\obj_init_game</object>
     </objects>
   </objects>
   <rooms name="rooms">
@@ -101,6 +105,9 @@
     <room>rooms\rm_test_collision</room>
     <room>rooms\rm_template</room>
   </rooms>
+  <constants number="1">
+    <constant name="PIXEL_SIZE">4</constant>
+  </constants>
   <help>
     <rtf>help.rtf</rtf>
   </help>

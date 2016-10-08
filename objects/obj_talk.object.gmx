@@ -62,7 +62,7 @@ remaining_time = Approach(remaining_time, 0, 1);
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="0">
+    <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -80,14 +80,33 @@ remaining_time = Approach(remaining_time, 0, 1);
           <argument>
             <kind>1</kind>
             <string>if(remaining_time) {
-  with(obj_mage) {
-    draw_set_font(fnt_arial);
-    draw_set_colour(c_yellow);
-    draw_set_alpha(1.);
-    draw_set_halign(fa_center);
-    draw_set_valign(fa_bottom);
-    draw_text(x, bbox_top - 5, other.text);
-  }
+  var margin = 4 * PIXEL_SIZE;  // in pixels.
+  var face_width = sprite_get_width (sp_dlg_mage) * PIXEL_SIZE;
+  var x_padding = sprite_get_bbox_left(sp_dlg_parchment) * PIXEL_SIZE;
+  var y_padding = sprite_get_bbox_top(sp_dlg_parchment) * PIXEL_SIZE;
+ 
+  draw_sprite_ext(
+    sp_dlg_mage, 0 /*image index*/,
+    margin, margin, /*position*/
+    PIXEL_SIZE, PIXEL_SIZE /*scale*/,
+    0 /*rotation angle*/, c_white /*blend color*/, 1 /*alpha*/);
+
+  draw_sprite_ext(
+    sp_dlg_parchment, 0 /*image index*/,
+    face_width + 2 * margin, margin, /*position*/
+    PIXEL_SIZE, PIXEL_SIZE /*scale*/,
+    0 /*rotation angle*/, c_white /*blend color*/, 1 /*alpha*/);
+
+  draw_set_font(fnt_arial);
+  draw_set_colour(c_black);
+  draw_set_alpha(.95);
+  draw_set_halign(fa_left);
+  draw_set_valign(fa_top);
+  draw_text_transformed(
+    face_width + 2 * margin + x_padding, margin + y_padding,
+    other.text,
+    PIXEL_SIZE, PIXEL_SIZE /*scale*/,
+    0 /*rotation angle*/);  
 }
 </string>
           </argument>
