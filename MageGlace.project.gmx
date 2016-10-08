@@ -44,11 +44,13 @@
     <script>scripts\scr_move.gml</script>
     <script>scripts\scr_move_init.gml</script>
     <script>scripts\scr_room_init.gml</script>
-    <script>scripts\Approach.gml</script>
     <script>scripts\scr_test_walk_right.gml</script>
     <script>scripts\scr_test_walk_left.gml</script>
     <script>scripts\scr_test_idle.gml</script>
-    <script>scripts\IIF.gml</script>
+    <scripts name="functions">
+      <script>scripts\Approach.gml</script>
+      <script>scripts\IIF.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_arial</font>
