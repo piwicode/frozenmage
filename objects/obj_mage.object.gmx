@@ -42,7 +42,7 @@ brake_accel = walk_speed / brake_accel_time ;
 air_friction = 2;
 
 // Vertical speed set when jumping.
-jump_impulse = 4;
+jump_impulse = 3.7;
 
 aim_arrow = instance_create(x, y, obj_aim_arrow)
 aim_arrow.visible = false
@@ -189,7 +189,8 @@ if (jump_pressed_ctrl &amp;&amp; is_standing) {
 
 // Fly cheet
 if(keyboard_check(vk_shift)) {  
-  ys -= 1;
+  ys -= 0.18
+  ;
 }
 
 // Push a block when the mage is in contact with it.
