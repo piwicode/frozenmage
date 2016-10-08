@@ -25,6 +25,8 @@
     <sprite>sprites\sp_mage_48</sprite>
     <sprite>sprites\sp_mage_64</sprite>
     <sprite>sprites\sp_block_LONG</sprite>
+    <sprite>sprites\sp_block_8x8</sprite>
+    <sprite>sprites\sp_block_16x16</sprite>
     <sprite>sprites\sp_block_Brd_G</sprite>
     <sprite>sprites\sp_block_Brd_D</sprite>
   </sprites>
@@ -57,6 +59,8 @@
       <object>objects\obj_icecube</object>
       <object>objects\obj_wall</object>
       <object>objects\obj_block_LONG</object>
+      <object>objects\obj_collision_16x16</object>
+      <object>objects\obj_collision_8x8</object>
       <object>objects\obj_block_Bord_D</object>
       <object>objects\obj_block_Bord_G</object>
     </objects>
