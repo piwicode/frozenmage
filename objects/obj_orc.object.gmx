@@ -30,18 +30,12 @@
 event_inherited();
 is_freezable = 1;
 
-// Speeds over x and y.
-xs = 0;
-ys = 0;
-// Acceleration: gravity is a vertical acceleration toward the bottom.
-yss = 1;
-// Maximum absolute value of the speed on both axis.
-max_speed = 30;
-// Horizontal speed when walking.
-walk_speed = 1;
+// Initialize the moveable capability.
+scr_move_init();
+
 // Current direction the ennemy is heading
 x_ctrl = 1;
-jump_ctrl = 0;
+walk_speed = 1;
 </string>
           </argument>
         </arguments>
@@ -64,93 +58,26 @@ jump_ctrl = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Apply the acceleration to the current speed, up to some a maximum speed.
-ys = clamp(ys + yss, -max_speed, max_speed);
+            <string>// Detect obstacle in fron of the sprite or absence of a platform at the feet of the sprite.
+if (place_meeting(x + x_ctrl, y, obj_solid) &amp;&amp; !place_meeting(x - x_ctrl, y, obj_solid)) {
+  x_ctrl *= -1;
+} else if (
+  !position_meeting(((bbox_left * (2 - x_ctrl)) + bbox_right * (2 + x_ctrl)) / 4, bbox_bottom + 1, obj_solid) &amp;&amp;
+  position_meeting(((bbox_left * (2 + x_ctrl)) + bbox_right * (2 - x_ctrl)) / 4, bbox_bottom + 1, obj_solid) &amp;&amp; 
+  !place_meeting(x - x_ctrl, y, obj_solid)) {
+    x_ctrl *= -1; // Go the other direction         
+}
+
+
 xs = x_ctrl * walk_speed;
 
-// If jump has just been pressed and there is something solid just below
-// the object.
-if jump_ctrl &amp;&amp; place_meeting(x, y + 1, obj_solid) {
-  ys = -jump_speed;
-}
+scr_move()
 
-// Detect collisions
-if place_meeting(x + xs, y, obj_solid) {
-  while(!place_meeting(x + sign(xs), y, obj_solid)) x += sign(xs);
-  xs = 0;
-  x_ctrl *= -1; // Go the other direction
-} else {
-  // Detect absence of a platform at the feet of the sprite.
-  // Check at the 1/4 or 3/4 of the sprite horizontaly, and one pixel below
-  // the bounding box which corresponds to the maximum resolution of the
-  // collision detection.
-  if(!position_meeting((bbox_left * (2 - sign(xs)) + bbox_right * (2 + sign(xs))) / 4,
-                       bbox_bottom + 1,
-                       obj_solid)) {
-      x_ctrl *= -1; // Go the other direction
-  }
-  
-}
 
-if place_meeting(x, y + ys, obj_solid) {
-  while(!place_meeting(x , y + sign(ys), obj_solid)) y += sign(ys);
-  ys = 0;
-}
-
-// Apply speed corrected by collision to the sprite.
-x += xs
-y += ys
 
 if x_ctrl != 0 {
   image_xscale = x_ctrl
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_dangerous">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>instance_destroy();
-instance_create(x, y, obj_explode);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_icecube">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>scr_col_icecube_crush()
 </string>
           </argument>
         </arguments>

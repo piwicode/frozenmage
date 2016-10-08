@@ -25,13 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-event_inherited();
+            <string>event_inherited();
 scr_move_init();
 
 // Speed variation beyond which the ice breaks.
 // Should not be greater than the max_speed.
-max_jitter = 12;
+max_jitter = 8;
 
 // No frozen content by default.
 frozen_object = 0;
@@ -62,7 +61,9 @@ frozen_image = 0;
 if (frozen_object) {
   instance_activate_object(frozen_object);  
   // TODO compute proper positionning.
+  frozen_object.xs = xs
   frozen_object.x = x
+  frozen_object.ys = ys
   frozen_object.y = y
 }
 if (frozen_image) {
@@ -92,23 +93,22 @@ instance_destroy()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Capture the speed before and after collision test
-// to detect the shock intensity if any.
-var delta_xs = xs;
-var delta_ys = ys;
-
-// Apply usual movement.
-scr_accelerate();
+            <string>// Apply usual movement and collision.
 scr_move();
 
-// Measure the speed variation over this frame, and
-// deduce the intencity of the shock.
-delta_xs -= xs; delta_ys -= ys;
+if (abs(delta_ys) &gt; 1) {
+  with(instance_place(x, y + 2, obj_mage)) do_die = 1;
+  with(instance_place(x, y + 2, obj_orc)) do_die = 1;
+}
+
 var jitter = delta_xs * delta_xs + delta_ys * delta_ys
 if (jitter &gt;= max_jitter * max_jitter) {
   if (frozen_object) { with(frozen_object) instance_destroy(); }
   if (frozen_image) { with(frozen_image) instance_destroy(); }
-  instance_change(obj_explode, true);
+  
+  // Use instance create to avoid the explosion to be considered obj_solid.
+  instance_create(x, y, obj_explode); 
+  instance_destroy();
   exit;  
 }
 
