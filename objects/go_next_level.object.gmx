@@ -84,7 +84,7 @@ if(do_go_next_level) {
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="0">
+    <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -105,10 +105,10 @@ if(do_go_next_level) {
 var progress = 1. - remaining_time / fadeout_duration;
 draw_set_alpha(progress)
 draw_rectangle(
-  view_xview[0],
-  view_yview[0],
-  view_xview[0] + view_wview[0],
-  view_yview[0] + view_hview[0],
+  0,
+  0,
+  display_get_width(),
+  display_get_height(),
   0 /*no outline*/);
 draw_set_alpha(1.);
 </string>

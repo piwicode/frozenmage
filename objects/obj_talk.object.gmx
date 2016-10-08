@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>text = "TO_BE_DEFINED";
+duration_sec = 10;
 remaining_time = 0;
 has_talked = 0;
 </string>
@@ -52,7 +53,7 @@ has_talked = 0;
             <kind>1</kind>
             <string>if (!has_talked &amp;&amp; place_meeting(x, y, obj_mage)) {
   has_talked = 1;
-  remaining_time = 4 * room_speed;
+  remaining_time = duration_sec * room_speed;
 }
 
 remaining_time = Approach(remaining_time, 0, 1);
