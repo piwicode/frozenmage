@@ -12,7 +12,7 @@ ys += yss;
 ys = clamp(ys, -max_speed, max_speed);
 xs = clamp(xs, -max_speed, max_speed);
 
-if(true){
+if(false){
 var xst = xs; var yst = ys;
 if(yst > 0) {yst = max(yst, 1);}
 var made_progress = true;

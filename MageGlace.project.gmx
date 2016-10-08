@@ -41,6 +41,7 @@
     <script>scripts\scr_test_walk_right.gml</script>
     <script>scripts\scr_test_walk_left.gml</script>
     <script>scripts\scr_test_idle.gml</script>
+    <script>scripts\IIF.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_arial</font>
@@ -80,13 +81,14 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_init</room>
-    <room>rooms\room4</room>
+    <room>rooms\rm_template</room>
+    <room>rooms\rm_lvl_01</room>
+    <room>rooms\rm_test_fire</room>
     <room>rooms\rm_test_lvl02</room>
     <room>rooms\rm_test_lvl03</room>
     <room>rooms\rm_test_lvl01</room>
     <room>rooms\rm_test_aim_test</room>
-    <room>rooms\tm_test_collision</room>
-    <room>rooms\rm_template</room>
+    <room>rooms\rm_test_collision</room>
     <room>rooms\rm_lvl01</room>
   </rooms>
   <help>
