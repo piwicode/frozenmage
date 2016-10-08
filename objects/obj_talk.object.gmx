@@ -2,7 +2,7 @@
 <object>
   <spriteName>sp_obj_talk</spriteName>
   <solid>0</solid>
-  <visible>-1</visible>
+  <visible>0</visible>
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
@@ -27,8 +27,6 @@
             <kind>1</kind>
             <string>text = "TO_BE_DEFINED";
 duration_sec = 5;
-remaining_time = 0;
-has_talked = 0;
 </string>
           </argument>
         </arguments>
@@ -51,64 +49,20 @@ has_talked = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!has_talked &amp;&amp; place_meeting(x, y, obj_mage)) {
-  has_talked = 1;
-  remaining_time = duration_sec * room_speed;
+            <string>if (place_meeting(x, y, obj_mage)) {
+  // Replace current dialog if any.
+  with (obj_gui_dialog) {
+    instance_destroy();
+  }
+  // Creqte the GUI object.
+  with(instance_create(0, 0, obj_gui_dialog)) {
+    text = other.text;
+    alarm[0] = other.duration_sec * room_speed;
+  }
+  // Remove this trigger object, so that dialog is not triggered twice.
+  instance_destroy();  
 }
 
-remaining_time = Approach(remaining_time, 0, 1);
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="64">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if(remaining_time) {
-  var margin = 4 * PIXEL_SIZE;  // in pixels.
-  var face_width = sprite_get_width (sp_dlg_mage) * PIXEL_SIZE;
-  var x_padding = sprite_get_bbox_left(sp_dlg_parchment) * PIXEL_SIZE;
-  var y_padding = sprite_get_bbox_top(sp_dlg_parchment) * PIXEL_SIZE;
- 
-  draw_sprite_ext(
-    sp_dlg_mage, 0 /*image index*/,
-    margin, margin, /*position*/
-    PIXEL_SIZE, PIXEL_SIZE /*scale*/,
-    0 /*rotation angle*/, c_white /*blend color*/, 1 /*alpha*/);
-
-  draw_sprite_ext(
-    sp_dlg_parchment, 0 /*image index*/,
-    face_width + 2 * margin, margin, /*position*/
-    PIXEL_SIZE, PIXEL_SIZE /*scale*/,
-    0 /*rotation angle*/, c_white /*blend color*/, 1 /*alpha*/);
-
-  draw_set_font(fnt_arial);
-  draw_set_colour(c_black);
-  draw_set_alpha(.95);
-  draw_set_halign(fa_left);
-  draw_set_valign(fa_top);
-  draw_text_transformed(
-    face_width + 2 * margin + x_padding, margin + y_padding,
-    other.text,
-    PIXEL_SIZE, PIXEL_SIZE /*scale*/,
-    0 /*rotation angle*/);  
-}
 </string>
           </argument>
         </arguments>

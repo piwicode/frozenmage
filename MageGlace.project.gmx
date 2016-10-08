@@ -91,6 +91,7 @@
       <object>objects\go_next_level</object>
       <object>objects\obj_talk</object>
       <object>objects\obj_init_game</object>
+      <object>objects\obj_gui_dialog</object>
     </objects>
   </objects>
   <rooms name="rooms">
