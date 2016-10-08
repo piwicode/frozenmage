@@ -49,6 +49,7 @@
     <font>fonts\fnt_arial</font>
   </fonts>
   <objects name="objects">
+    <object>objects\obj_collision_8x8</object>
     <object>objects\obj_door</object>
     <object>objects\obj_plate</object>
     <object>objects\obj_fence_open</object>
@@ -58,12 +59,7 @@
       <object>objects\obj_mage</object>
       <object>objects\obj_orc</object>
       <object>objects\obj_icecube</object>
-      <object>objects\obj_wall</object>
-      <object>objects\obj_block_LONG</object>
       <object>objects\obj_collision_16x16</object>
-      <object>objects\obj_collision_8x8</object>
-      <object>objects\obj_block_Bord_D</object>
-      <object>objects\obj_block_Bord_G</object>
     </objects>
     <objects name="parent">
       <object>objects\obj_collidable</object>
@@ -85,7 +81,6 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_init</room>
-    <room>rooms\rm_template</room>
     <room>rooms\rm_lvl_01</room>
     <room>rooms\rm_test_fire</room>
     <room>rooms\rm_test_lvl02</room>
@@ -93,7 +88,7 @@
     <room>rooms\rm_test_lvl01</room>
     <room>rooms\rm_test_aim_test</room>
     <room>rooms\rm_test_collision</room>
-    <room>rooms\rm_lvl01</room>
+    <room>rooms\rm_template</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
