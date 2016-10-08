@@ -53,6 +53,7 @@ is_fullscreen = 0;
 if (keyboard_check_pressed(vk_f11)) {
   is_fullscreen = !is_fullscreen;  // Toggle fullscreen.
   window_set_fullscreen(is_fullscreen);
+  window_set_cursor(IIF(is_fullscreen, cr_none, -1));
 }
 
 // Exit the game when ALT + F4 is pressed.
