@@ -37,6 +37,7 @@
   <backgrounds name="background">
     <background>background\background_feu</background>
     <background>background\Tile_Feu</background>
+    <background>background\Tile_Glace</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
