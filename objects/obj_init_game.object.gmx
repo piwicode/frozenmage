@@ -49,10 +49,15 @@ is_fullscreen = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>// Full screen when F11 is pressed.
 if (keyboard_check_pressed(vk_f11)) {
   is_fullscreen = !is_fullscreen;  // Toggle fullscreen.
   window_set_fullscreen(is_fullscreen);
+}
+
+// Exit the game when ALT + F4 is pressed.
+if (keyboard_check_pressed(vk_f4) &amp;&amp; keyboard_check(vk_alt)) {
+   game_end();
 }
 </string>
           </argument>

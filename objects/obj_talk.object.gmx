@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>text = "TO_BE_DEFINED";
-duration_sec = 10;
+duration_sec = 5;
 remaining_time = 0;
 has_talked = 0;
 </string>
