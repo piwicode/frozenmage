@@ -30,6 +30,8 @@
     <sprite>sprites\sp_block_Brd_G</sprite>
     <sprite>sprites\sp_block_Brd_D</sprite>
     <sprite>sprites\sp_go_next_level</sprite>
+    <sprite>sprites\sprite24</sprite>
+    <sprite>sprites\sp_obj_talk</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background_feu</background>
@@ -79,6 +81,7 @@
       <object>objects\obj_text</object>
       <object>objects\obj_debug_tool</object>
       <object>objects\go_next_level</object>
+      <object>objects\obj_talk</object>
     </objects>
   </objects>
   <rooms name="rooms">
