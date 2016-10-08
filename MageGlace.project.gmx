@@ -29,6 +29,7 @@
     <sprite>sprites\sp_block_16x16</sprite>
     <sprite>sprites\sp_block_Brd_G</sprite>
     <sprite>sprites\sp_block_Brd_D</sprite>
+    <sprite>sprites\sp_block_pierre</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background_feu</background>
@@ -59,6 +60,7 @@
       <object>objects\obj_mage</object>
       <object>objects\obj_orc</object>
       <object>objects\obj_icecube</object>
+      <object>objects\obj_block_pierre</object>
       <object>objects\obj_collision_16x16</object>
     </objects>
     <objects name="parent">
