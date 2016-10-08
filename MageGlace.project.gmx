@@ -88,10 +88,11 @@
     <objects name="control">
       <object>objects\obj_text</object>
       <object>objects\obj_debug_tool</object>
-      <object>objects\go_next_level</object>
+      <object>objects\obj_go_next_level</object>
       <object>objects\obj_talk</object>
       <object>objects\obj_init_game</object>
       <object>objects\obj_gui_dialog</object>
+      <object>objects\obj_gui_go_next_level</object>
     </objects>
   </objects>
   <rooms name="rooms">
@@ -106,9 +107,6 @@
     <room>rooms\rm_test_collision</room>
     <room>rooms\rm_template</room>
   </rooms>
-  <constants number="1">
-    <constant name="PIXEL_SIZE">4</constant>
-  </constants>
   <help>
     <rtf>help.rtf</rtf>
   </help>

@@ -71,21 +71,22 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var margin = 4 * PIXEL_SIZE;  // in pixels.
-var face_width = sprite_get_width (sp_dlg_mage) * PIXEL_SIZE;
-var x_padding = sprite_get_bbox_left(sp_dlg_parchment) * PIXEL_SIZE;
-var y_padding = sprite_get_bbox_top(sp_dlg_parchment) * PIXEL_SIZE;
+            <string>display_set_gui_size(320, 200)
+var margin = 4 ;  // in pixels.
+var face_width = sprite_get_width (sp_dlg_mage);
+var x_padding = sprite_get_bbox_left(sp_dlg_parchment);
+var y_padding = sprite_get_bbox_top(sp_dlg_parchment);
 
 draw_sprite_ext(
   sp_dlg_mage, 0 /*image index*/,
   margin, margin, /*position*/
-  PIXEL_SIZE, PIXEL_SIZE /*scale*/,
+  1, 1 /*scale*/,
   0 /*rotation angle*/, c_white /*blend color*/, 1 /*alpha*/);
 
 draw_sprite_ext(
   sp_dlg_parchment, 0 /*image index*/,
   face_width + 2 * margin, margin, /*position*/
-  PIXEL_SIZE, PIXEL_SIZE /*scale*/,
+  1, 1 /*scale*/,
   0 /*rotation angle*/, c_white /*blend color*/, 1 /*alpha*/);
 
 draw_set_font(fnt_arial);
@@ -96,7 +97,7 @@ draw_set_valign(fa_top);
 draw_text_transformed(
   face_width + 2 * margin + x_padding, margin + y_padding,
   other.text,
-  PIXEL_SIZE, PIXEL_SIZE /*scale*/,
+  1, 1 /*scale*/,
   0 /*rotation angle*/);  
 
 </string>
