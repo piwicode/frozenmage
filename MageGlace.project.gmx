@@ -29,6 +29,7 @@
     <sprite>sprites\sp_block_16x16</sprite>
     <sprite>sprites\sp_block_Brd_G</sprite>
     <sprite>sprites\sp_block_Brd_D</sprite>
+    <sprite>sprites\sp_go_next_level</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background_feu</background>
@@ -74,9 +75,10 @@
       <object>objects\obj_explode</object>
       <object>objects\obj_frozen_content</object>
     </objects>
-    <objects name="dbg">
+    <objects name="ctrl">
       <object>objects\obj_text</object>
       <object>objects\obj_debug_tool</object>
+      <object>objects\go_next_level</object>
     </objects>
   </objects>
   <rooms name="rooms">
