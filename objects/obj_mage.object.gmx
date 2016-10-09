@@ -6,7 +6,7 @@
   <depth>-200</depth>
   <persistent>0</persistent>
   <parentName>obj_entity</parentName>
-  <maskName>sp_mage</maskName>
+  <maskName>sp_collision_mage</maskName>
   <events>
     <event eventtype="0" enumb="0">
       <action>
@@ -31,10 +31,10 @@
 var PX = 1; var SEC = room_speed;
 
 // Walk configuration.
-walk_speed = 3;  // maximumu horizontal speed reached when walking.
-var walk_accel_time = .50 * SEC; // time it takes to reach the 0 speed.
+walk_speed = 2.7;  // maximumu horizontal speed reached when walking.
+var walk_accel_time = .16 * SEC; // time it takes to reach the 0 speed.
 walk_accel = walk_speed / walk_accel_time;
-var brake_accel_time = .4 * SEC; // time it takes to reach the max speed.
+var brake_accel_time = .28 * SEC; // time it takes to reach the max speed.
 brake_accel = walk_speed / brake_accel_time ;
 
 
@@ -42,13 +42,13 @@ brake_accel = walk_speed / brake_accel_time ;
 air_friction = 2;
 
 // Vertical speed set when jumping.
-jump_impulse = 3.7;
+jump_impulse = 4.2;
 
 aim_arrow = instance_create(x, y, obj_aim_arrow)
 aim_arrow.visible = false
 
-var step_length_in_px = 70;
-const_image_speed_walk = image_number / (step_length_in_px * 2) * walk_speed // frame per tick
+var step_length_in_px = 90;
+const_image_speed_walk = 12 / (step_length_in_px * 2) * walk_speed // frame per tick
 
 image_speed = 0; // No animation by default.
 

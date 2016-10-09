@@ -6,6 +6,7 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprite>sprites\sp_collision_mage</sprite>
     <sprite>sprites\sp_mage</sprite>
     <sprite>sprites\sp_stone</sprite>
     <sprite>sprites\sp_orc</sprite>
@@ -95,6 +96,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_init</room>
+    <room>rooms\rm_lvl_03</room>
     <room>rooms\rm_lvl_01</room>
     <room>rooms\rm_lvl_02</room>
     <room>rooms\rm_test_game_rules</room>
