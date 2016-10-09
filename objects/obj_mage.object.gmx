@@ -42,7 +42,7 @@ push_speed = 1; // constant horizontal speed, when pushing a block.
 air_friction = 2;
 
 // Vertical speed set when jumping.
-jump_impulse = 4.2;
+jump_impulse = 3.75;
 
 aim_arrow = instance_create(x, y, obj_aim_arrow)
 aim_arrow.visible = false
