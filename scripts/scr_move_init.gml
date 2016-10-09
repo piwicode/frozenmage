@@ -1,5 +1,6 @@
 // Speed over x and y axes.
 xs = 0; ys = 0;
+xst = 0; yst = 0; // Reminder speed from the last step.
 // Non integer position of the object.
 // x = floor(xx) and y = floor(yy)
 xx = x; yy = y;
