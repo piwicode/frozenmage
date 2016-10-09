@@ -9,7 +9,7 @@
   <speed>60</speed>
   <persistent>0</persistent>
   <colour>12632256</colour>
-  <showcolour>-1</showcolour>
+  <showcolour>0</showcolour>
   <code>scr_room_init(4)</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>0</clearViewBackground>
