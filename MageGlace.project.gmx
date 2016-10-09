@@ -92,6 +92,7 @@
       <object>objects\obj_init_game</object>
       <object>objects\obj_gui_dialog</object>
       <object>objects\obj_gui_go_next_level</object>
+      <object>objects\obj_test_collider</object>
     </objects>
   </objects>
   <rooms name="rooms">
@@ -100,6 +101,7 @@
     <room>rooms\rm_lvl_02</room>
     <room>rooms\rm_test_game_rules</room>
     <room>rooms\rm_test_collision</room>
+    <room>rooms\rm_test_collision_resolution</room>
     <room>rooms\rm_template</room>
   </rooms>
   <help>
