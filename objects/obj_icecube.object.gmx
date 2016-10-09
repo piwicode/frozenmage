@@ -61,10 +61,12 @@ frozen_image = 0;
 if (frozen_object) {
   instance_activate_object(frozen_object);  
   // TODO compute proper positionning.
-  frozen_object.xs = xs
-  frozen_object.x = x
-  frozen_object.ys = ys
-  frozen_object.y = y
+  frozen_object.xs = xs;
+  frozen_object.x = x;
+  frozen_object.xx = xx;
+  frozen_object.ys = ys;
+  frozen_object.y = y;
+  frozen_object.yy = yy;
 }
 if (frozen_image) {
   // Destroy the ice cube and the image.
