@@ -31,13 +31,15 @@
 var PX = 1; var SEC = room_speed;
 
 // Walk configuration.
+
 walk_speed = 2.7;  // maximumu horizontal speed reached when walking.
 var walk_accel_time = .16 * SEC; // time it takes to reach the 0 speed.
+
 walk_accel = walk_speed / walk_accel_time;
 var brake_accel_time = .28 * SEC; // time it takes to reach the max speed.
 brake_accel = walk_speed / brake_accel_time ;
 
-
+push_speed = 1; // constant horizontal speed, when pushing a block.
 
 air_friction = 2;
 
@@ -189,15 +191,16 @@ if (jump_pressed_ctrl &amp;&amp; is_standing) {
 
 // Fly cheet
 if(keyboard_check(vk_shift)) {  
-  ys -= 0.18
-  ;
+  ys -= 0.18;
 }
 
 // Push a block when the mage is in contact with it.
 var x_push = xs; // Horizontal displacement transmited to a pusheable object.
-if x_push != 0 &amp;&amp; place_meeting(floor(xx + sign(x_push)), floor(yy), obj_icecube) { 
+if xs != 0 &amp;&amp; place_meeting(floor(xx + sign(x_push)), floor(yy), obj_icecube) { 
+  // A block is being pushed.
+  xs = sign(xs) * push_speed;
   var block = instance_place(floor(xx + sign(x_push)), floor(yy), obj_icecube);
-  block.xs = x_push; // Set the horizontal speed of the block.
+  block.xs = xs; // Set the horizontal speed of the block.
 }
 
 </string>

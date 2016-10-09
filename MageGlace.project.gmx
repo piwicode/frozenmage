@@ -44,6 +44,7 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
+    <script>scripts\scr_game_init.gml</script>
     <script>scripts\scr_move.gml</script>
     <script>scripts\scr_move_init.gml</script>
     <script>scripts\scr_room_init.gml</script>
@@ -66,7 +67,6 @@
     <object>objects\obj_fence_close</object>
     <object>objects\obj_water</object>
     <objects name="entity">
-      <object>objects\obj_mage</object>
       <object>objects\obj_orc</object>
       <object>objects\obj_icecube</object>
       <object>objects\obj_block_pierre</object>
@@ -92,6 +92,7 @@
       <object>objects\obj_init_game</object>
       <object>objects\obj_gui_dialog</object>
       <object>objects\obj_gui_go_next_level</object>
+      <object>objects\obj_test_collider</object>
     </objects>
   </objects>
   <rooms name="rooms">
@@ -101,6 +102,7 @@
     <room>rooms\rm_lvl_02</room>
     <room>rooms\rm_test_game_rules</room>
     <room>rooms\rm_test_collision</room>
+    <room>rooms\rm_test_collision_resolution</room>
     <room>rooms\rm_template</room>
   </rooms>
   <help>

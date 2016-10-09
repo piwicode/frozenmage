@@ -24,7 +24,7 @@
         <isnot>0</isnot>
       </action>
     </event>
-    <event eventtype="4" ename="obj_mage">
+    <event eventtype="4" ename="&lt;undefined&gt;">
       <action>
         <libid>1</libid>
         <id>603</id>
