@@ -2,7 +2,7 @@
 <object>
   <spriteName>sp_mage_32</spriteName>
   <solid>0</solid>
-  <visible>0</visible>
+  <visible>-1</visible>
   <depth>-200</depth>
   <persistent>0</persistent>
   <parentName>obj_entity</parentName>
