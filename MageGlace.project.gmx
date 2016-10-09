@@ -6,7 +6,6 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\sp_collision_mage</sprite>
     <sprite>sprites\sp_mage</sprite>
     <sprite>sprites\sp_stone</sprite>
     <sprite>sprites\sp_orc</sprite>
@@ -22,7 +21,6 @@
     <sprite>sprites\sp_mage_32</sprite>
     <sprite>sprites\sp_mage_48</sprite>
     <sprite>sprites\sp_mage_64</sprite>
-    <sprite>sprites\sprite24</sprite>
     <sprite>sprites\sp_block_pierre</sprite>
     <sprites name="control">
       <sprite>sprites\sp_debug</sprite>

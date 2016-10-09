@@ -2,11 +2,11 @@
 <object>
   <spriteName>sp_mage_32</spriteName>
   <solid>0</solid>
-  <visible>-1</visible>
+  <visible>0</visible>
   <depth>-200</depth>
   <persistent>0</persistent>
   <parentName>obj_entity</parentName>
-  <maskName>sp_collision_mage</maskName>
+  <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
       <action>
