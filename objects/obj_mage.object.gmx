@@ -31,7 +31,7 @@
 var PX = 1; var SEC = room_speed;
 
 // Walk configuration.
-walk_speed = 2.7;  // maximumu horizontal speed reached when walking.
+walk_speed = 2.7;  // maximum horizontal speed reached when walking.
 var walk_accel_time = .16 * SEC; // time it takes to reach the 0 speed.
 walk_accel = walk_speed / walk_accel_time;
 var brake_accel_time = .28 * SEC; // time it takes to reach the max speed.
