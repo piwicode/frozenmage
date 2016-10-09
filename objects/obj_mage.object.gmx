@@ -196,7 +196,7 @@ if(keyboard_check(vk_shift)) {
 var x_push = xs; // Horizontal displacement transmited to a pusheable object.
 if xs != 0 &amp;&amp; place_meeting(floor(xx + sign(x_push)), floor(yy), obj_icecube) { 
   // A block is being pushed.
-  xs = sign(xs) * push_speed;
+  xs = sign(x_ctrl) * push_speed;
   var block = instance_place(floor(xx + sign(x_push)), floor(yy), obj_icecube);
   block.xs = xs; // Set the horizontal speed of the block.
 }
