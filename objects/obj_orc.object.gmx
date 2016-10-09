@@ -36,6 +36,7 @@ scr_move_init();
 // Current direction the ennemy is heading
 x_ctrl = 1;
 walk_speed = 1;
+do_die = 0;
 </string>
           </argument>
         </arguments>
@@ -73,10 +74,13 @@ xs = x_ctrl * walk_speed;
 
 scr_move()
 
-
-
 if x_ctrl != 0 {
   image_xscale = x_ctrl
+}
+
+if (do_die) {
+  instance_create(x, y, obj_explode);
+  instance_destroy();
 }
 </string>
           </argument>

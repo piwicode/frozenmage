@@ -97,8 +97,8 @@ instance_destroy()
 scr_move();
 
 if (abs(delta_ys) &gt; 1) {
-  with(instance_place(x, y + 2, obj_mage)) do_die = 1;
-  with(instance_place(x, y + 2, obj_orc)) do_die = 1;
+  with(instance_place(x, y + 2, obj_mage)){ do_die = 1; }
+  with(instance_place(x, y + 2, obj_orc)){ do_die = 1; }
 }
 
 var jitter = delta_xs * delta_xs + delta_ys * delta_ys

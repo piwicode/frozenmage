@@ -12,9 +12,10 @@ ys += yss;
 ys = clamp(ys, -max_speed, max_speed);
 xs = clamp(xs, -max_speed, max_speed);
 
-if(false){
+if(true){
 var xst = xs; var yst = ys;
-if(yst > 0) {yst = max(yst, 1);}
+if(abs(xst) < 1) {xst = sign(xst);}
+if(abs(yst) < 1) {yst = sign(yst);}
 var made_progress = true;
 var x_colide = false; var y_colide = false;
 while (made_progress) {
