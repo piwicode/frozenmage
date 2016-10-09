@@ -10,10 +10,7 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code>// This initializtion room is intenred to build the persistent object
-// and go the the first level.  It should stay the first level of the
-// game.
-room_goto_next()</code>
+  <code></code>
   <enableViews>-1</enableViews>
   <clearViewBackground>0</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
