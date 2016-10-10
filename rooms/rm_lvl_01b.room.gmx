@@ -136,7 +136,7 @@
     <instance objName="obj_collision_16x16" x="320" y="192" name="inst_9A14E46E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="416" y="192" name="inst_F0426A68" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="400" y="192" name="inst_96781575" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_go_next_level" x="384" y="200" name="inst_DAC08F5E" locked="0" code="" scaleX="0.25" scaleY="0.125" colour="4294967295" rotation="0"/>
+    <instance objName="obj_go_next_level" x="368" y="192" name="inst_DAC08F5E" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Tile_Feu" x="0" y="192" w="248" h="16" xo="0" yo="224" id="10000049" name="inst_4DA4ADAF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
