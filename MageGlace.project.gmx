@@ -8,7 +8,8 @@
   <sprites name="sprites">
     <sprite>sprites\sp_mage</sprite>
     <sprite>sprites\sp_orc</sprite>
-    <sprite>sprites\sp_spark</sprite>
+    <sprite>sprites\sp_ice_spark</sprite>
+    <sprite>sprites\sp_fireball</sprite>
     <sprite>sprites\sp_icecube</sprite>
     <sprite>sprites\sp_water</sprite>
     <sprite>sprites\sp_explode</sprite>
@@ -88,6 +89,7 @@
     </objects>
     <objects name="effect">
       <object>objects\obj_spark</object>
+      <object>objects\obj_fireball</object>
       <object>objects\obj_aim_arrow</object>
       <object>objects\obj_explode</object>
       <object>objects\obj_frozen_content</object>
@@ -103,6 +105,8 @@
       <object>objects\obj_test_collider</object>
     </objects>
     <object>objects\obj_ice_staff</object>
+    <object>objects\obj_wind_staff</object>
+    <object>objects\obj_fire_staff</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_init</room>

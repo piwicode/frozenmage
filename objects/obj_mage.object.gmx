@@ -90,7 +90,6 @@ if (x_ctrl != 0) {
 // Play the walk animation only when the mage is moving horizontally.
 image_speed = const_image_speed_walk * (xs != 0);
 
-
 // -y_ctrl because vertical axis is inverted between atan and the screen.
 // use image_scale to remember the current facing position. 
 var x_fire = (bbox_right + bbox_left) * .5;
@@ -106,11 +105,18 @@ aim_arrow.y = y_fire
 aim_arrow.image_angle = aim_direction;
 
 // Use fire_pressed_start to change the aim style.
-if (fire_released_ctrl) {  
-  spark = instance_create(x_fire, y_fire, obj_spark);
-  with (spark) {
-    direction = aim_direction;
-    speed = max_speed;
+if (fire_released_ctrl) {
+  var class = -1;
+  if(global.mage_level == mage_power.ice) {
+    with (instance_create(x_fire, y_fire, obj_spark)) {
+      direction = aim_direction;
+      speed = max_speed;
+    }
+  } else if(global.mage_level == mage_power.fire) {
+    with (instance_create(x_fire, y_fire, obj_fireball)) {
+      direction = aim_direction;
+      speed = max_speed;
+    }
   }
 }
 
@@ -187,8 +193,7 @@ if (jump_pressed_ctrl &amp;&amp; is_standing) {
   ys = -jump_impulse;
 }
 
-// Fly cheet
-if(keyboard_check(vk_shift)) {  
+if(global.mage_level == mage_power.wind &amp;&amp; keyboard_check(fire_check_ctrl)) {  
   ys -= 0.18;
 }
 
