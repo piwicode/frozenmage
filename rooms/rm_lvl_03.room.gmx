@@ -312,7 +312,7 @@
     <instance objName="obj_collision_16x16" x="624" y="176" name="inst_9D3A8554" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="416" y="48" name="inst_CB651D75" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="224" y="176" name="inst_124EE4B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_door" x="256" y="192" name="inst_194375A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_exit_door" x="256" y="192" name="inst_194375A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_orc" x="520" y="32" name="inst_B5BCBAC8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_orc" x="784" y="32" name="inst_0B4E2F77" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_orc" x="872" y="160" name="inst_759923DD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

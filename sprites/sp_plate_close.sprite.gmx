@@ -20,6 +20,6 @@
   <width>32</width>
   <height>3</height>
   <frames>
-    <frame index="0">images\sp_plate_0.png</frame>
+    <frame index="0">images\sp_plate_close_0.png</frame>
   </frames>
 </sprite>

@@ -237,7 +237,7 @@
     <instance objName="obj_collision_16x16" x="816" y="144" name="inst_1E989955" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="800" y="144" name="inst_A1B85534" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="784" y="144" name="inst_C4841D8C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_door" x="992" y="192" name="inst_7E8FB1C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_exit_door" x="992" y="192" name="inst_7E8FB1C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Tile_Feu" x="0" y="32" w="64" h="32" xo="0" yo="224" id="10000080" name="inst_004971C7" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -5,26 +5,10 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>obj_solid</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="2" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>222</id>
-        <kind>0</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_next_room</functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_mage">
+    <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -41,10 +25,104 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (abs(other.x - x) &lt; 5 &amp;&amp; abs(other.y - y) &lt; 15) {
-  // The mage is in front of the door.
-  with(other) {instance_destroy()}
-  alarm[0] = room_speed * 1; // Wait a second efore switching level.
+            <string>// Control variables
+do_open = 0;  // Is there an oppening plate being triggered.
+do_close = 0;  // Is there an oppening plate being triggered.
+
+// Label establishing the relationship between the door and the plates.
+label = 0;
+
+// Tunning variables
+triggered_openning_duration = room_speed * 1
+stay_openned_duration = room_speed * 4
+auto_closing_duration = room_speed * 10
+triggered_closing_duration = room_speed * .25
+
+// Functionning variables
+y_amplitude = 48;
+y_closed = y;
+y_opened = y - y_amplitude;
+yy = y_closed;  // Target floating point position.
+
+remaining_open_time = 0;
+enum door_state {
+   closed = 1,
+   triggered_openning = 2,
+   opened = 3,
+   auto_closing = 4,
+   triggered_closing = 5
+}
+   
+state = door_state.closed
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (do_close &amp;&amp; state != door_state.closed) {
+  state = door_state.triggered_closing;
+}
+
+if (do_open &amp;&amp; !do_close &amp;&amp; state != door_state.opened) {
+  state = door_state.triggered_openning;
+}
+
+switch(state) {
+  case door_state.triggered_openning:
+    yy = Approach(yy, y_opened, y_amplitude / triggered_openning_duration)
+  break;  
+  case door_state.opened:
+    if(remaining_open_time &gt; 0) {
+      remaining_open_time--;
+    }
+    state = door_state.auto_closing;    
+    break;
+  case door_state.auto_closing:
+    yy = Approach(yy, y_closed, y_amplitude / auto_closing_duration)
+    if (yy == y_closed) {
+      state = door_state.closed;
+    }
+  break;  
+  case door_state.triggered_closing:
+    yy = Approach(yy, y_closed, y_amplitude / triggered_closing_duration)    
+  break;  
+}
+
+// Move the door except, if colliding with a solid object.
+var ys = yy - y;
+repeat(abs(ys)) {
+ if (place_meeting(x, y + sign(ys), obj_entity)) {
+   yy = y; // Stop the door in place.
+   break;
+ }
+ y += sign(ys)
+}
+
+if (yy == y_closed) {
+  state = door_state.closed;
+}
+
+if (yy == y_opened &amp;&amp; state == door_state.triggered_openning) {
+  state = door_state.opened;
+  remaining_open_time = stay_openned_duration;
 }
 </string>
           </argument>
