@@ -37,6 +37,7 @@
     </sprites>
     <sprite>sprites\sprite24</sprite>
     <sprite>sprites\sp_door</sprite>
+    <sprite>sprites\sp_ice_staff</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background_feu</background>
@@ -101,6 +102,7 @@
       <object>objects\obj_gui_go_next_level</object>
       <object>objects\obj_test_collider</object>
     </objects>
+    <object>objects\obj_ice_staff</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_init</room>

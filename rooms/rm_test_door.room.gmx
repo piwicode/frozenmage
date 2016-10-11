@@ -51,7 +51,7 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_mage" x="184" y="160" name="inst_11A7BE4C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mage" x="320" y="176" name="inst_11A7BE4C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="0" y="192" name="inst_B21A1C64" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="16" y="192" name="inst_78683517" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="32" y="192" name="inst_0E3378E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -114,8 +114,8 @@
     <instance objName="obj_collision_16x16" x="984" y="192" name="inst_CCAE0F1E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="1000" y="192" name="inst_050DE53D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="1016" y="192" name="inst_5B9C84D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_plate_open" x="240" y="192" name="inst_5C531257" locked="0" code="door_instance_name = &quot;door_a&quot;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_plate_close" x="304" y="192" name="inst_8F7E85E0" locked="0" code="door_instance_name = &quot;door_a&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_plate_open" x="304" y="192" name="inst_5C531257" locked="0" code="door_instance_name = &quot;door_a&quot;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_plate_close" x="336" y="192" name="inst_8F7E85E0" locked="0" code="door_instance_name = &quot;door_a&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_door" x="368" y="128" name="door_a" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
