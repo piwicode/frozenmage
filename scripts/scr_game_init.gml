@@ -39,4 +39,4 @@ enum mage_power {
  wind = 2,
  fire = 3,
 }
-global.mage_level = none;
+global.mage_level = mage_power.none;

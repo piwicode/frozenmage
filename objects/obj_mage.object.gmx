@@ -41,8 +41,15 @@ push_speed = 1; // constant horizontal speed, when pushing a block.
 
 air_friction = 2;
 
-// Vertical speed set when jumping.
-jump_impulse = 3.75;
+// Jump settings.
+jump_speed = 3; // pixel per frame.
+jump_duration = 15; // frames.
+jump_countdown = 0;
+
+// Number of frames the jump initial key press can trigger the jump action.
+jump_ctrl_permissiveness = 400; // frames.
+// Jump is triggered when non zero, and the character is standing. 
+jump_ctrl_countdown = 0;  // frames. 
 
 aim_arrow = instance_create(x, y, obj_aim_arrow)
 aim_arrow.visible = false
@@ -57,6 +64,8 @@ image_speed = 0; // No animation by default.
 // initialization script.
 // Name of a script with no argument executed on the mage after input handling.
 input_override_script = false; // Set to true in conjunction
+
+
 
 </string>
           </argument>
@@ -130,6 +139,12 @@ if (do_die) {
   instance_create(x, y, obj_explode);
   instance_destroy();
 }
+
+// Create a trail for debugging.
+var point = instance_create(x, y, obj_dot);
+if(jump_ctrl_held) {
+  point.image_blend = c_red
+}
 </string>
           </argument>
         </arguments>
@@ -154,7 +169,7 @@ if (do_die) {
             <kind>1</kind>
             <string>// Get user inputs.
 jump_pressed_ctrl = keyboard_check_pressed(vk_space);
-jump_check_ctrl = keyboard_check_pressed(vk_space);
+jump_held_ctrl = keyboard_check(vk_space);
 fire_pressed_ctrl = keyboard_check_pressed(vk_control);
 fire_check_ctrl = keyboard_check(vk_control);
 fire_released_ctrl = keyboard_check_released(vk_control);
@@ -166,13 +181,13 @@ if (input_override_script) {
   script_execute(input_override_script);
 }
 
-// ## Display debug information. To be removed.
+// Display debug information. To be removed.
 if(fire_pressed_ctrl) fire_frame_count = 0;
 if(fire_check_ctrl) fire_frame_count += 1;
 if(fire_released_ctrl) show_debug_message("fire duration " + string(fire_frame_count))
 
 
-// Tells if the object lies on something or not.
+// Tells if the object lies on something solid or not.
 is_standing = place_meeting(floor(x), floor(y) + 1, obj_solid)
 // The mage walks horizontaly except when aiming.
 var target_xs = x_ctrl * walk_speed;
@@ -187,15 +202,27 @@ var accel = IIF(xs * (target_xs - xs) &lt; 0, brake_accel, walk_accel);
 // Apply the acceleration toward the intended direction.
 xs = Approach(xs, target_xs, accel);
 
-// If jump key has just been pressed and there is something solid just below
-// the object, then jump.
-if (jump_pressed_ctrl &amp;&amp; is_standing) {
-  ys = -jump_impulse;
+// ## Jump
+// Its possible to press the jumb ctrl a few frames before reaching a platform.
+// Keeping hte jump pressed for a few frames makes the character jump higher.
+if (jump_pressed_ctrl) { jump_ctrl_countdown = jump_ctrl_permissiveness; }
+if (!jump_held_ctrl) { jump_ctrl_countdown = 0; jump_countdown = 0 }
+if (jump_ctrl_countdown &amp;&amp; is_standing) {
+  jump_ctrl_countdown = 0;
+  jump_countdown = jump_duration; 
 }
+if (jump_countdown) {
+  ys = -jump_speed;
+}
+// Count down
+jump_countdown = max(0, jump_countdown - 1);
+jump_ctrl_countdown = max(0, jump_ctrl_countdown - 1);
 
 if(global.mage_level == mage_power.wind &amp;&amp; keyboard_check(fire_check_ctrl)) {  
   ys -= 0.18;
 }
+
+//show_debug_message(string(ys))
 
 // Push a block when the mage is in contact with it.
 var x_push = xs; // Horizontal displacement transmited to a pusheable object.

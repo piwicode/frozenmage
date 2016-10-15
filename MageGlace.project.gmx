@@ -103,6 +103,7 @@
       <object>objects\obj_gui_dialog</object>
       <object>objects\obj_gui_go_next_level</object>
       <object>objects\obj_test_collider</object>
+      <object>objects\obj_dot</object>
     </objects>
     <object>objects\obj_ice_staff</object>
     <object>objects\obj_wind_staff</object>
