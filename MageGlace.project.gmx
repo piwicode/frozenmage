@@ -31,6 +31,9 @@
       <sprite>sprites\sp_go_next_level</sprite>
       <sprite>sprites\sp_obj_talk</sprite>
       <sprite>sprites\sp_block_16x16</sprite>
+      <sprite>sprites\sp_dangerous_16x16</sprite>
+      <sprite>sprites\sp_trigger</sprite>
+      <sprite>sprites\sp_trigger_effect</sprite>
     </sprites>
     <sprites name="dialog">
       <sprite>sprites\sp_dlg_mage</sprite>
@@ -78,14 +81,15 @@
       <object>objects\obj_icecube</object>
       <object>objects\obj_stone_16</object>
       <object>objects\obj_stone_32</object>
+      <object>objects\obj_still_stone_32</object>
     </objects>
     <objects name="parent">
       <object>objects\obj_collidable</object>
-      <object>objects\obj_dangerous</object>
       <object>objects\obj_entity</object>
       <object>objects\obj_not_collidable</object>
       <object>objects\obj_solid</object>
       <object>objects\obj_plate</object>
+      <object>objects\par_trigger_effect</object>
     </objects>
     <objects name="effect">
       <object>objects\obj_spark</object>
@@ -95,6 +99,7 @@
       <object>objects\obj_frozen_content</object>
     </objects>
     <objects name="control">
+      <object>objects\obj_dangerous</object>
       <object>objects\obj_text</object>
       <object>objects\obj_debug_tool</object>
       <object>objects\obj_go_next_level</object>
@@ -104,6 +109,10 @@
       <object>objects\obj_gui_go_next_level</object>
       <object>objects\obj_test_collider</object>
       <object>objects\obj_dot</object>
+      <object>objects\obj_top_down_scroll</object>
+      <object>objects\obj_trigger_zone</object>
+      <object>objects\obj_trigger_zone_fall</object>
+      <object>objects\obj_trigger_effect_fall</object>
     </objects>
     <object>objects\obj_ice_staff</object>
     <object>objects\obj_wind_staff</object>
@@ -119,14 +128,15 @@
       <room>rooms\rm_test_collision_resolution</room>
       <room>rooms\rm_test_collision</room>
       <room>rooms\rm_test_door</room>
+      <room>rooms\rm_palette</room>
     </rooms>
     <rooms name="game">
       <room>rooms\rm_lvl_01</room>
       <room>rooms\rm_lvl_01b</room>
       <room>rooms\rm_lvl_02a</room>
       <room>rooms\rm_lvl_02c</room>
+      <room>rooms\rm_lvl_03a</room>
     </rooms>
-    <room>rooms\rm_palette</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

@@ -36,6 +36,7 @@ max_jitter = 8;
 frozen_object = 0;
 frozen_image = 0;
 
+do_die = 0; // When 1, the object self destruct on next cycle.
 
 time_before_falling = room_speed * 1
 // When the cube stands still until something walks on top of it.
@@ -107,12 +108,26 @@ instance_destroy()
           <argument>
             <kind>1</kind>
             <string>// Apply usual movement and collision.
+if (do_die) {
+  if (frozen_object) { with(frozen_object) instance_destroy(); }
+  if (frozen_image) { with(frozen_image) instance_destroy(); }
+  
+  // Use instance create to avoid the explosion to be considered obj_solid.
+  instance_create(x, y, obj_explode); 
+  instance_destroy();
+  exit;  
+}
 switch (state) {
 case block_state.still:
   // The block do not move.
   xx = x; yy = y;  xst = 0; yst = 0; xs = 0; ys = 0;
-  if (instance_place(x, y - 2, obj_entity)) { // Something is on top.
-    state = block_state.about_to_fall;
+  if (place_meeting(x, y - 2, obj_entity)) { // Something is on top.
+    block = instance_place(x, y - 2, obj_icecube);
+    if (block &amp;&amp; block.state == block_state.free) {
+      state = block_state.free; // Free immediately when colliding with a block.
+    } else {
+      state = block_state.about_to_fall;
+    }
   }   
   exit;
 
@@ -135,13 +150,7 @@ case block_state.free:
   // Detect a shock that could break the block.  
   var jitter = delta_xs * delta_xs + delta_ys * delta_ys
   if (jitter &gt;= max_jitter * max_jitter) {
-    if (frozen_object) { with(frozen_object) instance_destroy(); }
-    if (frozen_image) { with(frozen_image) instance_destroy(); }
-    
-    // Use instance create to avoid the explosion to be considered obj_solid.
-    instance_create(x, y, obj_explode); 
-    instance_destroy();
-    exit;  
+    do_die = 1; // Die on the next frame to let a full cycle of objects to detect contact.
   }
   
   // Move the frozen object along with the ice cube.

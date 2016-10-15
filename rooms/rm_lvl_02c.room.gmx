@@ -52,7 +52,6 @@
   </views>
   <instances>
     <instance objName="obj_mage" x="16" y="192" name="inst_11A7BE4C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_talk" x="448" y="128" name="inst_EF4C0612" locked="0" code="text = &quot;It's is quite fortunate this block was#here.&quot;&#xA;" scaleX="1.5" scaleY="2.5806450843811" colour="4294967295" rotation="0"/>
     <instance objName="obj_go_next_level" x="448" y="312" name="inst_65EB1789" locked="0" code="" scaleX="9.29032230377197" scaleY="2.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_door" x="336" y="64" name="inst_F86BEB7F" locked="0" code="label = 1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_plate_open" x="192" y="192" name="inst_1ABEB2AD" locked="0" code="label = 1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

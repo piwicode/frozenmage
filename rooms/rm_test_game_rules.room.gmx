@@ -636,6 +636,12 @@
     <instance objName="obj_collision_16x16" x="928" y="480" name="inst_56C83335" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="768" y="528" name="inst_5D13AD3D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="752" y="528" name="inst_77658927" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="1024" y="1024" name="inst_07E88627" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="160" y="768" name="inst_EB77AE66" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="176" y="768" name="inst_A28E89D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_still_stone_32" x="176" y="640" name="inst_B3C85D3D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_still_stone_32" x="176" y="512" name="inst_8AE814F8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stone_32" x="176" y="320" name="inst_ADFBAFA8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
