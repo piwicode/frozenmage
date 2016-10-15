@@ -27,9 +27,10 @@
             <kind>1</kind>
             <string>// Detect presence on plate.
 event_inherited();
-
-for(var i = ds_list_size(door_instances) - 1; i &gt;= 0 ; i--){
-  door_instances[|i].do_close = is_pressed;
+if (is_pressed) {
+  for(var i = ds_list_size(door_instances) - 1; i &gt;= 0 ; i--){
+    door_instances[|i].do_close++;
+  }
 }
 
 </string>

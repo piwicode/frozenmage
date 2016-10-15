@@ -180,6 +180,7 @@
     <instance objName="obj_still_stone_32" x="192" y="6792" name="inst_A1FA2C10" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_still_stone_32" x="160" y="6792" name="inst_DDA72542" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="224" y="6024" name="inst_F8E92281" locked="0" code="" scaleX="4.26666688919067" scaleY="1.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spawn_restart_room" x="16" y="-16" name="inst_ADD8C3C7" locked="0" code="do_restart_room = true;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

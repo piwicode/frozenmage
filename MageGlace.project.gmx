@@ -42,6 +42,8 @@
     <sprite>sprites\sprite24</sprite>
     <sprite>sprites\sp_door</sprite>
     <sprite>sprites\sp_ice_staff</sprite>
+    <sprite>sprites\spr_spawn</sprite>
+    <sprite>sprites\sp_respawn</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background_feu</background>
@@ -64,6 +66,7 @@
       <script>scripts\IIF.gml</script>
     </scripts>
     <script>scripts\scr_door_place_meeting.gml</script>
+    <script>scripts\scr_door_instance_place.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_arial</font>
@@ -115,6 +118,9 @@
       <object>objects\obj_trigger_zone</object>
       <object>objects\obj_trigger_zone_fall</object>
       <object>objects\obj_trigger_effect_fall</object>
+      <object>objects\obj_spawn</object>
+      <object>objects\obj_spawn_restart_room</object>
+      <object>objects\obj_checkpoint</object>
     </objects>
     <object>objects\obj_ice_staff</object>
     <object>objects\obj_wind_staff</object>
@@ -139,6 +145,7 @@
       <room>rooms\rm_lvl_02c</room>
       <room>rooms\rm_lvl_03a</room>
       <room>rooms\rm_lvl_04a</room>
+      <room>rooms\rm_lvl_04b</room>
     </rooms>
   </rooms>
   <help>

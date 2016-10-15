@@ -27,6 +27,16 @@
             <kind>1</kind>
             <string>scr_move_init()
 
+// Input variables have to be defined so that an instance 
+// create by an alarm can run the end setp without the begin step.
+jump_pressed_ctrl = 0;
+jump_held_ctrl = 0;
+fire_pressed_ctrl = 0;
+fire_check_ctrl = 0;
+fire_released_ctrl = 0;
+x_ctrl = 0;
+y_ctrl = 0;
+
 // Units
 var PX = 1; var SEC = room_speed;
 
@@ -128,15 +138,24 @@ if (fire_released_ctrl) {
   }
 }
 
-// Kill the mage
+// Kill the mage when touching something dangerous.
 if (place_meeting(x + 1, y + 1, obj_dangerous) ||
     place_meeting(x - 1, y - 1, obj_dangerous)) {
-  do_die = 1
+  do_die = 1;
+}
+// Die when falling down from the room.
+if (y &gt; room_height + 64) {
+  do_die = 1;
 }
 
 if (do_die) {
   instance_create(x, y, obj_explode);
   instance_destroy();
+  // Request player respawn.
+  with(obj_spawn) {
+    state = spawn_state.do_respawn;
+    break;
+  }
 }
 
 // Create a trail for debugging.
@@ -194,12 +213,12 @@ if(fire_check_ctrl) {
   if(is_standing) { // When aiming and on the ground stop moving.
     target_xs = 0; // Inhibit walk.
   } // When aiming and in the air keep moving until reaching the ground.
-} 
-
-// When trying to move in the opposite direction of the current movement.
-var accel = IIF(xs * (target_xs - xs) &lt; 0, brake_accel, walk_accel);
-// Apply the acceleration toward the intended direction.
-xs = Approach(xs, target_xs, accel);
+} else {
+  // When trying to move in the opposite direction of the current movement.
+  var accel = IIF(xs * (target_xs - xs) &lt; 0, brake_accel, walk_accel);
+  // Apply the acceleration toward the intended direction.
+  xs = Approach(xs, target_xs, accel);
+}
 
 // ## Jump
 // Its possible to press the jumb ctrl a few frames before reaching a platform.
@@ -226,6 +245,36 @@ if xs != 0 &amp;&amp; place_meeting(floor(xx + sign(x_push)), floor(yy), obj_ice
   var block = instance_place(floor(xx + sign(x_push)), floor(yy), obj_icecube);
   block.xs = xs; // Set the horizontal speed of the block.
 }
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>with(obj_spawn) {
+  x = other.x; y = other.y;
+  exit;
+}
+// If none exist create one.
+instance_create(x, y, obj_spawn)
+
 
 </string>
           </argument>

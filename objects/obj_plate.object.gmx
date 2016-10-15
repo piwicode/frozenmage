@@ -81,7 +81,7 @@ door_instances = ds_list_create();
           <argument>
             <kind>1</kind>
             <string>// Detect that an entity is pressing the plate.
-is_pressed = place_meeting(x, y - abs(bbox_top - bbox_bottom) - 1, obj_entity);
+is_pressed = place_meeting(x, y - abs(bbox_top - bbox_bottom) - 2, obj_entity);
 </string>
           </argument>
         </arguments>

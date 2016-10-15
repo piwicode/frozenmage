@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>instance_create(x, y, obj_explode);
 instance_destroy();
-global.mage_level = mage_power.none;
+global.mage_level = mage_power.ice;
 </string>
           </argument>
         </arguments>
