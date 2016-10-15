@@ -27,8 +27,11 @@
             <kind>1</kind>
             <string>// Detect presence on plate.
 event_inherited();
-// Foward the information to the instace.
-door_instance.do_close = is_pressed;
+
+for(var i = ds_list_size(door_instances) - 1; i &gt;= 0 ; i--){
+  door_instances[|i].do_close = is_pressed;
+}
+
 </string>
           </argument>
         </arguments>

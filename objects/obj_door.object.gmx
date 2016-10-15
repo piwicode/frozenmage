@@ -38,11 +38,17 @@ stay_openned_duration = room_speed * 4
 auto_closing_duration = room_speed * 10
 triggered_closing_duration = room_speed * .25
 
+image_angle = (image_angle + 360) % 360;
+is_horizontal = (image_angle == 90 || image_angle == 270);
+movment_sign = IIF(image_angle == 0 || image_angle == 90, 1 , -1);
+
 // Functionning variables
-y_amplitude = 48;
-y_closed = y;
-y_opened = y - y_amplitude;
-yy = y_closed;  // Target floating point position.
+p_amplitude = 48;  // Amplitude of the movement.
+p_closed = IIF(is_horizontal, x, y);  // param value when closed.
+p_opened = p_closed - p_amplitude * movment_sign;  // param value when closed.
+
+p = p_closed; // Current position of the door, always integer.
+pp = p; // Target position of the door, floading point.
 
 remaining_open_time = 0;
 enum door_state {
@@ -77,52 +83,57 @@ state = door_state.closed
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (do_close &amp;&amp; !do_open &amp;&amp; state != door_state.closed) {
+            <string>// Process plate inputs.
+if (do_close) {
+ var t = 1
+}
+if (do_close &amp;&amp; !do_open &amp;&amp; state != door_state.closed) {
   state = door_state.triggered_closing;
 }
-
 if (do_open &amp;&amp; state != door_state.opened) {
   state = door_state.triggered_openning;
 }
+if (do_open) {
+  remaining_open_time = stay_openned_duration;
+}
 
+// Compute the target position.
 switch(state) {
   case door_state.triggered_openning:
-    yy = Approach(yy, y_opened, y_amplitude / triggered_openning_duration)
-  break;  
+    pp = Approach(pp, p_opened, p_amplitude / triggered_openning_duration);    
   case door_state.opened:
-    if(remaining_open_time &gt; 0) {
-      remaining_open_time--;
+    remaining_open_time = max(0, remaining_open_time - 1);
+    if(!remaining_open_time) {
+      state = door_state.auto_closing;
     }
-    state = door_state.auto_closing;    
     break;
   case door_state.auto_closing:
-    yy = Approach(yy, y_closed, y_amplitude / auto_closing_duration)
-    if (yy == y_closed) {
-      state = door_state.closed;
-    }
+    pp = Approach(pp, p_closed, p_amplitude / auto_closing_duration)
   break;  
   case door_state.triggered_closing:
-    yy = Approach(yy, y_closed, y_amplitude / triggered_closing_duration)    
+    pp = Approach(pp, p_closed, p_amplitude / triggered_closing_duration)    
   break;  
 }
 
-// Move the door except, if colliding with a solid object.
-var ys = yy - y;
-repeat(abs(ys)) {
- if (place_meeting(x, y + sign(ys), obj_entity)) {
-   yy = y; // Stop the door in place.
+// Move the door avoidint collisions with a solid object.
+var ps = pp - p;
+repeat(abs(ps)) {
+ if(scr_door_place_meeting(p + sign(ps), obj_entity)) {
+   pp = p; // Stop the door in place.
    break;
  }
- y += sign(ys)
+ p += sign(ps)
 }
 
-if (yy == y_closed) {
+// Update the object position in game.
+if (is_horizontal) { x = p; } else { y = p; }
+
+// Update the state.
+if (pp == p_closed) {
   state = door_state.closed;
 }
-
-if (yy == y_opened &amp;&amp; state == door_state.triggered_openning) {
+if (pp == p_opened &amp;&amp; state == door_state.triggered_openning) {
   state = door_state.opened;
-  remaining_open_time = stay_openned_duration;
 }
 </string>
           </argument>

@@ -48,6 +48,7 @@
     <background>background\Tile_Feu</background>
     <background>background\Tile_Glace</background>
     <background>background\bg_grotte</background>
+    <background>background\bg_ice</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -62,6 +63,7 @@
       <script>scripts\Approach.gml</script>
       <script>scripts\IIF.gml</script>
     </scripts>
+    <script>scripts\scr_door_place_meeting.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_arial</font>
@@ -136,6 +138,7 @@
       <room>rooms\rm_lvl_02a</room>
       <room>rooms\rm_lvl_02c</room>
       <room>rooms\rm_lvl_03a</room>
+      <room>rooms\rm_lvl_04a</room>
     </rooms>
   </rooms>
   <help>
