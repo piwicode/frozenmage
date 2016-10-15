@@ -42,9 +42,8 @@ push_speed = 1; // constant horizontal speed, when pushing a block.
 air_friction = 2;
 
 // Jump settings.
-jump_speed = 3; // pixel per frame.
-jump_duration = 15; // frames.
-jump_countdown = 0;
+jump_initial_speed = 6; // pixel per frame.
+jump_released_speed = 2; // pixel per frame.
 
 // Number of frames the jump initial key press can trigger the jump action.
 jump_ctrl_permissiveness = 400; // frames.
@@ -142,7 +141,7 @@ if (do_die) {
 
 // Create a trail for debugging.
 var point = instance_create(x, y, obj_dot);
-if(jump_ctrl_held) {
+if(jump_held_ctrl) {
   point.image_blend = c_red
 }
 </string>
@@ -206,16 +205,11 @@ xs = Approach(xs, target_xs, accel);
 // Its possible to press the jumb ctrl a few frames before reaching a platform.
 // Keeping hte jump pressed for a few frames makes the character jump higher.
 if (jump_pressed_ctrl) { jump_ctrl_countdown = jump_ctrl_permissiveness; }
-if (!jump_held_ctrl) { jump_ctrl_countdown = 0; jump_countdown = 0 }
+if (!jump_held_ctrl) { jump_ctrl_countdown = 0; ys = max(ys, -jump_released_speed);}
 if (jump_ctrl_countdown &amp;&amp; is_standing) {
   jump_ctrl_countdown = 0;
-  jump_countdown = jump_duration; 
+  ys = -jump_initial_speed;
 }
-if (jump_countdown) {
-  ys = -jump_speed;
-}
-// Count down
-jump_countdown = max(0, jump_countdown - 1);
 jump_ctrl_countdown = max(0, jump_ctrl_countdown - 1);
 
 if(global.mage_level == mage_power.wind &amp;&amp; keyboard_check(fire_check_ctrl)) {  
