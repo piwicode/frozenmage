@@ -123,9 +123,13 @@ case block_state.still:
   xx = x; yy = y;  xst = 0; yst = 0; xs = 0; ys = 0;
   if (place_meeting(x, y - 2, obj_entity)) { // Something is on top.
     block = instance_place(x, y - 2, obj_icecube);
-    if (block &amp;&amp; block.state == block_state.free) {
-      state = block_state.free; // Free immediately when colliding with a block.
+    if (block &amp;&amp; block.state == block_state.still) {
+      // Do nothing
+    } else if(block &amp;&amp; block.state == block_state.free) {
+      // Free immediately when colliding with a block.
+      state = block_state.free; 
     } else {
+      // Something is walking on the block.
       state = block_state.about_to_fall;
     }
   }   
