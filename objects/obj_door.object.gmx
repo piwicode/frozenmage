@@ -77,11 +77,11 @@ state = door_state.closed
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (do_close &amp;&amp; state != door_state.closed) {
+            <string>if (do_close &amp;&amp; !do_open &amp;&amp; state != door_state.closed) {
   state = door_state.triggered_closing;
 }
 
-if (do_open &amp;&amp; !do_close &amp;&amp; state != door_state.opened) {
+if (do_open &amp;&amp; state != door_state.opened) {
   state = door_state.triggered_openning;
 }
 

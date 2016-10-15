@@ -124,7 +124,9 @@
       <room>rooms\rm_lvl_01</room>
       <room>rooms\rm_lvl_01b</room>
       <room>rooms\rm_lvl_02a</room>
+      <room>rooms\rm_lvl_02c</room>
     </rooms>
+    <room>rooms\rm_palette</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

@@ -35,6 +35,17 @@ max_jitter = 8;
 // No frozen content by default.
 frozen_object = 0;
 frozen_image = 0;
+
+
+time_before_falling = room_speed * 1
+// When the cube stands still until something walks on top of it.
+state = block_state.free;
+
+enum block_state {
+  still, // static until something stands on top of it.  
+  about_to_fall, // static until alarm 1 rings.
+  free, // free to fall and to be pushed.
+}
 </string>
           </argument>
         </arguments>
@@ -96,33 +107,54 @@ instance_destroy()
           <argument>
             <kind>1</kind>
             <string>// Apply usual movement and collision.
-scr_move();
+switch (state) {
+case block_state.still:
+  // The block do not move.
+  xx = x; yy = y;  xst = 0; yst = 0; xs = 0; ys = 0;
+  if (instance_place(x, y - 2, obj_entity)) { // Something is on top.
+    state = block_state.about_to_fall;
+  }   
+  exit;
 
-if (abs(delta_ys) &gt; 1) {
-  with(instance_place(x, y + 2, obj_mage)){ do_die = 1; }
-  with(instance_place(x, y + 2, obj_orc)){ do_die = 1; }
-}
+case block_state.about_to_fall:
+  // The block do not move.
+  xx = x; yy = y;  xst = 0; yst = 0; xs = 0; ys = 0;
+  time_before_falling = max(0, time_before_falling -1);
+  if(time_before_falling == 0) {state = block_state.free;}
+  exit;
 
-var jitter = delta_xs * delta_xs + delta_ys * delta_ys
-if (jitter &gt;= max_jitter * max_jitter) {
-  if (frozen_object) { with(frozen_object) instance_destroy(); }
-  if (frozen_image) { with(frozen_image) instance_destroy(); }
+case block_state.free:  
+  scr_move();
+
+  // Kill object it is falling upon.
+  if (abs(delta_ys) &gt; 1) {
+    with(instance_place(x, y + 2, obj_mage)){ do_die = 1; }
+    with(instance_place(x, y + 2, obj_orc)){ do_die = 1; }
+  }
+
+  // Detect a shock that could break the block.  
+  var jitter = delta_xs * delta_xs + delta_ys * delta_ys
+  if (jitter &gt;= max_jitter * max_jitter) {
+    if (frozen_object) { with(frozen_object) instance_destroy(); }
+    if (frozen_image) { with(frozen_image) instance_destroy(); }
+    
+    // Use instance create to avoid the explosion to be considered obj_solid.
+    instance_create(x, y, obj_explode); 
+    instance_destroy();
+    exit;  
+  }
   
-  // Use instance create to avoid the explosion to be considered obj_solid.
-  instance_create(x, y, obj_explode); 
-  instance_destroy();
-  exit;  
+  // Move the frozen object along with the ice cube.
+  if (frozen_image) {
+    frozen_image.x = x;
+    frozen_image.y = y;
+  }
+  
+  // Stop an ongoing push.
+  xs = 0;
+  exit;
 }
-
-// Move the frozen object along with the ice cube.
-if (frozen_image) {
-  frozen_image.x = x;
-  frozen_image.y = y;
-}
-
-// Stop an ongoing push.
-// Todo: use a separate variable for push
-xs = 0
+  
 </string>
           </argument>
         </arguments>

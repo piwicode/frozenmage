@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>fadeout_duration = 1 * room_speed;
+            <string>fadeout_duration = .5 * room_speed;
 remaining_time = fadeout_duration;
 do_go_next_level = 0;
 </string>
