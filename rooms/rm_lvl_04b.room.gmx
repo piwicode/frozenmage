@@ -151,7 +151,7 @@
     <instance objName="obj_plate_open" x="296" y="136" name="inst_5627660B" locked="0" code="label = 2&#xA;" scaleX="0.625" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_plate_open" x="408" y="136" name="inst_1113D54B" locked="0" code="label = 3&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_plate_open" x="512" y="136" name="inst_03AF6346" locked="0" code="label = 4&#xA;" scaleX="0.5" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_orc" x="304" y="128" name="inst_0F797F93" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_orc" x="304" y="136" name="inst_0F797F93" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_plate_close" x="344" y="136" name="inst_06766513" locked="0" code="label = 3&#xA;" scaleX="0.5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_plate_close" x="360" y="136" name="inst_06847F2F" locked="0" code="label = 2&#xA;" scaleX="0.5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="24" y="392" name="inst_99FF11A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
