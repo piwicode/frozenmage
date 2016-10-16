@@ -44,6 +44,7 @@
     <sprite>sprites\sp_ice_staff</sprite>
     <sprite>sprites\spr_spawn</sprite>
     <sprite>sprites\sp_respawn</sprite>
+    <sprite>sprites\sp_part_doom</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background_feu</background>
@@ -125,6 +126,7 @@
     <object>objects\obj_ice_staff</object>
     <object>objects\obj_wind_staff</object>
     <object>objects\obj_fire_staff</object>
+    <object>objects\obj_part_doom</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_init</room>
