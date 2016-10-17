@@ -4,7 +4,10 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_pick_staff</sound>
+    <sound>sound\snd_falling</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\sp_mage</sprite>
     <sprite>sprites\sp_orc</sprite>
@@ -127,7 +130,12 @@
     <object>objects\obj_ice_staff</object>
     <object>objects\obj_wind_staff</object>
     <object>objects\obj_fire_staff</object>
-    <object>objects\obj_part_doom</object>
+    <objects name="sound">
+      <object>objects\obj_sound_bg</object>
+    </objects>
+    <objects name="particles">
+      <object>objects\obj_part_doom</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_init</room>
