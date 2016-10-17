@@ -83,6 +83,8 @@ case spawn_state.do_respawn:
   // Wait for the scolling to terminate.
   state = spawn_state.scrolling;
   static_view_count = 0;
+  // Play respawn sound.
+  audio_play_sound(snd_respawn, 20/*priority*/, false);
 break;
 
 case spawn_state.scrolling:

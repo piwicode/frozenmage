@@ -10,6 +10,7 @@
     <sound>sound\snd_shock01</sound>
     <sound>sound\snd_shock02</sound>
     <sound>sound\snd_shock03</sound>
+    <sound>sound\snd_respawn</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sp_mage</sprite>
