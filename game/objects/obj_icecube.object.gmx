@@ -145,7 +145,7 @@ case block_state.about_to_fall:
 case block_state.free:  
   scr_move();
 
-  // Kill object it is falling upon.
+  // Kill characters if is falling upon.
   if (abs(delta_ys) &gt; 1) {
     with(instance_place(x, y + 2, obj_mage)){ do_die = 1; }
     with(instance_place(x, y + 2, obj_orc)){ do_die = 1; }
@@ -157,6 +157,14 @@ case block_state.free:
     do_die = 1; // Die on the next frame to let a full cycle of objects to detect contact.
   }
   
+  // Detect a shock that could be heard.
+  if(abs(delta_ys) &gt; 2) { 
+    var intensity = clamp(delta_ys, 2, 8) / 10;
+    var max_dist = 150;
+    var distance = (max_dist - clamp(scr_distance_of_view(), 0, max_dist)) / max_dist;
+    scr_sound_play_shock(intensity * distance);
+  }
+
   // Move the frozen object along with the ice cube.
   if (frozen_image) {
     frozen_image.x = x;

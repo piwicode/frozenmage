@@ -7,6 +7,9 @@
   <sounds name="sound">
     <sound>sound\snd_pick_staff</sound>
     <sound>sound\snd_falling</sound>
+    <sound>sound\snd_shock01</sound>
+    <sound>sound\snd_shock02</sound>
+    <sound>sound\snd_shock03</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sp_mage</sprite>
@@ -71,6 +74,8 @@
     </scripts>
     <script>scripts\scr_door_place_meeting.gml</script>
     <script>scripts\scr_door_instance_place.gml</script>
+    <script>scripts\scr_distance_of_view.gml</script>
+    <script>scripts\scr_sound_play_shock.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_arial</font>
