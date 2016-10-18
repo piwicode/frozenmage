@@ -134,21 +134,15 @@ instance_destroy();
 // This is done in room stqrt event to make sure all instances initialization
 // code has been executed.
 
-with(obj_fence_open) {
-  if (label == other.label) {
-    ds_list_add(other.door_instances, self.id);
+var object_types = Array(obj_fence_open, obj_fence_close, obj_door, obj_block_spawn)
+for (var i = 0 ; i &lt; array_length_1d(object_types) ; i++) {
+  with(object_types[i]) {
+    if (label == other.label) {
+      ds_list_add(other.door_instances, self.id);
+    }
   }
 }
-with(obj_fence_close) {
-  if (label == other.label) {
-    ds_list_add(other.door_instances, self.id);
-  }
-}
-with(obj_door) {
-  if (label == other.label) {
-    ds_list_add(other.door_instances, self.id);
-  }
-}
+
 </string>
           </argument>
         </arguments>

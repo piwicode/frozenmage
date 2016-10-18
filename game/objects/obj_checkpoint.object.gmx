@@ -26,9 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>with(obj_spawn) {
- x = other.x;
- y = other.y;
+  instance_destroy();
 }
+// Replace eventual room restart with a respawn.
+instance_create(x, y, obj_spawn);
 instance_destroy();
 </string>
           </argument>

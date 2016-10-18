@@ -72,6 +72,7 @@
     <scripts name="functions">
       <script>scripts\Approach.gml</script>
       <script>scripts\IIF.gml</script>
+      <script>scripts\Array.gml</script>
     </scripts>
     <script>scripts\scr_door_place_meeting.gml</script>
     <script>scripts\scr_door_instance_place.gml</script>
@@ -107,35 +108,24 @@
       <object>objects\obj_plate</object>
       <object>objects\par_trigger_effect</object>
     </objects>
-    <objects name="effect">
-      <object>objects\obj_spark</object>
-      <object>objects\obj_fireball</object>
-      <object>objects\obj_aim_arrow</object>
-      <object>objects\obj_explode</object>
-      <object>objects\obj_frozen_content</object>
-    </objects>
     <objects name="control">
       <object>objects\obj_dangerous</object>
       <object>objects\obj_text</object>
       <object>objects\obj_debug_tool</object>
       <object>objects\obj_go_next_level</object>
       <object>objects\obj_talk</object>
-      <object>objects\obj_init_game</object>
-      <object>objects\obj_gui_dialog</object>
-      <object>objects\obj_gui_go_next_level</object>
-      <object>objects\obj_test_collider</object>
-      <object>objects\obj_dot</object>
-      <object>objects\obj_top_down_scroll</object>
       <object>objects\obj_trigger_zone</object>
       <object>objects\obj_trigger_zone_fall</object>
       <object>objects\obj_trigger_effect_fall</object>
-      <object>objects\obj_spawn</object>
       <object>objects\obj_spawn_restart_room</object>
       <object>objects\obj_checkpoint</object>
+      <object>objects\obj_block_spawn</object>
     </objects>
     <objects name="room_control">
       <object>objects\obj_mage_ice_power</object>
       <object>objects\obj_mage_no_power</object>
+      <object>objects\obj_top_down_scroll</object>
+      <object>objects\obj_init_game</object>
     </objects>
     <object>objects\obj_ice_staff</object>
     <object>objects\obj_wind_staff</object>
@@ -145,6 +135,18 @@
     </objects>
     <objects name="particles">
       <object>objects\obj_part_doom</object>
+    </objects>
+    <objects name="effect">
+      <object>objects\obj_spark</object>
+      <object>objects\obj_fireball</object>
+      <object>objects\obj_aim_arrow</object>
+      <object>objects\obj_explode</object>
+      <object>objects\obj_frozen_content</object>
+      <object>objects\obj_dot</object>
+      <object>objects\obj_gui_dialog</object>
+      <object>objects\obj_spawn</object>
+      <object>objects\obj_gui_go_next_level</object>
+      <object>objects\obj_test_collider</object>
     </objects>
   </objects>
   <rooms name="rooms">
@@ -163,11 +165,13 @@
       <room>rooms\rm_lvl_01</room>
       <room>rooms\rm_lvl_01b</room>
       <room>rooms\rm_lvl_02a</room>
+      <room>rooms\rm_lvl_02b</room>
       <room>rooms\rm_lvl_02c</room>
       <room>rooms\rm_lvl_03a</room>
       <room>rooms\rm_lvl_04a</room>
       <room>rooms\rm_lvl_04b</room>
       <room>rooms\rm_lvl_04c</room>
+      <room>rooms\rm_lvl_02</room>
     </rooms>
   </rooms>
   <help>
