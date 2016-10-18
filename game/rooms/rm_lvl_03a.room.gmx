@@ -66,7 +66,7 @@
     <instance objName="obj_collision_16x16" x="256" y="2008" name="inst_3CA50ACD" locked="0" code="" scaleX="4.26666688919067" scaleY="47.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="224" y="2768" name="inst_5FE13970" locked="0" code="" scaleX="6" scaleY="27" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="0" y="216" name="inst_280E17AD" locked="0" code="" scaleX="2" scaleY="5.86666679382324" colour="4294967295" rotation="0"/>
-    <instance objName="obj_top_down_scroll" x="-16" y="-24" name="inst_B4277428" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_top_down_scroll" x="0" y="-24" name="inst_B4277428" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="304" y="0" name="inst_0ED1017E" locked="0" code="" scaleX="1" scaleY="25.0666675567627" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="304" y="400" name="inst_3A39147A" locked="0" code="" scaleX="1" scaleY="25.0666675567627" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="304" y="800" name="inst_6F096FDD" locked="0" code="" scaleX="1" scaleY="25.0666675567627" colour="4294967295" rotation="0"/>
@@ -180,8 +180,9 @@
     <instance objName="obj_still_stone_32" x="192" y="6792" name="inst_A1FA2C10" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_still_stone_32" x="160" y="6792" name="inst_DDA72542" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="224" y="6024" name="inst_F8E92281" locked="0" code="" scaleX="4.26666688919067" scaleY="1.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spawn_restart_room" x="16" y="-16" name="inst_ADD8C3C7" locked="0" code="do_restart_room = true;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_sound_bg" x="32" y="-24" name="inst_60FACE35" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spawn_restart_room" x="48" y="-16" name="inst_ADD8C3C7" locked="0" code="do_restart_room = true;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_sound_bg" x="16" y="-24" name="inst_60FACE35" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mage_no_power" x="-16" y="-24" name="inst_02471F8D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
