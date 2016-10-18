@@ -133,6 +133,10 @@
       <object>objects\obj_spawn_restart_room</object>
       <object>objects\obj_checkpoint</object>
     </objects>
+    <objects name="room_control">
+      <object>objects\obj_mage_ice_power</object>
+      <object>objects\obj_mage_no_power</object>
+    </objects>
     <object>objects\obj_ice_staff</object>
     <object>objects\obj_wind_staff</object>
     <object>objects\obj_fire_staff</object>
@@ -163,6 +167,7 @@
       <room>rooms\rm_lvl_03a</room>
       <room>rooms\rm_lvl_04a</room>
       <room>rooms\rm_lvl_04b</room>
+      <room>rooms\rm_lvl_04c</room>
     </rooms>
   </rooms>
   <help>
