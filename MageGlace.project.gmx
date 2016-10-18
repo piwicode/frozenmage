@@ -39,6 +39,7 @@
     <background>background\background_feu</background>
     <background>background\Tile_Feu</background>
     <background>background\Tile_Glace</background>
+    <background>background\Tile_320x240</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -96,9 +97,9 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_init</room>
-    <room>rooms\rm_lvl_03</room>
     <room>rooms\rm_lvl_01</room>
     <room>rooms\rm_lvl_02</room>
+    <room>rooms\rm_lvl_03</room>
     <room>rooms\rm_test_game_rules</room>
     <room>rooms\rm_test_collision</room>
     <room>rooms\rm_test_collision_resolution</room>

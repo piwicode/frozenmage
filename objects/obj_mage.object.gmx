@@ -31,10 +31,10 @@
 var PX = 1; var SEC = room_speed;
 
 // Walk configuration.
-walk_speed = 2.7;  // maximum horizontal speed reached when walking.
-var walk_accel_time = .16 * SEC; // time it takes to reach the 0 speed.
+walk_speed = 2.3;  // maximum horizontal speed reached when walking.
+var walk_accel_time = .05 * SEC; // time it takes to reach the 0 speed.
 walk_accel = walk_speed / walk_accel_time;
-var brake_accel_time = .28 * SEC; // time it takes to reach the max speed.
+var brake_accel_time = .20 * SEC; // time it takes to reach the max speed.
 brake_accel = walk_speed / brake_accel_time ;
 
 push_speed = 1; // constant horizontal speed, when pushing a block.
@@ -42,13 +42,13 @@ push_speed = 1; // constant horizontal speed, when pushing a block.
 air_friction = 2;
 
 // Vertical speed set when jumping.
-jump_impulse = 3.75;
+jump_impulse = 4.4
 
 aim_arrow = instance_create(x, y, obj_aim_arrow)
 aim_arrow.visible = false
 
 var step_length_in_px = 90;
-const_image_speed_walk = 12 / (step_length_in_px * 2) * walk_speed // frame per tick
+const_image_speed_walk = 14 / (step_length_in_px * 2) * walk_speed // frame per tick
 
 image_speed = 0; // No animation by default.
 

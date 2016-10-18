@@ -6,7 +6,7 @@ xst = 0; yst = 0; // Reminder speed from the last step.
 xx = x; yy = y;
 
 // Acceleration: gravity is a vertical acceleration toward the bottom.
-yss = 0.2;
+yss = 0.25;
 
 // Maximum absolute value of the horizontal and vertical speed.
 max_speed = 30;
