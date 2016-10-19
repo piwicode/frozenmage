@@ -74,7 +74,6 @@
     <instance objName="obj_block_spawn" x="560" y="64" name="inst_890B2B18" locked="0" code="label = 3&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_plate_close" x="576" y="168" name="inst_7FB9A3C7" locked="0" code="label = 3&#xA;" scaleX="1.90625" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="568" y="272" name="inst_CB695C8A" locked="0" code="" scaleX="11.7333335876465" scaleY="1.60000002384186" colour="4294967295" rotation="0"/>
-    <instance objName="obj_troll" x="632" y="168" name="inst_355F5445" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_part_doom" x="448" y="344" name="inst_3062D2C1" locked="0" code="" scaleX="33.0699996948242" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="488" y="272" name="inst_EB3F8E7D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="472" y="280" name="inst_B99D78D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

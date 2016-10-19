@@ -237,6 +237,9 @@
     <instance objName="obj_collision_16x16" x="360" y="632" name="inst_1E38B8A0" locked="0" code="" scaleX="7.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="576" y="632" name="inst_EC5B145B" locked="0" code="" scaleX="22" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_mage_no_power" x="0" y="-16" name="inst_EE40596E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_checkpoint" x="528" y="536" name="inst_AAF22F7A" locked="0" code="" scaleX="4.19999980926514" scaleY="3.75" colour="4294967295" rotation="0"/>
+    <instance objName="obj_checkpoint" x="72" y="328" name="inst_ED56011A" locked="0" code="" scaleX="4.19999980926514" scaleY="3.75" colour="4294967295" rotation="0"/>
+    <instance objName="obj_still_stone_32" x="424" y="568" name="inst_58BD8A95" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
