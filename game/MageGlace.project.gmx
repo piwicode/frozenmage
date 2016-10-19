@@ -112,7 +112,6 @@
     <objects name="control">
       <object>objects\obj_dangerous</object>
       <object>objects\obj_text</object>
-      <object>objects\obj_debug_tool</object>
       <object>objects\obj_go_next_level</object>
       <object>objects\obj_talk</object>
       <object>objects\obj_trigger_zone</object>
@@ -127,6 +126,7 @@
       <object>objects\obj_mage_no_power</object>
       <object>objects\obj_top_down_scroll</object>
       <object>objects\obj_init_game</object>
+      <object>objects\obj_debug_tool</object>
     </objects>
     <object>objects\obj_ice_staff</object>
     <object>objects\obj_wind_staff</object>

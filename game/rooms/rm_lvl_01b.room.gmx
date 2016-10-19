@@ -143,7 +143,7 @@
     <instance objName="obj_water" x="576" y="224" name="inst_37E0C48E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_water" x="608" y="224" name="inst_F9ED4306" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_water" x="640" y="224" name="inst_F563A8ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_door" x="880" y="80" name="inst_F7529406" locked="0" code="label = 1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_door" x="880" y="80" name="inst_F7529406" locked="0" code="label = 1" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_plate_open" x="816" y="144" name="inst_823473D0" locked="0" code="label = 1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="-16" y="0" name="inst_EE5674AA" locked="0" code="" scaleX="1" scaleY="13" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="1024" y="144" name="inst_E2FA1EE8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
