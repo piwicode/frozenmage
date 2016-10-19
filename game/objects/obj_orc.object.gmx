@@ -81,7 +81,7 @@ scr_move()
 
 // Face the displacement direction.
 if x_ctrl != 0 {
-  image_xscale = x_ctrl
+  image_xscale = abs(image_xscale) * x_ctrl
 }
 
 if (do_die) {
