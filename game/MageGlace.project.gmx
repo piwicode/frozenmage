@@ -52,6 +52,7 @@
       <sprite>sprites\sp_dlg_parchment</sprite>
     </sprites>
     <sprite>sprites\sp_troll</sprite>
+    <sprite>sprites\sp_final_fall</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background_feu</background>
@@ -99,6 +100,7 @@
       <object>objects\obj_stone_16</object>
       <object>objects\obj_stone_32</object>
       <object>objects\obj_still_stone_32</object>
+      <object>objects\obj_still_stone_16</object>
       <object>objects\obj_troll</object>
     </objects>
     <objects name="parent">
@@ -120,6 +122,7 @@
       <object>objects\obj_spawn_restart_room</object>
       <object>objects\obj_checkpoint</object>
       <object>objects\obj_block_spawn</object>
+      <object>objects\obj_final_fall</object>
     </objects>
     <objects name="room_control">
       <object>objects\obj_mage_ice_power</object>
@@ -174,6 +177,7 @@
       <room>rooms\rm_lvl_04c</room>
       <room>rooms\rm_lvl_04d</room>
       <room>rooms\rm_lvl_04e</room>
+      <room>rooms\rm_lvl_05a</room>
     </rooms>
     <rooms name="marco">
       <room>rooms\rm_niv_01a</room>
