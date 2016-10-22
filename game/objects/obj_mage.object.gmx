@@ -47,7 +47,7 @@ jump_released_speed = 2; // pixel per frame.
 jump_ctrl_permissiveness = 20; // Number of frames the jump initial key press can trigger the jump action.
 jump_ctrl_countdown = 0;  // frames. 
 
-if(string_copy(room_get_name(room),0, 6) == "rm_niv" or true) {
+if(string_copy(room_get_name(room),0, 6) == "rm_niv" or true ) {
   walk_speed = 2.5  // maximum horizontal speed reached when walking.
   walk_accel = 0.15;  // time it takes to reach the 0 speed.
   brake_accel = 0.25;  // time it takes to reach the max speed.
