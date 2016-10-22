@@ -51,7 +51,7 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_mage" x="24" y="192" name="inst_11A7BE4C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mage" x="64" y="192" name="inst_11A7BE4C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="0" y="192" name="inst_B21A1C64" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="16" y="192" name="inst_78683517" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="32" y="192" name="inst_0E3378E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -164,6 +164,10 @@
     <instance objName="obj_collision_16x16" x="656" y="192" name="inst_DF26E79A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="656" y="208" name="inst_779D0EE2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_mage_no_power" x="0" y="-16" name="inst_A5B9CAD6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="448" y="96" name="inst_D6D67AD4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="528" y="96" name="inst_DA495CBD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="872" y="0" name="inst_BA840E2C" locked="0" code="" scaleX="0.5" scaleY="5.86666679382324" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="912" y="0" name="inst_A0A22E05" locked="0" code="" scaleX="0.5" scaleY="5.86666679382324" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Tile_Feu" x="0" y="192" w="248" h="16" xo="0" yo="224" id="10000049" name="inst_4DA4ADAF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

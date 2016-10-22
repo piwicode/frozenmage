@@ -53,19 +53,19 @@
   <instances>
     <instance objName="obj_mage" x="16" y="216" name="inst_C06F8CBF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="-48" y="8" name="inst_4B261ED7" locked="0" code="" scaleX="2" scaleY="14" colour="4294967295" rotation="0"/>
-    <instance objName="obj_plate_open" x="104" y="216" name="inst_5F018A51" locked="0" code="label = 1" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_door" x="296" y="96" name="inst_83EACCA0" locked="0" code="label = 1" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_go_next_level" x="328" y="104" name="inst_B17D8273" locked="0" code="" scaleX="0.516129016876221" scaleY="1.77419352531433" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_16x16" x="-16" y="216" name="inst_21BB42C5" locked="0" code="" scaleX="11" scaleY="1.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_16x16" x="264" y="160" name="inst_9288E42D" locked="0" code="" scaleX="6" scaleY="3.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_16x16" x="-16" y="0" name="inst_39C5E5CA" locked="0" code="" scaleX="2.13333344459534" scaleY="9" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_16x16" x="16" y="128" name="inst_AE08C330" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_16x16" x="208" y="216" name="inst_30DA79E1" locked="0" code="" scaleX="9.5" scaleY="1.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_part_doom" x="160" y="224" name="inst_0E0376BB" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_plate_close" x="88" y="128" name="inst_7CBC79E5" locked="0" code="label = 1&#xA;" scaleX="0.5" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_orc" x="80" y="128" name="inst_6FB8DB81" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_16x16" x="288" y="24" name="inst_5ED626B4" locked="0" code="" scaleX="0.5" scaleY="5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_16x16" x="344" y="104" name="inst_56EFA2FC" locked="0" code="" scaleX="1" scaleY="3.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_plate_open" x="72" y="216" name="inst_5F018A51" locked="0" code="label = 1" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_door" x="280" y="120" name="inst_83EACCA0" locked="0" code="label = 1" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_go_next_level" x="328" y="128" name="inst_B17D8273" locked="0" code="" scaleX="0.516129016876221" scaleY="1.77419352531433" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="-32" y="216" name="inst_21BB42C5" locked="0" code="" scaleX="11" scaleY="1.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="248" y="184" name="inst_9288E42D" locked="0" code="" scaleX="6" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="-8" y="8" name="inst_39C5E5CA" locked="0" code="" scaleX="2.13333344459534" scaleY="9" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="16" y="152" name="inst_AE08C330" locked="0" code="" scaleX="6" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="208" y="216" name="inst_30DA79E1" locked="0" code="" scaleX="8.5" scaleY="1.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_part_doom" x="144" y="224" name="inst_0E0376BB" locked="0" code="" scaleX="4" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_plate_close" x="104" y="152" name="inst_7CBC79E5" locked="0" code="label = 1&#xA;" scaleX="0.5" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_orc" x="40" y="152" name="inst_6FB8DB81" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="272" y="48" name="inst_5ED626B4" locked="0" code="" scaleX="0.5" scaleY="5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="344" y="0" name="inst_56EFA2FC" locked="0" code="" scaleX="1" scaleY="15" colour="4294967295" rotation="0"/>
     <instance objName="obj_mage_ice_power" x="0" y="-16" name="inst_900EA113" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
