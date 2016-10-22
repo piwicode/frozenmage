@@ -31,6 +31,7 @@ do_close = 0;  // Is there an oppening plate being triggered.
 
 // Label establishing the relationship between the door and the plates.
 label = 0;
+is_freezable = 0
 
 // Tunning variables
 triggered_openning_duration = room_speed * 1
