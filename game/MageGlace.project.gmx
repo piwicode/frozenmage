@@ -175,6 +175,10 @@
       <room>rooms\rm_lvl_04d</room>
       <room>rooms\rm_lvl_04e</room>
     </rooms>
+    <rooms name="marco">
+      <room>rooms\rm_niv_01a</room>
+      <room>rooms\rm_niv_01b</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

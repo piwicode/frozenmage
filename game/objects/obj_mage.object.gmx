@@ -41,22 +41,20 @@ y_ctrl = 0;
 var PX = 1; var SEC = room_speed;
 
 // Walk configuration.
-walk_speed = 2.3;  // maximum horizontal speed reached when walking.
-var walk_accel_time = .05 * SEC; // time it takes to reach the 0 speed.
-walk_accel = walk_speed / walk_accel_time;
-var brake_accel_time = .20 * SEC; // time it takes to reach the max speed.
-brake_accel = walk_speed / brake_accel_time ;
+walk_speed = 2.5  // maximum horizontal speed reached when walking.
+walk_accel = 0.15;
+// walk_accel = 2 / (0.1 * 60);
+brake_accel = 0.25;
+// brake_accel = 2 / (.20 * 60);
 
 push_speed = 1; // constant horizontal speed, when pushing a block.
 
-air_friction = 2;
-
 // Jump settings.
-jump_initial_speed = 6; // pixel per frame.
+jump_initial_speed = 4.3 ; // pixel per frame.
 jump_released_speed = 2; // pixel per frame.
 
 // Number of frames the jump initial key press can trigger the jump action.
-jump_ctrl_permissiveness = 400; // frames.
+jump_ctrl_permissiveness = 20; // frames.
 // Jump is triggered when non zero, and the character is standing. 
 jump_ctrl_countdown = 0;  // frames. 
 
@@ -67,7 +65,6 @@ var step_length_in_px = 90;
 const_image_speed_walk = 14 / (step_length_in_px * 2) * walk_speed // frame per tick
 
 image_speed = 0; // No animation by default.
-
 
 // Override user inputs for test purpose. Set the following vars with instance
 // initialization script.
