@@ -15,6 +15,7 @@
   <sprites name="sprites">
     <sprite>sprites\sp_mage</sprite>
     <sprite>sprites\sp_orc</sprite>
+    <sprite>sprites\sp_orc2</sprite>
     <sprite>sprites\sp_ice_spark</sprite>
     <sprite>sprites\sp_fireball</sprite>
     <sprite>sprites\sp_icecube</sprite>
@@ -182,6 +183,8 @@
     <rooms name="marco">
       <room>rooms\rm_niv_01a</room>
       <room>rooms\rm_niv_01b</room>
+      <room>rooms\rm_niv_01c</room>
+      <room>rooms\rm_niv_02a</room>
     </rooms>
   </rooms>
   <help>
