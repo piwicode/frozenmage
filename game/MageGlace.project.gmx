@@ -11,6 +11,12 @@
     <sound>sound\snd_shock02</sound>
     <sound>sound\snd_shock03</sound>
     <sound>sound\snd_respawn</sound>
+    <sound>sound\snd_door_sliding</sound>
+    <sound>sound\snd_door_stop</sound>
+    <sound>sound\snd_plate_down</sound>
+    <sound>sound\snd_plate_up</sound>
+    <sound>sound\snd_walk</sound>
+    <sound>sound\snd_jump</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sp_mage</sprite>

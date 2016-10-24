@@ -25,15 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Control variables
+            <string>// External control variables
 do_open = 0;  // Is there an oppening plate being triggered.
 do_close = 0;  // Is there an oppening plate being triggered.
 
 // Label establishing the relationship between the door and the plates.
 label = 0;
-is_freezable = 0
 
 // Tunning variables
+is_freezable = 0
 triggered_openning_duration = room_speed * 1
 stay_openned_duration = room_speed * 4
 auto_closing_duration = room_speed * 10
@@ -43,14 +43,14 @@ image_angle = (image_angle + 360) % 360;
 is_horizontal = (image_angle == 90 || image_angle == 270);
 movment_sign = IIF(image_angle == 0 || image_angle == 90, 1 , -1);
 
-// Functionning variables
 p_amplitude = 48;  // Amplitude of the movement.
 p_closed = IIF(is_horizontal, x, y);  // param value when closed.
 p_opened = p_closed - p_amplitude * movment_sign;  // param value when closed.
 
+// Object state variables
+current_sound = 0;
 p = p_closed; // Current position of the door, always integer.
 pp = p; // Target position of the door, floading point.
-
 remaining_open_time = 0;
 enum door_state {
    closed = 1,
@@ -85,7 +85,7 @@ state = door_state.closed
           <argument>
             <kind>1</kind>
             <string>// Process plate inputs.
-
+previous_state = state
 if (do_close &amp;&amp; !do_open &amp;&amp; state != door_state.closed) {
   state = door_state.triggered_closing;
 }
@@ -133,12 +133,32 @@ repeat(abs(ps)) {
 if (is_horizontal) { x = p; } else { y = p; }
 
 // Update the state.
-if (pp == p_closed) {
+if (pp == p_closed &amp;&amp; state != door_state.closed) {
   state = door_state.closed;
+
 }
 if (pp == p_opened &amp;&amp; state == door_state.triggered_openning) {
   state = door_state.opened;
 }
+
+// Sound
+if(state != previous_state) {
+  audio_stop_sound(current_sound);
+  switch(state) {
+    case door_state.triggered_openning:
+    case door_state.triggered_closing:
+    case door_state.auto_closing:
+      audio_sound_gain(current_sound, 0, .2);      
+      current_sound = audio_play_sound(snd_door_sliding, 50, false);
+    break;
+    case door_state.closed:
+      audio_sound_gain(current_sound, 0, .2);      
+      current_sound = audio_play_sound(snd_door_stop, 50, false); 
+    break;  
+  }
+}
+
+
 </string>
           </argument>
         </arguments>

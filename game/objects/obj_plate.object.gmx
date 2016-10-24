@@ -81,7 +81,13 @@ door_instances = ds_list_create();
           <argument>
             <kind>1</kind>
             <string>// Detect that an entity is pressing the plate.
+previous_is_pressed = is_pressed;
 is_pressed = place_meeting(x, y - abs(bbox_top - bbox_bottom) - 2, obj_entity);
+
+if(is_pressed != previous_is_pressed) {
+  audio_play_sound(IIF(is_pressed, snd_plate_down, snd_plate_up), 50, false)
+}
+
 </string>
           </argument>
         </arguments>

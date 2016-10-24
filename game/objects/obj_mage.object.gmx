@@ -37,6 +37,10 @@ fire_released_ctrl = 0;
 x_ctrl = 0;
 y_ctrl = 0;
 
+// state
+is_walking = false;
+previous_is_walking = false;
+walking_sound = 0;
 
 walk_speed = 2.5  // maximum horizontal speed reached when walking.
 walk_accel = 0.15;  // time it takes to reach the 0 speed.
@@ -73,6 +77,29 @@ input_override_script = false; // Set to true in conjunction
 
 
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="1" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>audio_stop_sound(walking_sound);
 </string>
           </argument>
         </arguments>
@@ -160,6 +187,19 @@ var point = instance_create(x, y, obj_dot);
 if(jump_held_ctrl) {
   point.image_blend = c_red
 }
+
+// Sound
+previous_is_walking = is_walking;
+is_walking = x_ctrl != 0 and xs !=0
+
+if(is_walking != previous_is_walking) {
+  if(is_walking) {
+     audio_stop_sound(walking_sound);
+     walking_sound = audio_play_sound(snd_walk, 30, true);
+  } else {
+     audio_stop_sound(walking_sound);
+  }
+}
 </string>
           </argument>
         </arguments>
@@ -225,6 +265,7 @@ if (!jump_held_ctrl) { jump_ctrl_countdown = 0; ys = max(ys, -jump_released_spee
 if (jump_ctrl_countdown &amp;&amp; is_standing) {
   jump_ctrl_countdown = 0;
   ys = -jump_initial_speed;
+  audio_play_sound(snd_jump, 30, false);
 }
 
 jump_ctrl_countdown = max(0, jump_ctrl_countdown - 1);
@@ -245,6 +286,29 @@ if xs != 0 &amp;&amp; place_meeting(floor(xx + sign(x_push)), floor(yy), obj_ice
   block.xs = xs; // Set the horizontal speed of the block.
 }
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="5">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>audio_stop_sound(walking_sound);
 </string>
           </argument>
         </arguments>
