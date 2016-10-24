@@ -38,6 +38,8 @@ x_ctrl = 1;
 walk_speed = 1;
 do_die = 0;
 
+// Animation
+image_speed = .2
 </string>
           </argument>
         </arguments>
