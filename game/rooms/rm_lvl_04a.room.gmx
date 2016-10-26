@@ -114,7 +114,7 @@
     <instance objName="obj_door" x="1016" y="208" name="inst_D7771964" locked="0" code="label = 1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="-90"/>
     <instance objName="obj_collision_16x16" x="1008" y="240" name="inst_A1484818" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="872" y="240" name="inst_C2C1A48F" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
-    <instance objName="obj_go_next_level" x="888" y="240" name="inst_B17D8273" locked="0" code="" scaleX="3.87096762657166" scaleY="1.03225803375244" colour="4294967295" rotation="0"/>
+    <instance objName="obj_go_next_level" x="1016" y="216" name="inst_B17D8273" locked="0" code="" scaleX="2" scaleY="4" colour="4294967295" rotation="-90"/>
     <instance objName="obj_part_doom" x="528" y="208" name="inst_F5F6F1F5" locked="0" code="" scaleX="4.5" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="obj_mage_no_power" x="0" y="-16" name="inst_B668CA03" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="-16" y="344" name="inst_053AAF09" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

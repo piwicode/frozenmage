@@ -52,7 +52,7 @@
   </views>
   <instances>
     <instance objName="obj_mage" x="16" y="184" name="inst_11A7BE4C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_go_next_level" x="464" y="424" name="inst_65EB1789" locked="0" code="" scaleX="9" scaleY="2.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_go_next_level" x="456" y="496" name="inst_65EB1789" locked="0" code="" scaleX="2" scaleY="10" colour="4294967295" rotation="90"/>
     <instance objName="obj_door" x="344" y="72" name="inst_F86BEB7F" locked="0" code="label = 1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_plate_open" x="192" y="184" name="inst_1ABEB2AD" locked="0" code="label = 1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_plate_close" x="192" y="104" name="inst_F2685409" locked="0" code="label = 1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
