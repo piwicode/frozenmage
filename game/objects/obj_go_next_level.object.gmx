@@ -32,7 +32,7 @@ bubble = part_type_create();
 part_type_shape(bubble, pt_shape_pixel);
 part_type_size(bubble, .25, .5, -.01, 0)
 part_type_speed(bubble, .6, .8, -.02, 0)
-part_type_direction(bubble, 175 + direction, 185 + direction, 0, 6)
+part_type_direction(bubble, 175 + image_angle, 185 + image_angle, 0, 6)
 part_type_life(bubble, 30, 50)
 part_type_colour3(bubble, make_color_rgb(166,124,0),
                           make_color_rgb(255,191,0),
