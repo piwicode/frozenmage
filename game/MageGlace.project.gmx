@@ -63,8 +63,13 @@
       <sprite>sprites\spr_arrows</sprite>
       <sprite>sprites\spr_key_arrows</sprite>
       <sprite>sprites\spr_pad</sprite>
-      <sprite>sprites\sp_title_presents</sprite>
+      <sprite>sprites\spr_title_presents</sprite>
       <sprite>sprites\spr_title_authors</sprite>
+      <sprite>sprites\spr_credit_code</sprite>
+      <sprite>sprites\spr_credit_sound</sprite>
+      <sprite>sprites\spr_design</sprite>
+      <sprite>sprites\spr_graphics</sprite>
+      <sprite>sprites\spr_credit_thanks</sprite>
     </sprites>
     <sprite>sprites\sp_troll</sprite>
     <sprite>sprites\sp_final_fall</sprite>
@@ -184,6 +189,12 @@
       <object>objects\obj_par_control</object>
       <object>objects\obj_title_presents</object>
       <object>objects\obj_title_autors</object>
+      <object>objects\obj_credit_code</object>
+      <object>objects\obj_credit_sound</object>
+      <object>objects\obj_credit_graphics</object>
+      <object>objects\obj_credit_design</object>
+      <object>objects\obj_credit_thanks</object>
+      <object>objects\obj_par_credit</object>
     </objects>
   </objects>
   <rooms name="rooms">
@@ -212,6 +223,7 @@
       <room>rooms\rm_lvl_04d</room>
       <room>rooms\rm_lvl_04e</room>
       <room>rooms\rm_lvl_05a</room>
+      <room>rooms\rm_outro</room>
     </rooms>
     <rooms name="marco">
       <room>rooms\rm_niv_01a</room>
