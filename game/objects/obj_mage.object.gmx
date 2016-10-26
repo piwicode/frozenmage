@@ -136,6 +136,8 @@ image_speed = const_image_speed_walk * (xs != 0);
 // use image_scale to remember the current facing position. 
 var x_fire = (bbox_right + bbox_left) * .5;
 var y_fire = (bbox_top + bbox_bottom) * .5;
+
+if(false) {
 if (x_ctrl == 0 &amp;&amp; y_ctrl == 0) {
   var aim_direction = radtodeg(arctan2(-y_ctrl, image_xscale));
 } else {
@@ -145,6 +147,8 @@ aim_arrow.visible = fire_check_ctrl;
 aim_arrow.x = x_fire 
 aim_arrow.y = y_fire
 aim_arrow.image_angle = aim_direction;
+}
+aim_direction = radtodeg(arctan2(-y_ctrl, image_xscale));
 
 // Use fire_pressed_start to change the aim style.
 if (fire_pressed_ctrl) {
@@ -161,6 +165,7 @@ if (fire_pressed_ctrl) {
     }
   }
 }
+
 
 // Kill the mage when touching something dangerous.
 if (place_meeting(x + 1, y + 1, obj_dangerous) ||
