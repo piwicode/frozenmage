@@ -149,11 +149,11 @@ if(state != previous_state) {
     case door_state.triggered_closing:
     case door_state.auto_closing:
       audio_sound_gain(current_sound, 0, .2);      
-      current_sound = audio_play_sound(snd_door_sliding, 50, false);
+      current_sound = scr_play_at_position(snd_door_sliding);
     break;
     case door_state.closed:
       audio_sound_gain(current_sound, 0, .2);      
-      current_sound = audio_play_sound(snd_door_stop, 50, false); 
+      current_sound = scr_play_at_position(snd_door_stop); 
     break;  
   }
 }

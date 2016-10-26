@@ -160,9 +160,7 @@ case block_state.free:
   // Detect a shock that could be heard.
   if(abs(delta_ys) &gt; 2) { 
     var intensity = clamp(delta_ys, 2, 8) / 10;
-    var max_dist = 150;
-    var distance = (max_dist - clamp(scr_distance_of_view(), 0, max_dist)) / max_dist;
-    scr_sound_play_shock(intensity * distance);
+    scr_sound_play_shock(intensity);
   }
 
   // Move the frozen object along with the ice cube.

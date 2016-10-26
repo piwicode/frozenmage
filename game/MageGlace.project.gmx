@@ -87,6 +87,7 @@
     <script>scripts\scr_door_instance_place.gml</script>
     <script>scripts\scr_distance_of_view.gml</script>
     <script>scripts\scr_sound_play_shock.gml</script>
+    <script>scripts\scr_play_at_position.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_arial</font>
