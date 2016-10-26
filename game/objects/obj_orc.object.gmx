@@ -63,13 +63,13 @@ image_speed = .2
           <argument>
             <kind>1</kind>
             <string>// Detect obstacle in front of the sprite or absence of a platform at the feet of the sprite.
-if (place_meeting(x + x_ctrl, y, obj_solid) &amp;&amp;
-    !place_meeting(x - x_ctrl, y, obj_solid)) {
+if (place_meeting(x + x_ctrl, y, obj_entity) &amp;&amp;
+    !place_meeting(x - x_ctrl, y, obj_entity)) {
   // There is something solid in front of the character, and nothing solid in the back.
   x_ctrl *= -1;
 } else if (
-  !position_meeting(((bbox_left * (2 - x_ctrl)) + bbox_right * (2 + x_ctrl)) / 4, bbox_bottom + 1, obj_solid) &amp;&amp;
-  position_meeting(((bbox_left * (2 + x_ctrl)) + bbox_right * (2 - x_ctrl)) / 4, bbox_bottom + 1, obj_solid) &amp;&amp; 
+  !position_meeting(((bbox_left * (2 - x_ctrl)) + bbox_right * (2 + x_ctrl)) / 4, bbox_bottom + 1, obj_entity) &amp;&amp;
+  position_meeting(((bbox_left * (2 + x_ctrl)) + bbox_right * (2 - x_ctrl)) / 4, bbox_bottom + 1, obj_entity) &amp;&amp; 
   !place_meeting(x - x_ctrl, y, obj_solid)) {
     // There is nothing to walk on in front of the character,
     // something to walk on behind the character,
