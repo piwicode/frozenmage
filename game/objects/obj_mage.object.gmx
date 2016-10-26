@@ -223,13 +223,14 @@ if(is_walking != previous_is_walking) {
           <argument>
             <kind>1</kind>
             <string>// Get user inputs.
-jump_pressed_ctrl = keyboard_check_pressed(vk_space);
-jump_held_ctrl = keyboard_check(vk_space);
-fire_pressed_ctrl = keyboard_check_pressed(vk_control);
-fire_check_ctrl = keyboard_check(vk_control);
-fire_released_ctrl = keyboard_check_released(vk_control);
-x_ctrl = keyboard_check(vk_right) - keyboard_check(vk_left);
-y_ctrl = keyboard_check(vk_down) - keyboard_check(vk_up);
+
+jump_pressed_ctrl = scr_input_pressed(vk_space, gp_face1);
+jump_held_ctrl = scr_input_held(vk_space, gp_face1);
+fire_pressed_ctrl = scr_input_pressed(vk_control, gp_face3);
+fire_check_ctrl = scr_input_held(vk_control, gp_face3);
+fire_released_ctrl = scr_input_released(vk_control, gp_face3);
+x_ctrl = src_input_axis(vk_right, vk_left, gp_padr, gp_padl, gp_axislh);
+y_ctrl = src_input_axis(vk_down, vk_up, gp_padd, gp_padu, gp_axislv);
 
 // Apply input override for test only.
 if (input_override_script) {

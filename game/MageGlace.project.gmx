@@ -88,6 +88,12 @@
     <script>scripts\scr_distance_of_view.gml</script>
     <script>scripts\scr_sound_play_shock.gml</script>
     <script>scripts\scr_play_at_position.gml</script>
+    <scripts name="input">
+      <script>scripts\scr_input_pressed.gml</script>
+      <script>scripts\scr_input_released.gml</script>
+      <script>scripts\scr_input_held.gml</script>
+      <script>scripts\src_input_axis.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_arial</font>
@@ -138,6 +144,7 @@
       <object>objects\obj_top_down_scroll</object>
       <object>objects\obj_init_game</object>
       <object>objects\obj_debug_tool</object>
+      <object>objects\obj_hi_gamepad</object>
     </objects>
     <object>objects\obj_ice_staff</object>
     <object>objects\obj_wind_staff</object>
