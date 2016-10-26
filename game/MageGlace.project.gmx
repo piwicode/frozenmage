@@ -57,6 +57,14 @@
     <sprites name="dialog">
       <sprite>sprites\sp_dlg_mage</sprite>
       <sprite>sprites\sp_dlg_parchment</sprite>
+      <sprite>sprites\spr_game_title</sprite>
+      <sprite>sprites\spr_key_space</sprite>
+      <sprite>sprites\spr_key_ctrl</sprite>
+      <sprite>sprites\spr_arrows</sprite>
+      <sprite>sprites\spr_key_arrows</sprite>
+      <sprite>sprites\spr_pad</sprite>
+      <sprite>sprites\sp_title_presents</sprite>
+      <sprite>sprites\spr_title_authors</sprite>
     </sprites>
     <sprite>sprites\sp_troll</sprite>
     <sprite>sprites\sp_final_fall</sprite>
@@ -167,6 +175,16 @@
       <object>objects\obj_gui_go_next_level</object>
       <object>objects\obj_test_collider</object>
     </objects>
+    <objects name="dialog">
+      <object>objects\obj_game_title</object>
+      <object>objects\obj_key_arrows</object>
+      <object>objects\obj_key_ctrl</object>
+      <object>objects\obj_key_space</object>
+      <object>objects\obj_pad</object>
+      <object>objects\obj_par_control</object>
+      <object>objects\obj_title_presents</object>
+      <object>objects\obj_title_autors</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_init</room>
@@ -181,6 +199,7 @@
       <room>rooms\rm_palette</room>
     </rooms>
     <rooms name="game">
+      <room>rooms\rm_intro</room>
       <room>rooms\rm_lvl_01a</room>
       <room>rooms\rm_lvl_01b</room>
       <room>rooms\rm_lvl_02a</room>

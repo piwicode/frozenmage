@@ -8,6 +8,8 @@ if (zoom != 1) {
   view_visible[0] = true;
   view_hview[0] = window_get_height() / zoom;
   view_wview[0] = window_get_width() / zoom;
+  view_hborder[0] = 160
+  view_vborder[0] = 64
   view_object[0] = obj_mage;
 }
 
