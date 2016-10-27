@@ -40,6 +40,7 @@
     <sprite>sprites\sp_stone_32</sprite>
     <sprite>sprites\sp_door</sprite>
     <sprite>sprites\sp_ice_staff</sprite>
+    <sprite>sprites\sp_scorpion</sprite>
     <sprites name="control">
       <sprite>sprites\sp_debug</sprite>
       <sprite>sprites\sp_text</sprite>
@@ -71,7 +72,6 @@
       <sprite>sprites\spr_graphics</sprite>
       <sprite>sprites\spr_credit_thanks</sprite>
     </sprites>
-    <sprite>sprites\sp_troll</sprite>
     <sprite>sprites\sp_final_fall</sprite>
   </sprites>
   <backgrounds name="background">
