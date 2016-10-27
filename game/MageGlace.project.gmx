@@ -83,6 +83,7 @@
     <background>background\bg_grotte</background>
     <background>background\bg_ice</background>
     <background>background\bg_auto_tile</background>
+    <background>background\bg_auto_tile2</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
