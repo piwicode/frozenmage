@@ -237,6 +237,9 @@
       <room>rooms\rm_niv_01c</room>
       <room>rooms\rm_niv_02a</room>
     </rooms>
+    <rooms name="marco_news">
+      <room>rooms\rm_niv_01</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
