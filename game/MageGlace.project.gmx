@@ -48,6 +48,7 @@
       <sprite>sprites\sp_go_next_level</sprite>
       <sprite>sprites\sp_obj_talk</sprite>
       <sprite>sprites\sp_block_16x16</sprite>
+      <sprite>sprites\sp_block_16x16_notile</sprite>
       <sprite>sprites\sp_dangerous_16x16</sprite>
       <sprite>sprites\sp_trigger</sprite>
       <sprite>sprites\spr_spawn</sprite>
@@ -81,6 +82,7 @@
     <background>background\Tile_320x240</background>
     <background>background\bg_grotte</background>
     <background>background\bg_ice</background>
+    <background>background\bg_auto_tile</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -107,12 +109,14 @@
       <script>scripts\scr_input_held.gml</script>
       <script>scripts\src_input_axis.gml</script>
     </scripts>
+    <script>scripts\scr_auto_tile.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_arial</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_collision_16x16</object>
+    <object>objects\obj_collision_16x16_notile</object>
     <object>objects\obj_exit_door</object>
     <object>objects\obj_plate_open</object>
     <object>objects\obj_plate_close</object>
@@ -158,6 +162,7 @@
       <object>objects\obj_init_game</object>
       <object>objects\obj_debug_tool</object>
       <object>objects\obj_hi_gamepad</object>
+      <object>objects\obj_autotile</object>
     </objects>
     <object>objects\obj_ice_staff</object>
     <object>objects\obj_wind_staff</object>
