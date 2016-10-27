@@ -55,7 +55,7 @@
     <instance objName="obj_collision_16x16" x="-32" y="0" name="inst_4B261ED7" locked="0" code="" scaleX="2" scaleY="14" colour="4294967295" rotation="0"/>
     <instance objName="obj_mage_ice_power" x="0" y="-16" name="inst_900EA113" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_part_doom" x="720" y="232" name="inst_26270C86" locked="0" code="" scaleX="53.5" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_16x16" x="-16" y="112" name="inst_0E632771" locked="0" code="" scaleX="5.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="-16" y="112" name="inst_0E632771" locked="0" code="" scaleX="5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="1504" y="160" name="inst_483F7C9B" locked="0" code="" scaleX="34" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_spawn_restart_room" x="24" y="-8" name="inst_42F57EEC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_final_fall" x="2024" y="0" name="inst_5174C0ED" locked="0" code="" scaleX="1.53333330154419" scaleY="6.93333339691162" colour="4294967295" rotation="0"/>
