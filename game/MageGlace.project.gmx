@@ -239,9 +239,7 @@
       <room>rooms\rm_niv_01b</room>
       <room>rooms\rm_niv_01c</room>
       <room>rooms\rm_niv_02a</room>
-    </rooms>
-    <rooms name="marco_news">
-      <room>rooms\rm_niv_01</room>
+      <room>rooms\rm_niv_02b</room>
     </rooms>
   </rooms>
   <help>
