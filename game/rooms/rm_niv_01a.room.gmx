@@ -85,10 +85,8 @@
     <instance objName="obj_collision_16x16" x="80" y="32" name="inst_A39EC9D7" locked="0" code="" scaleX="2.5" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
-    <tile bgName="Tile_320x240" x="280" y="120" w="128" h="56" xo="8" yo="104" id="10002629" name="inst_08D93447" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Tile_320x240" x="176" y="88" w="8" h="24" xo="104" yo="128" id="10002635" name="inst_6B38329F" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Tile_320x240" x="176" y="112" w="8" h="24" xo="104" yo="128" id="10002636" name="inst_B5C08517" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Tile_320x240" x="400" y="88" w="48" h="32" xo="80" yo="152" id="10002639" name="inst_55A9BB2B" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Tile_320x240" x="224" y="136" w="48" h="8" xo="40" yo="208" id="10002640" name="inst_3C536984" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Tile_320x240" x="272" y="136" w="8" h="8" xo="88" yo="208" id="10002641" name="inst_785EB732" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Tile_320x240" x="0" y="136" w="48" h="8" xo="64" yo="208" id="10002642" name="inst_7411C2D9" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
