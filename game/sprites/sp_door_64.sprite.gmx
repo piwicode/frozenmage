@@ -20,6 +20,6 @@
   <width>32</width>
   <height>64</height>
   <frames>
-    <frame index="0">images\sp_door_0.png</frame>
+    <frame index="0">images\sp_door_64_0.png</frame>
   </frames>
 </sprite>

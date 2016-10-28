@@ -36,9 +36,11 @@
     <sprite>sprites\sp_mage_32</sprite>
     <sprite>sprites\sp_mage_48</sprite>
     <sprite>sprites\sp_mage_64</sprite>
+    <sprite>sprites\sp_stone_8</sprite>
     <sprite>sprites\sp_stone_16</sprite>
     <sprite>sprites\sp_stone_32</sprite>
-    <sprite>sprites\sp_door</sprite>
+    <sprite>sprites\sp_door_64</sprite>
+    <sprite>sprites\sp_door_32</sprite>
     <sprite>sprites\sp_ice_staff</sprite>
     <sprite>sprites\sp_scorpion</sprite>
     <sprites name="control">
