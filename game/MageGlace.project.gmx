@@ -25,8 +25,6 @@
     <sprite>sprites\sp_ice_spark</sprite>
     <sprite>sprites\sp_fireball</sprite>
     <sprite>sprites\sp_icecube</sprite>
-    <sprite>sprites\sp_icecube_16</sprite>
-    <sprite>sprites\sp_icecube_8</sprite>
     <sprite>sprites\sp_water</sprite>
     <sprite>sprites\sp_explode</sprite>
     <sprite>sprites\sp_exit_door</sprite>
@@ -38,7 +36,6 @@
     <sprite>sprites\sp_mage_32</sprite>
     <sprite>sprites\sp_mage_48</sprite>
     <sprite>sprites\sp_mage_64</sprite>
-    <sprite>sprites\sp_stone_8</sprite>
     <sprite>sprites\sp_stone_16</sprite>
     <sprite>sprites\sp_stone_32</sprite>
     <sprite>sprites\sp_door</sprite>
@@ -132,12 +129,10 @@
       <object>objects\obj_mage</object>
       <object>objects\obj_orc</object>
       <object>objects\obj_icecube</object>
-      <object>objects\obj_stone_8</object>
       <object>objects\obj_stone_16</object>
       <object>objects\obj_stone_32</object>
-      <object>objects\obj_still_stone_8</object>
-      <object>objects\obj_still_stone_16</object>
       <object>objects\obj_still_stone_32</object>
+      <object>objects\obj_still_stone_16</object>
       <object>objects\obj_troll</object>
     </objects>
     <objects name="parent">
