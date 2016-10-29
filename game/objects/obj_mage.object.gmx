@@ -156,11 +156,13 @@ if (fire_pressed_ctrl) {
   if(global.mage_level == mage_power.ice) {
     with (instance_create(x_fire, y_fire, obj_spark)) {
       direction = aim_direction;
+      image_angle = aim_direction
       speed = max_speed;
     }
   } else if(global.mage_level == mage_power.fire) {
     with (instance_create(x_fire, y_fire, obj_fireball)) {
       direction = aim_direction;
+      image_angle = aim_direction
       speed = max_speed;
     }
   }

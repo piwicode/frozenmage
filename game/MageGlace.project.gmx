@@ -113,6 +113,7 @@
       <script>scripts\src_input_axis.gml</script>
     </scripts>
     <script>scripts\scr_auto_tile.gml</script>
+    <script>scripts\scr_freeze.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_arial</font>
@@ -130,12 +131,12 @@
     <objects name="entity">
       <object>objects\obj_mage</object>
       <object>objects\obj_orc</object>
+      <object>objects\obj_troll</object>
       <object>objects\obj_icecube</object>
       <object>objects\obj_stone_16</object>
       <object>objects\obj_stone_32</object>
       <object>objects\obj_still_stone_32</object>
       <object>objects\obj_still_stone_16</object>
-      <object>objects\obj_troll</object>
     </objects>
     <objects name="parent">
       <object>objects\obj_collidable</object>

@@ -73,25 +73,11 @@
             <string>// Freeze the target and disapear.
 
 // TODO compute proper positionning.
-if (other.is_freezable) {
-  ice_cube = instance_create(other.x, other.y, obj_icecube);
-  
-  // Save the frozen object to restore later.
-  // For un unknown reason, 'other' is -2 which is not the instance id.
-  // A workaround consist in getting the id of other.
-  ice_cube.frozen_object = other.id; 
-  instance_deactivate_object(other);
-  
-  // Create a dummy object attached to the cube to display the frozen content.
-  ice_cube.frozen_image = instance_create(other.x, other.y, obj_frozen_content);
-  ice_cube.frozen_image.image_speed = 0;
-  ice_cube.frozen_image.image_index = other.image_index;
-  ice_cube.frozen_image.sprite_index = other.sprite_index;
-  ice_cube.frozen_image.image_xscale = other.image_xscale;
-  ice_cube.frozen_image.image_yscale = other.image_yscale;
-  
-  // Register an alarm to melt the cube.
-  ice_cube.alarm[0] = room_speed * 5;
+
+with (other) {
+  if (is_freezable) {
+    scr_freeze()
+  }  
 }
 
 instance_destroy();

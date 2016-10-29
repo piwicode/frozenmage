@@ -98,7 +98,7 @@
     <instance objName="obj_still_stone_32" x="752" y="56" name="inst_4845CDBD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_still_stone_32" x="752" y="24" name="inst_D7060C0E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_still_stone_32" x="272" y="136" name="inst_EE8927DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_16x16" x="464" y="504" name="inst_F14080AB" locked="0" code="" scaleX="18" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="464" y="512" name="inst_F14080AB" locked="0" code="" scaleX="18" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_mage_no_power" x="0" y="-16" name="inst_CDF08FB7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stone_32" x="480" y="240" name="inst_48AC55B7" locked="0" code="state = block_state.still;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="400" y="168" name="inst_0BE6C523" locked="0" code="" scaleX="4" scaleY="22" colour="4294967295" rotation="0"/>
