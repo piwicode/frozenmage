@@ -62,9 +62,6 @@ if(string_copy(room_get_name(room),0, 6) == "rm_niv" or true ) {
   jump_ctrl_countdown = 0;  // frames. 
 }
 
-aim_arrow = instance_create(x, y, obj_aim_arrow)
-aim_arrow.visible = false
-
 var step_length_in_px = 90;
 const_image_speed_walk = 14 / (step_length_in_px * 2) * walk_speed // frame per tick
 
@@ -137,17 +134,6 @@ image_speed = const_image_speed_walk * (xs != 0);
 var x_fire = (bbox_right + bbox_left) * .5;
 var y_fire = (bbox_top + bbox_bottom) * .5;
 
-if(false) {
-if (x_ctrl == 0 &amp;&amp; y_ctrl == 0) {
-  var aim_direction = radtodeg(arctan2(-y_ctrl, image_xscale));
-} else {
-  var aim_direction = radtodeg(arctan2(-y_ctrl, x_ctrl));
-}
-aim_arrow.visible = fire_check_ctrl;
-aim_arrow.x = x_fire 
-aim_arrow.y = y_fire
-aim_arrow.image_angle = aim_direction;
-}
 aim_direction = radtodeg(arctan2(-y_ctrl, image_xscale));
 
 // Use fire_pressed_start to change the aim style.
