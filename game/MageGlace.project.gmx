@@ -31,12 +31,8 @@
     <sprite>sprites\sp_plate_open</sprite>
     <sprite>sprites\sp_plate_close</sprite>
     <sprite>sprites\sp_fence_close</sprite>
-    <sprite>sprites\sp_aim_arrow</sprite>
     <sprite>sprites\sp_fence_open</sprite>
     <sprite>sprites\sp_mage_32</sprite>
-    <sprite>sprites\sp_mage_48</sprite>
-    <sprite>sprites\sp_mage_64</sprite>
-    <sprite>sprites\sp_stone_8</sprite>
     <sprite>sprites\sp_stone_16</sprite>
     <sprite>sprites\sp_stone_32</sprite>
     <sprite>sprites\sp_door_64</sprite>
@@ -57,6 +53,7 @@
       <sprite>sprites\sp_trigger_effect</sprite>
       <sprite>sprites\sp_part_doom</sprite>
       <sprite>sprites\sp_respawn</sprite>
+      <sprite>sprites\sp_final_fall</sprite>
     </sprites>
     <sprites name="dialog">
       <sprite>sprites\sp_dlg_mage</sprite>
@@ -64,7 +61,6 @@
       <sprite>sprites\spr_game_title</sprite>
       <sprite>sprites\spr_key_space</sprite>
       <sprite>sprites\spr_key_ctrl</sprite>
-      <sprite>sprites\spr_arrows</sprite>
       <sprite>sprites\spr_key_arrows</sprite>
       <sprite>sprites\spr_pad</sprite>
       <sprite>sprites\spr_title_presents</sprite>
@@ -75,7 +71,6 @@
       <sprite>sprites\spr_graphics</sprite>
       <sprite>sprites\spr_credit_thanks</sprite>
     </sprites>
-    <sprite>sprites\sp_final_fall</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background_feu</background>
@@ -114,6 +109,7 @@
     </scripts>
     <script>scripts\scr_auto_tile.gml</script>
     <script>scripts\scr_freeze.gml</script>
+    <script>scripts\scr_emit_magic_burst.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_arial</font>
@@ -135,8 +131,8 @@
       <object>objects\obj_icecube</object>
       <object>objects\obj_stone_16</object>
       <object>objects\obj_stone_32</object>
-      <object>objects\obj_still_stone_32</object>
       <object>objects\obj_still_stone_16</object>
+      <object>objects\obj_still_stone_32</object>
     </objects>
     <objects name="parent">
       <object>objects\obj_collidable</object>
@@ -176,6 +172,7 @@
     </objects>
     <objects name="particles">
       <object>objects\obj_part_doom</object>
+      <object>objects\obj_part_global_system</object>
     </objects>
     <objects name="effect">
       <object>objects\obj_spark</object>
@@ -233,6 +230,8 @@
       <room>rooms\rm_lvl_04e</room>
       <room>rooms\rm_lvl_05a</room>
       <room>rooms\rm_lvl_06a</room>
+      <room>rooms\rm_lvl_08a</room>
+      <room>rooms\rm_lvl_08b</room>
       <room>rooms\rm_outro</room>
     </rooms>
     <rooms name="marco">

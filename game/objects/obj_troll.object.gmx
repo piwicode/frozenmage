@@ -3,7 +3,7 @@
   <spriteName>sp_scorpion</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>500</depth>
   <persistent>0</persistent>
   <parentName>obj_orc</parentName>
   <maskName>&lt;undefined&gt;</maskName>

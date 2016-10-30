@@ -3,7 +3,7 @@
   <spriteName>sp_mage_32</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-200</depth>
+  <depth>400</depth>
   <persistent>0</persistent>
   <parentName>obj_entity</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -131,18 +131,18 @@ image_speed = const_image_speed_walk * (xs != 0);
 
 // -y_ctrl because vertical axis is inverted between atan and the screen.
 // use image_scale to remember the current facing position. 
-var x_fire = (bbox_right + bbox_left) * .5;
-var y_fire = (bbox_top + bbox_bottom) * .5;
+var x_fire = (bbox_right + bbox_left) * .5 + abs(bbox_right - bbox_left) * .25 * image_xscale;
+var y_fire = bbox_top * .75 + bbox_bottom * .25;
 
-aim_direction = radtodeg(arctan2(-y_ctrl, image_xscale));
+aim_direction = radtodeg(arctan2(-y_ctrl *.5, image_xscale));
 
 // Use fire_pressed_start to change the aim style.
 if (fire_pressed_ctrl) {
   var class = -1;
   if(global.mage_level == mage_power.ice) {
     with (instance_create(x_fire, y_fire, obj_spark)) {
-      direction = aim_direction;
-      image_angle = aim_direction
+      direction = other.aim_direction;
+      image_angle = other.aim_direction
       speed = max_speed;
     }
   } else if(global.mage_level == mage_power.fire) {
@@ -166,13 +166,14 @@ if (y &gt; room_height + 64) {
 }
 
 if (do_die) {
-  instance_create(x, y, obj_explode);
+  scr_emit_magic_burst(40, 40);  
   instance_destroy();
   // Request player respawn.
   with(obj_spawn) {
     state = spawn_state.do_respawn;
     break;
   }
+
 }
 
 // Create a trail for debugging.

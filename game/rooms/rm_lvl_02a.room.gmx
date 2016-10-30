@@ -101,7 +101,7 @@
     <instance objName="obj_collision_16x16" x="736" y="384" name="inst_B2591717" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="752" y="384" name="inst_9A833937" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="768" y="384" name="inst_0456BE5E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_go_next_level" x="976" y="288" name="inst_65EB1789" locked="0" code="" scaleX="1.5" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_go_next_level" x="976" y="224" name="inst_65EB1789" locked="0" code="" scaleX="2.5" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_door" x="928" y="288" name="inst_F86BEB7F" locked="0" code="label = 1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="784" y="384" name="inst_BED8C737" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="800" y="384" name="inst_F82612DD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

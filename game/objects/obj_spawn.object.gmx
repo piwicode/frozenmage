@@ -100,8 +100,11 @@ case spawn_state.scrolling:
   if (static_view_count &gt; respawn_delay ) {
     view_hspeed[0] = prev_hspeed; 
     view_vspeed[0] = prev_vspeed;
-    view_object[0] = instance_create(x, y, obj_mage);
     state = spawn_state.idle;
+    with(instance_create(x, y, obj_mage)) {
+      view_object[0] = id;
+      scr_emit_magic_burst(4, 4);
+    }
   }
 break;
 }

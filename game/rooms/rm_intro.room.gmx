@@ -56,7 +56,7 @@
     <instance objName="obj_talk" x="32" y="0" name="inst_CE742620" locked="0" code="text = &quot;There is nothing on the right.#I should try to go left instead.&quot;&#xA;" scaleX="3" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="obj_key_arrows" x="272" y="64" name="inst_4E2FA384" locked="0" code="invisible_duration_secs = 3;&#xA;" scaleX="0.25" scaleY="0.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_key_space" x="224" y="64" name="inst_7639E9EE" locked="0" code="invisible_duration_secs = 2;&#xA;" scaleX="0.25" scaleY="0.25" colour="4294967295" rotation="0"/>
-    <instance objName="obj_pad" x="96" y="56" name="inst_44C6C99E" locked="0" code="" scaleX="0.200000002980232" scaleY="0.200000002980232" colour="4294967295" rotation="0"/>
+    <instance objName="obj_pad" x="112" y="56" name="inst_44C6C99E" locked="0" code="" scaleX="0.400000005960464" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
     <instance objName="obj_title_autors" x="432" y="8" name="inst_57ECAB47" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_title_presents" x="584" y="72" name="inst_85DE9ADB" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_go_next_level" x="896" y="0" name="inst_DB6D5A7E" locked="0" code="" scaleX="4" scaleY="5" colour="4294967295" rotation="0"/>

@@ -55,7 +55,7 @@
     <instance objName="obj_collision_16x16" x="-32" y="0" name="inst_4B261ED7" locked="0" code="" scaleX="2" scaleY="14" colour="4294967295" rotation="0"/>
     <instance objName="obj_plate_open" x="312" y="120" name="inst_5F018A51" locked="0" code="label = 1" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_door" x="280" y="152" name="inst_83EACCA0" locked="0" code="label = 1" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_go_next_level" x="480" y="160" name="inst_B17D8273" locked="0" code="" scaleX="0.774193525314331" scaleY="1.75" colour="4294967295" rotation="0"/>
+    <instance objName="obj_go_next_level" x="480" y="160" name="inst_B17D8273" locked="0" code="" scaleX="2" scaleY="1.75" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="0" y="184" name="inst_21BB42C5" locked="0" code="" scaleX="2" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="0" y="120" name="inst_AE08C330" locked="0" code="" scaleX="4.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_orc" x="40" y="120" name="inst_6FB8DB81" locked="0" code="" scaleX="0.25" scaleY="0.25" colour="4294967295" rotation="0"/>
@@ -73,7 +73,6 @@
     <instance objName="obj_collision_16x16" x="0" y="0" name="inst_CA98E00C" locked="0" code="" scaleX="1" scaleY="7" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="56" y="152" name="inst_1CF71D04" locked="0" code="" scaleX="9" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_spawn_restart_room" x="24" y="-8" name="inst_D1EE3CBF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_16x16" x="560" y="120" name="inst_970991F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

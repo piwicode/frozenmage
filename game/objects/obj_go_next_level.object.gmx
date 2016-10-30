@@ -37,7 +37,7 @@ part_type_life(bubble, 30, 50)
 part_type_colour3(bubble, make_color_rgb(166,124,0),
                           make_color_rgb(255,191,0),
                           make_color_rgb(255,220,115));
-part_type_alpha2(bubble, .8, .5);
+part_type_alpha2(bubble, .95, .6);
 
 emitter = part_emitter_create(system);
 part_emitter_region(

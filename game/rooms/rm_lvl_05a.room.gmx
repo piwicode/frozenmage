@@ -55,7 +55,7 @@
     <instance objName="obj_collision_16x16" x="-32" y="0" name="inst_4B261ED7" locked="0" code="" scaleX="2" scaleY="14" colour="4294967295" rotation="0"/>
     <instance objName="obj_plate_open" x="272" y="144" name="inst_5F018A51" locked="0" code="label = 1" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_door" x="296" y="80" name="inst_83EACCA0" locked="0" code="label = 1" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_go_next_level" x="416" y="88" name="inst_B17D8273" locked="0" code="" scaleX="1.29032254219055" scaleY="1.75" colour="4294967295" rotation="0"/>
+    <instance objName="obj_go_next_level" x="416" y="88" name="inst_B17D8273" locked="0" code="" scaleX="2" scaleY="1.75" colour="4294967295" rotation="0"/>
     <instance objName="obj_orc" x="352" y="144" name="inst_6FB8DB81" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_mage_ice_power" x="0" y="-16" name="inst_900EA113" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="288" y="0" name="inst_2D156E19" locked="0" code="" scaleX="0.5" scaleY="6" colour="4294967295" rotation="0"/>

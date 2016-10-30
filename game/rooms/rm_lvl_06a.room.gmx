@@ -183,7 +183,7 @@
     <instance objName="obj_collision_16x16" x="240" y="152" name="inst_E2BCF928" locked="0" code="" scaleX="5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_plate_open" x="272" y="152" name="inst_BECEDEF6" locked="0" code="label = 2&#xA;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stone_32" x="144" y="112" name="inst_11BE867B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_go_next_level" x="72" y="112" name="inst_96155C39" locked="0" code="" scaleX="2.25" scaleY="2.5" colour="4294967295" rotation="180"/>
+    <instance objName="obj_go_next_level" x="40" y="112" name="inst_96155C39" locked="0" code="" scaleX="2.25" scaleY="2.5" colour="4294967295" rotation="180"/>
     <instance objName="obj_still_stone_16" x="720" y="80" name="inst_034EB19E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_still_stone_16" x="704" y="80" name="inst_3BD84A19" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_still_stone_16" x="688" y="80" name="inst_74EAD073" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

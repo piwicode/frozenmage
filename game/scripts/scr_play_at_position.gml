@@ -14,6 +14,8 @@ var distance_from_view = max(
 
 var max_distance = 120
 var volume = intensity * max(max_distance - distance_from_view, 0) / max_distance;
-var sound_instance = audio_play_sound(resource_idx, 50, loop);
-audio_sound_gain(sound_instance, volume, 0);
-return sound_instance
+if(volume > 0) {
+  var sound_instance = audio_play_sound(resource_idx, 50, loop);
+  audio_sound_gain(sound_instance, volume, 0);
+  return sound_instance
+}

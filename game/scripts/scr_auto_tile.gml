@@ -3,7 +3,7 @@ var tile_size = 8
 var tile_padding = 1
 // scr_auto_tile()
 
-var tile_depth = 100;
+var tile_depth = 500;
 var object = obj_collision_16x16
 object_set_visible(object, false);
 var xx = 0; var
