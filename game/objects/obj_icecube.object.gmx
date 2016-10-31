@@ -38,6 +38,13 @@ frozen_image = 0;
 
 do_die = 0; // When 1, the object self destruct on next cycle.
 
+frozen_duration = room_speed * 7;
+
+// Register an alarm to melt the cube.
+alarm[0] = frozen_duration;
+image_speed = image_number / frozen_duration;
+
+
 time_before_falling = room_speed * 1
 // When the cube stands still until something walks on top of it.
 state = block_state.free;

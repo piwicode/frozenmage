@@ -213,6 +213,7 @@
       <room>rooms\rm_test_collision_resolution</room>
       <room>rooms\rm_test_collision</room>
       <room>rooms\rm_test_door</room>
+      <room>rooms\room33</room>
       <room>rooms\rm_palette</room>
     </rooms>
     <rooms name="game">
@@ -226,9 +227,11 @@
       <room>rooms\rm_lvl_04a</room>
       <room>rooms\rm_lvl_04b</room>
       <room>rooms\rm_lvl_04c</room>
+      <room>rooms\rm_lvl_04cc</room>
       <room>rooms\rm_lvl_04d</room>
       <room>rooms\rm_lvl_04e</room>
       <room>rooms\rm_lvl_05a</room>
+      <room>rooms\rm_lvl_05b</room>
       <room>rooms\rm_lvl_06a</room>
       <room>rooms\rm_lvl_08a</room>
       <room>rooms\rm_lvl_08b</room>

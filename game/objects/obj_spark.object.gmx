@@ -71,16 +71,22 @@
           <argument>
             <kind>1</kind>
             <string>// Freeze the target and disapear.
+instance_destroy();
 
 // TODO compute proper positionning.
-
 with (other) {
+  // When freezing an icecube, reset the timer and annimation position.
+  if (object_index == obj_icecube) {
+     image_index = 0;
+     alarm[0] = frozen_duration;
+  }
+
   if (is_freezable) {
     scr_freeze()
   }  
 }
 
-instance_destroy();
+
   
 </string>
           </argument>
