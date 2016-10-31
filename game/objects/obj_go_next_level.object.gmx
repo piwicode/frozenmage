@@ -38,6 +38,7 @@ part_type_colour3(bubble, make_color_rgb(166,124,0),
                           make_color_rgb(255,191,0),
                           make_color_rgb(255,220,115));
 part_type_alpha2(bubble, .95, .6);
+part_type_blend(bubble, true);
 
 emitter = part_emitter_create(system);
 part_emitter_region(
