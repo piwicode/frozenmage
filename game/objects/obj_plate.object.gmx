@@ -88,6 +88,7 @@ if(is_pressed != previous_is_pressed) {
   scr_play_at_position(IIF(is_pressed, snd_plate_down, snd_plate_up))
 }
 
+image_index = is_pressed;
 </string>
           </argument>
         </arguments>

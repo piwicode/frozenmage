@@ -36,8 +36,8 @@ part_type_direction(bubble, 175 + image_angle, 185 + image_angle, 0, 6)
 part_type_life(bubble, 30, 50)
 part_type_colour3(bubble, make_color_rgb(166,124,0),
                           make_color_rgb(255,191,0),
-                          make_color_rgb(255,220,115));
-part_type_alpha2(bubble, .95, .6);
+                          make_color_rgb(255,250,115));
+part_type_alpha2(bubble, .95, .7);
 part_type_blend(bubble, true);
 
 emitter = part_emitter_create(system);
@@ -46,7 +46,7 @@ part_emitter_region(
   bbox_left, bbox_right, bbox_top, bbox_bottom,
   ps_shape_rectangle, ps_distr_linear);
 var area = (bbox_right -  bbox_left) * (bbox_bottom - bbox_top)
-part_emitter_stream(system, emitter, bubble, area / 1800);
+part_emitter_stream(system, emitter, bubble, area / 1200);
 
 </string>
           </argument>

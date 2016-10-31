@@ -50,9 +50,10 @@
       <sprite>sprites\sp_block_16x16_notile</sprite>
       <sprite>sprites\sp_dangerous_16x16</sprite>
       <sprite>sprites\sp_trigger</sprite>
-      <sprite>sprites\spr_spawn</sprite>
       <sprite>sprites\sp_trigger_effect</sprite>
       <sprite>sprites\sp_part_doom</sprite>
+      <sprite>sprites\spr_spawn</sprite>
+      <sprite>sprites\spr_spawn_restart</sprite>
       <sprite>sprites\sp_respawn</sprite>
       <sprite>sprites\sp_final_fall</sprite>
     </sprites>
@@ -153,7 +154,9 @@
       <object>objects\obj_trigger_zone</object>
       <object>objects\obj_trigger_zone_fall</object>
       <object>objects\obj_trigger_effect_fall</object>
-      <object>objects\obj_spawn_restart_room</object>
+      <object>objects\obj_spawn</object>
+      <object>objects\obj_spawn_restart</object>
+      <object>objects\obj_spawn_scroll_room</object>
       <object>objects\obj_checkpoint</object>
       <object>objects\obj_block_spawn</object>
       <object>objects\obj_final_fall</object>
@@ -185,7 +188,6 @@
       <object>objects\obj_frozen_content</object>
       <object>objects\obj_dot</object>
       <object>objects\obj_gui_dialog</object>
-      <object>objects\obj_spawn</object>
       <object>objects\obj_gui_go_next_level</object>
       <object>objects\obj_test_collider</object>
     </objects>

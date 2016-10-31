@@ -231,11 +231,6 @@ if (input_override_script) {
   script_execute(input_override_script);
 }
 
-// Log debug informations. To be removed.
-if(fire_pressed_ctrl) fire_frame_count = 0;
-if(fire_check_ctrl) fire_frame_count += 1;
-if(fire_released_ctrl) show_debug_message("fire duration " + string(fire_frame_count))
-
 // Tells if the object lies on something solid or not.
 is_standing = place_meeting(floor(x), floor(y) + 1, obj_solid)
 

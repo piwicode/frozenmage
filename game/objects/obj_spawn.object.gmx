@@ -33,6 +33,7 @@ scrolling_initial_speed = .5;
 scrolling_speed = 0;
 scrolling_accleration = .4;
 
+restart_room = false
 // Time before recreating the character.
 respawn_delay = room_speed * .5;
 
@@ -97,13 +98,21 @@ case spawn_state.scrolling:
   view_hspeed[0] = scrolling_speed;
   view_vspeed[0] = scrolling_speed;
   
+  // After the delay, respawn the character.
   if (static_view_count &gt; respawn_delay ) {
     view_hspeed[0] = prev_hspeed; 
     view_vspeed[0] = prev_vspeed;
     state = spawn_state.idle;
-    with(instance_create(x, y, obj_mage)) {
-      view_object[0] = id;
-      scr_emit_magic_burst(4, 4);
+    if (restart_room) {
+      room_restart();
+      with(obj_mage) { 
+        scr_emit_magic_burst(4, 4);
+      }
+    } else {
+      with(instance_create(x, y, obj_mage)) {
+        view_object[0] = id;
+        scr_emit_magic_burst(4, 4);
+      }
     }
   }
 break;
