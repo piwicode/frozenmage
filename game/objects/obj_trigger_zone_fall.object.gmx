@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>/// Detect all blocks and make them fall.
-with(obj_icecube) {
+with(obj_par_block) {
   if (state == block_state.still) {
     if (place_meeting(x, y, other)) {
       state = block_state.free;

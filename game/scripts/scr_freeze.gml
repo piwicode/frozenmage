@@ -1,4 +1,4 @@
-///scr_freeze()
+/// scr_freeze()
 
 // Create the icecube that the place of the frozen object.
 var ice_cube = instance_create(x, y, obj_icecube);

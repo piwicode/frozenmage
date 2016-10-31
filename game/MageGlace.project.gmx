@@ -17,6 +17,7 @@
     <sound>sound\snd_plate_up</sound>
     <sound>sound\snd_walk</sound>
     <sound>sound\snd_jump</sound>
+    <sound>sound\snd_pick_star</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sp_mage</sprite>
@@ -71,6 +72,7 @@
       <sprite>sprites\spr_graphics</sprite>
       <sprite>sprites\spr_credit_thanks</sprite>
     </sprites>
+    <sprite>sprites\sp_star</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background_feu</background>
@@ -141,6 +143,7 @@
       <object>objects\obj_solid</object>
       <object>objects\obj_plate</object>
       <object>objects\par_trigger_effect</object>
+      <object>objects\obj_par_block</object>
     </objects>
     <objects name="control">
       <object>objects\obj_dangerous</object>
@@ -202,6 +205,7 @@
       <object>objects\obj_credit_thanks</object>
       <object>objects\obj_par_credit</object>
     </objects>
+    <object>objects\obj_star</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_init</room>
@@ -213,7 +217,7 @@
       <room>rooms\rm_test_collision_resolution</room>
       <room>rooms\rm_test_collision</room>
       <room>rooms\rm_test_door</room>
-      <room>rooms\room33</room>
+      <room>rooms\rm_test_ice_collision</room>
       <room>rooms\rm_palette</room>
     </rooms>
     <rooms name="game">
@@ -232,6 +236,7 @@
       <room>rooms\rm_lvl_04e</room>
       <room>rooms\rm_lvl_05a</room>
       <room>rooms\rm_lvl_05b</room>
+      <room>rooms\rm_lvl_05c</room>
       <room>rooms\rm_lvl_06a</room>
       <room>rooms\rm_lvl_08a</room>
       <room>rooms\rm_lvl_08b</room>

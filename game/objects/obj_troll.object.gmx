@@ -64,7 +64,7 @@ enum troll_state {
             <kind>1</kind>
             <string>switch (state) { 
 case troll_state.walk:
-  var facing_an_icecube = place_meeting(x + x_ctrl, y, obj_icecube);;
+  var facing_an_icecube = place_meeting(x + x_ctrl, y, obj_par_block);;
   if (facing_an_icecube) {    
     state = troll_state.push;
     push_count_down = push_initial_amount + 1; // +1 I don't investigated the reason why.
@@ -75,7 +75,7 @@ case troll_state.walk:
 case troll_state.push:
   push_count_down = max(0, push_count_down - 1); // Decrement counter.
   if (push_count_down) {
-    block = instance_place(x + x_ctrl, y, obj_icecube);;
+    block = instance_place(x + x_ctrl, y, obj_par_block);;
     if (!block) {
       // The block is no longer there, get back to walk.
       state = troll_state.walk;

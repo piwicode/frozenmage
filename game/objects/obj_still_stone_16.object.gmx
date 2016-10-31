@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>500</depth>
   <persistent>0</persistent>
-  <parentName>obj_stone_32</parentName>
+  <parentName>obj_par_block</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">

@@ -64,7 +64,7 @@ if (x &lt; 1024) {
   exit;
 }
 
-with(instance_place(x, y, obj_icecube)) {
+with(instance_place(x, y, obj_par_block)) {
   state = block_state.free;
 }
 </string>
