@@ -199,10 +199,11 @@ if(is_walking != previous_is_walking) {
 
 // Sound of foot hitting the ground after a jump.
 // The volume of the sound depends on the intensity of the impact.
-if (delta_ys &gt; 1) {
+var min_vertical_velocity = 2
+if (delta_ys &gt;= min_vertical_velocity) {
   // Vertical speed corresponding to the maximum sound intensity.
-  var delta_ys_max_volume = 8;  
-  var volume = clamp(delta_ys / delta_ys_max_volume, 0, 1);
+  var delta_ys_max_volume = 10;  
+  var volume = clamp((delta_ys - min_vertical_velocity) / delta_ys_max_volume, 0, 1);
   audio_sound_gain(audio_play_sound(snd_foot, 50, false), volume, 0);
 }
 </string>

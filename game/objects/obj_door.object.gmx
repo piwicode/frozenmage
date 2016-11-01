@@ -118,12 +118,15 @@ switch(state) {
 // Move the door avoidint collisions with a solid object.
 var ps = pp - p;
 repeat(abs(ps)) {
- if(scr_door_place_meeting(p + sign(ps), obj_entity)) {
-   // Kills what it falls on.
-   with(scr_door_instance_place(p + sign(ps), obj_orc)) { do_die = 1; }
-   with(scr_door_instance_place(p + sign(ps), obj_mage)) { do_die = 1;  }
+ if(scr_door_place_meeting(p + sign(ps), obj_entity)) {   
+   // Vertical top down doors kills what it falls on.
+   if (image_angle == 0) {
+     with(scr_door_instance_place(p + sign(ps), obj_orc)) { do_die = 1; }
+     with(scr_door_instance_place(p + sign(ps), obj_mage)) {
+       if(is_standing) do_die = 1;  
+     }
+   }
    pp = p; // Stop the door in place.
-
    break;
  }
  p += sign(ps)

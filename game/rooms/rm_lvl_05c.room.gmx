@@ -97,6 +97,7 @@
     <instance objName="obj_go_next_level" x="296" y="0" name="inst_3B184BF1" locked="0" code="" scaleX="1.5" scaleY="2.75" colour="4294967295" rotation="0"/>
     <instance objName="obj_mage_ice_power" x="0" y="-16" name="inst_DA4C344F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stone_32" x="272" y="200" name="inst_5ED5CB20" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="96" y="96" name="inst_97208B9E" locked="0" code="" scaleX="2" scaleY="0.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
