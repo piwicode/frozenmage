@@ -67,6 +67,7 @@
     <instance objName="obj_water" x="208" y="248" name="inst_CDFC7BBE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_water" x="240" y="248" name="inst_5464B1CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="-16" y="248" name="inst_6C540601" locked="0" code="" scaleX="25" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="72" y="200" name="inst_FE1B14E8" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

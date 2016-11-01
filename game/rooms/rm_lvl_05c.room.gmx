@@ -53,8 +53,7 @@
   <instances>
     <instance objName="obj_spawn_scroll_room" x="24" y="-8" name="inst_EFC96BC2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="-16" y="216" name="inst_75CB7931" locked="0" code="" scaleX="8" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_16x16" x="224" y="216" name="inst_0A9F2D00" locked="0" code="" scaleX="6" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="0" y="0" name="inst_7A2DC904" locked="0" code="" scaleX="0" scaleY="0" colour="0" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="208" y="216" name="inst_0A9F2D00" locked="0" code="" scaleX="6.5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="296" y="192" name="inst_934A341C" locked="0" code="" scaleX="1" scaleY="1.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_mage" x="16" y="208" name="inst_DC368443" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="288" y="200" name="inst_C3DABCDD" locked="0" code="" scaleX="0.5" scaleY="1" colour="4294967295" rotation="0"/>
@@ -68,7 +67,6 @@
     <instance objName="obj_still_stone_16" x="160" y="216" name="inst_9088080D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_still_stone_16" x="176" y="216" name="inst_93F3A19C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_still_stone_16" x="192" y="216" name="inst_73F33005" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_still_stone_16" x="208" y="216" name="inst_307DD4E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_still_stone_16" x="48" y="152" name="inst_46613E42" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_still_stone_16" x="64" y="152" name="inst_E28F037F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_still_stone_16" x="80" y="152" name="inst_5204899C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -77,7 +75,7 @@
     <instance objName="obj_collision_16x16" x="-8" y="120" name="inst_33D695AD" locked="0" code="" scaleX="1.5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="-8" y="8" name="inst_F575D484" locked="0" code="" scaleX="1" scaleY="7" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="72" y="88" name="inst_608F55BF" locked="0" code="" scaleX="4.80000019073486" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_16x16" x="240" y="88" name="inst_12905AF2" locked="0" code="" scaleX="5.80000019073486" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="224" y="88" name="inst_12905AF2" locked="0" code="" scaleX="6.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_orc" x="272" y="88" name="inst_036C7DC4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="312" y="96" name="inst_94A8415B" locked="0" code="" scaleX="0.5" scaleY="8.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_orc" x="128" y="88" name="inst_F3A2BE52" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

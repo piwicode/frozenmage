@@ -224,19 +224,20 @@
     </rooms>
     <rooms name="game">
       <room>rooms\rm_intro</room>
-      <room>rooms\rm_lvl_01a</room>
-      <room>rooms\rm_lvl_01b</room>
-      <room>rooms\rm_lvl_02a</room>
-      <room>rooms\rm_lvl_02b</room>
-      <room>rooms\rm_lvl_02c</room>
-      <room>rooms\rm_lvl_03a</room>
-      <room>rooms\rm_lvl_04a</room>
-      <room>rooms\rm_lvl_04b</room>
+      <room>rooms\rm_lvl_01a_just_jump</room>
+      <room>rooms\rm_lvl_01b_just_jump</room>
+      <room>rooms\rm_lvl_02a_downward_stairs</room>
+      <room>rooms\rm_lvl_02b_block_factory</room>
+      <room>rooms\rm_lvl_02c_the_trap</room>
+      <room>rooms\rm_lvl_03a_basejump</room>
+      <room>rooms\rm_lvl_04a_walk_on_thre_roof</room>
+      <room>rooms\rm_lvl_05a_behind_the_door</room>
+      <room>rooms\rm_lvl_04aaa</room>
+      <room>rooms\rm_lvl_04b_ice_staff</room>
       <room>rooms\rm_lvl_04c</room>
       <room>rooms\rm_lvl_04cc</room>
       <room>rooms\rm_lvl_04d</room>
       <room>rooms\rm_lvl_04e</room>
-      <room>rooms\rm_lvl_05a</room>
       <room>rooms\rm_lvl_05b</room>
       <room>rooms\rm_lvl_05c</room>
       <room>rooms\rm_lvl_06a</room>
