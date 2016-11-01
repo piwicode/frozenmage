@@ -71,6 +71,12 @@
           <argument>
             <kind>1</kind>
             <string>// Freeze the target and disapear.
+with(obj_part_global_system) {
+  part_emitter_region(system, em_ice,
+    other.bbox_left, other.bbox_right, other.bbox_top, other.bbox_bottom,
+    ps_shape_diamond, ps_distr_gaussian);
+  part_emitter_burst(system, em_ice, pt_ice, 4);
+}
 instance_destroy();
 
 // TODO compute proper positionning.
@@ -79,8 +85,7 @@ with (other) {
   if (object_index == obj_icecube) {
      image_index = 0;
      alarm[0] = frozen_duration;
-  }
-
+  }  
   if (is_freezable) {
     scr_freeze()
   }  

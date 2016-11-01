@@ -18,6 +18,8 @@
     <sound>sound\snd_walk</sound>
     <sound>sound\snd_jump</sound>
     <sound>sound\snd_pick_star</sound>
+    <sound>sound\snd_foot</sound>
+    <sound>sound\snd_spell</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sp_mage</sprite>
@@ -101,7 +103,6 @@
     </scripts>
     <script>scripts\scr_door_place_meeting.gml</script>
     <script>scripts\scr_door_instance_place.gml</script>
-    <script>scripts\scr_distance_of_view.gml</script>
     <script>scripts\scr_sound_play_shock.gml</script>
     <script>scripts\scr_play_at_position.gml</script>
     <scripts name="input">
