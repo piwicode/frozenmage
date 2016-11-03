@@ -58,7 +58,7 @@
     <instance objName="obj_collision_16x16" x="48" y="192" name="inst_D2B47141" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="64" y="192" name="inst_4218101C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="80" y="192" name="inst_416C366C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_talk" x="640" y="208" name="inst_EF4C0612" locked="0" code="text = &quot;It's is quite fortunate this block was#here.&quot;&#xA;" scaleX="1.5" scaleY="2.5806450843811" colour="4294967295" rotation="0"/>
+    <instance objName="obj_talk" x="640" y="208" name="inst_EF4C0612" locked="0" code="text = &quot;It's is quite fortunate this block was#here.&quot;" scaleX="1.5" scaleY="2.5806450843811" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="96" y="200" name="inst_B3D3EA3D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="112" y="208" name="inst_BDECB398" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="128" y="216" name="inst_66892A4C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

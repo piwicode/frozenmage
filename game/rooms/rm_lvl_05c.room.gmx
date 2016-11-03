@@ -55,7 +55,7 @@
     <instance objName="obj_collision_16x16" x="-16" y="216" name="inst_75CB7931" locked="0" code="" scaleX="8" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="208" y="216" name="inst_0A9F2D00" locked="0" code="" scaleX="6.5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="296" y="192" name="inst_934A341C" locked="0" code="" scaleX="1" scaleY="1.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_mage" x="16" y="208" name="inst_DC368443" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mage" x="16" y="216" name="inst_DC368443" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="288" y="200" name="inst_C3DABCDD" locked="0" code="" scaleX="0.5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="272" y="200" name="inst_62EF6F5C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="256" y="200" name="inst_94E22298" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

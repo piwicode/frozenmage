@@ -184,7 +184,6 @@
     <objects name="effect">
       <object>objects\obj_spark</object>
       <object>objects\obj_fireball</object>
-      <object>objects\obj_aim_arrow</object>
       <object>objects\obj_explode</object>
       <object>objects\obj_frozen_content</object>
       <object>objects\obj_dot</object>
@@ -209,6 +208,7 @@
       <object>objects\obj_par_credit</object>
     </objects>
     <object>objects\obj_star</object>
+    <object>objects\obj_google_analytics</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_init</room>
@@ -231,7 +231,7 @@
       <room>rooms\rm_lvl_02b_block_factory</room>
       <room>rooms\rm_lvl_02c_the_trap</room>
       <room>rooms\rm_lvl_03a_basejump</room>
-      <room>rooms\rm_lvl_04a_walk_on_thre_roof</room>
+      <room>rooms\rm_lvl_04a_walk_on_the_roof</room>
       <room>rooms\rm_lvl_05a_behind_the_door</room>
       <room>rooms\rm_lvl_04aaa</room>
       <room>rooms\rm_lvl_04b_ice_staff</room>

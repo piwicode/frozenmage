@@ -83,7 +83,7 @@ if (keyboard_check_pressed(vk_f4) &amp;&amp; keyboard_check(vk_alt)) {
           <argument>
             <kind>1</kind>
             <string>// This code is innqctive becqsue this instance is not visible.
-draw_surface_ext(application_surface, global.Xoffset, global.Yoffset, 1, 1, 0, c_white, 1);
+// draw_surface_ext(application_surface, global.Xoffset, global.Yoffset, 1, 1, 0, c_white, 1);
 </string>
           </argument>
         </arguments>

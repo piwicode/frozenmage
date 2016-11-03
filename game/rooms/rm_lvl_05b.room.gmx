@@ -136,6 +136,7 @@
     <instance objName="obj_collision_16x16" x="232" y="832" name="inst_97AA12DD" locked="0" code="" scaleX="4.5" scaleY="2.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="264" y="872" name="inst_31EBA7BA" locked="0" code="" scaleX="2.5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="288" y="888" name="inst_69A2B89B" locked="0" code="" scaleX="1" scaleY="2.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="-16" y="936" name="inst_F09FBE27" locked="0" code="" scaleX="1" scaleY="5.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
