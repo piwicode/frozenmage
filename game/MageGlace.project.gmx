@@ -247,12 +247,15 @@
       <room>rooms\rm_lvl_08b</room>
       <room>rooms\rm_outro</room>
     </rooms>
-    <rooms name="marco">
+    <rooms name="old_levels">
       <room>rooms\rm_niv_01a</room>
       <room>rooms\rm_niv_01b</room>
       <room>rooms\rm_niv_01c</room>
       <room>rooms\rm_niv_02a</room>
       <room>rooms\rm_niv_02b</room>
+    </rooms>
+    <rooms name="game_02">
+      <room>rooms\rm_g2_lvl_intro</room>
     </rooms>
   </rooms>
   <help>
