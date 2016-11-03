@@ -4,11 +4,11 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="7" enumb="4">
+    <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,14 +25,116 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var url = "https://www.google-analytics.com/debug/collect"
-var user_id = "UA-86788013-2"
+            <string>/// Read existing clientid, or generate and persist one.
+var client_id_file_name = "client_id.txt"
+if (file_exists(client_id_file_name)) { 
+  var file_id = file_text_open_read(client_id_file_name);
+  client_id = file_text_read_string(file_id);
+  file_text_close(file_id);
+  show_debug_message("Analytics: Read persisted client id " + client_id);
+} else  {  
+  client_id = string(irandom($fffffffffffffff));
+  var file_id = file_text_open_write(client_id_file_name);  
+  file_text_write_string(file_id, client_id);
+  file_text_close(file_id); 
+  show_debug_message("Analytics: Generate and persist client id " + client_id);
+}
+
+tracking_id = "UA-86788013-2";
+
+// Capture the start time for the very first room displayed.
+from_time = get_timer();
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="10">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string></string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="5">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>var to_time = get_timer();
+var time_spent = string(round((to_time - from_time) / 1000 / 1000));
+show_debug_message("Analytics: Send " + time_spent +
+  " secs spent in " + room_get_name(room));
 var payload =
-  "v=1"+
-  "&amp;tid="+user_id+
-  target
-  ;
-//http_post_string(
+  "v=1&amp;t=event" + 
+  // game name with spaces replaced by underscores.
+  "&amp;an=" + game_display_name +
+  "&amp;av=" + GM_version + // game version
+  "&amp;tid=" + tracking_id +
+  "&amp;cid=" + client_id +
+  "&amp;ec=lvl_completed" + 
+  "&amp;ea=" + room_get_name(room) +
+  "&amp;ev=" + string(time_spent);
+
+var url = "https://www.google-analytics.com/collect";
+http_post_string(url, payload);
+
+// Surprisingly room start is not called on room restart, but room end is.
+// We want to reset the from_time so that a time span is not reported 
+// multiple times.
+from_time = to_time;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///event_user(0);
+event_user(0);
 </string>
           </argument>
         </arguments>
