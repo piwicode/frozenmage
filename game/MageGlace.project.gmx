@@ -256,6 +256,7 @@
     </rooms>
     <rooms name="game_02">
       <room>rooms\rm_g2_lvl_intro</room>
+      <room>rooms\rm_g2_lvl_01</room>
     </rooms>
   </rooms>
   <help>

@@ -31,7 +31,7 @@ if(false) { // Deactivate bugy rescaling code.
 }
 
 // Now persistent objects are created, go to the first level, or the test room.
-room_goto(IIF(debug_mode, rm_intro, rm_intro));  // Go to the test rooms
+room_goto(IIF(debug_mode, rm_g2_lvl_intro, rm_g2_lvl_intro));  // Go to the test rooms
 
 enum mage_power {
  none = 0,
