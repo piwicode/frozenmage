@@ -2,7 +2,7 @@
 // Pixel art parameters.
 global.game_res_height = 200;
 global.game_res_width = 320;
-global.game_res_scale = 4;
+global.game_res_scale = 3;
 
 // Capture the monitor resolution for scaling.
 global.monitor_width = display_get_width();
