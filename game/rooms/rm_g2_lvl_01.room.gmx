@@ -9,7 +9,7 @@
   <speed>60</speed>
   <persistent>0</persistent>
   <colour>7172431</colour>
-  <showcolour>-1</showcolour>
+  <showcolour>0</showcolour>
   <code>scr_room_init(4)</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>0</clearViewBackground>
@@ -31,7 +31,7 @@
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="-1" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="Background_03_320x240" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -89,7 +89,12 @@
     <instance objName="obj_collision_16x16" x="128" y="40" name="inst_9D5D2EB1" locked="0" code="" scaleX="2" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="136" y="48" name="inst_452222B6" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
   </instances>
-  <tiles/>
+  <tiles>
+    <tile bgName="Decos_back" x="512" y="-48" w="112" h="208" xo="216" yo="208" id="10002790" name="inst_74CBA1C9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Decos_back" x="432" y="-32" w="112" h="64" xo="368" yo="368" id="10002791" name="inst_F551CF05" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Decos_back" x="344" y="-40" w="112" h="64" xo="368" yo="368" id="10002792" name="inst_2797ED62" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Decos_back" x="-104" y="-104" w="312" h="296" xo="368" yo="8" id="10002793" name="inst_C8E01CB9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+  </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
   <PhysicsWorldLeft>0</PhysicsWorldLeft>

@@ -86,6 +86,15 @@
     <background>background\bg_ice</background>
     <background>background\bg_auto_tile</background>
     <background>background\bg_auto_tile2</background>
+    <background>background\Background_01_320x240</background>
+    <background>background\Background_01_640x480</background>
+    <background>background\Background_02_320x240</background>
+    <background>background\Background_02_640x480</background>
+    <background>background\Background_03_320x240</background>
+    <background>background\Background_03_640x480</background>
+    <background>background\Background_04_640x480</background>
+    <background>background\Background_04_320x240</background>
+    <background>background\Decos_back</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
