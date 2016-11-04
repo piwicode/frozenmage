@@ -50,28 +50,6 @@ from_time = get_timer();
         </arguments>
       </action>
     </event>
-    <event eventtype="7" enumb="10">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string></string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="7" enumb="5">
       <action>
         <libid>1</libid>
@@ -93,6 +71,7 @@ from_time = get_timer();
 var time_spent = string(round((to_time - from_time) / 1000 / 1000));
 show_debug_message("Analytics: Send " + time_spent +
   " secs spent in " + room_get_name(room));
+
 var payload =
   "v=1&amp;t=event" + 
   // game name with spaces replaced by underscores.
@@ -111,30 +90,6 @@ http_post_string(url, payload);
 // We want to reset the from_time so that a time span is not reported 
 // multiple times.
 from_time = to_time;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="7" enumb="3">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///event_user(0);
-event_user(0);
 </string>
           </argument>
         </arguments>
