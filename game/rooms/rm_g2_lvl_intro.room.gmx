@@ -9,7 +9,7 @@
   <speed>60</speed>
   <persistent>0</persistent>
   <colour>7172431</colour>
-  <showcolour>-1</showcolour>
+  <showcolour>0</showcolour>
   <code>scr_room_init(4)</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>0</clearViewBackground>
@@ -31,7 +31,7 @@
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="-1" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="Background_01_320x240" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -102,7 +102,13 @@
     <instance objName="obj_still_stone_16" x="296" y="24" name="inst_5914B41B" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_still_stone_16" x="304" y="24" name="inst_9EE0EC41" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
   </instances>
-  <tiles/>
+  <tiles>
+    <tile bgName="Decos_back" x="-24" y="152" w="120" h="56" xo="368" yo="440" id="10002785" name="inst_D224465B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Decos_back" x="104" y="80" w="200" h="152" xo="432" yo="576" id="10002786" name="inst_D7016EF6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Decos_back" x="248" y="-8" w="120" h="56" xo="368" yo="376" id="10002787" name="inst_F59E430E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Decos_back" x="152" y="-24" w="120" h="56" xo="368" yo="376" id="10002788" name="inst_7F650D31" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="Decos_back" x="-96" y="-16" w="152" h="88" xo="640" yo="584" id="10002789" name="inst_7B23A18A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+  </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
   <PhysicsWorldLeft>0</PhysicsWorldLeft>
