@@ -94,7 +94,8 @@
     <background>background\Background_03_640x480</background>
     <background>background\Background_04_640x480</background>
     <background>background\Background_04_320x240</background>
-    <background>background\Decos_back</background>
+    <background>background\Tile_Caverne</background>
+    <background>background\Tile_Montagne</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -265,7 +266,6 @@
     </rooms>
     <rooms name="game_02">
       <room>rooms\rm_g2_lvl_intro</room>
-      <room>rooms\rm_g2_lvl_01</room>
     </rooms>
   </rooms>
   <help>
