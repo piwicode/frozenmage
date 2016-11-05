@@ -207,6 +207,12 @@
     <instance objName="obj_still_stone_16" x="1224" y="8" name="inst_B574F3C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_talk" x="168" y="80" name="inst_E4299309" locked="0" code="text = &quot;Thanks got, that is the exit!&quot;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="56" y="0" name="inst_866541EC" locked="0" code="" scaleX="4.5" scaleY="3.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="752" y="96" name="inst_F28A7DF8" locked="0" code="" scaleX="1.5" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="696" y="152" name="inst_840004E3" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="712" y="168" name="inst_3516647C" locked="0" code="" scaleX="1" scaleY="4.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="464" y="152" name="inst_6B37077C" locked="0" code="" scaleX="2.5" scaleY="6.40000009536743" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="288" y="168" name="inst_1FCD0A3D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="304" y="184" name="inst_2A25A78B" locked="0" code="" scaleX="10.5" scaleY="4" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
