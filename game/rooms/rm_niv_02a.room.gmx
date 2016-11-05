@@ -60,7 +60,7 @@
     <instance objName="obj_collision_16x16" x="8" y="96" name="inst_DFB2AD63" locked="0" code="" scaleX="12" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="120" y="64" name="inst_23F2597C" locked="0" code="" scaleX="12" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="8" y="32" name="inst_10BAAF60" locked="0" code="" scaleX="12" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_mage" x="40" y="24" name="inst_5BE5609A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mage" x="40" y="32" name="inst_5BE5609A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_troll" x="96" y="160" name="inst_E3394E58" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_troll" x="248" y="64" name="inst_9CE67503" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_troll" x="88" y="96" name="inst_454D082F" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
