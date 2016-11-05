@@ -84,6 +84,8 @@
     <instance objName="obj_still_stone_16" x="848" y="64" name="inst_3F3250F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_still_stone_16" x="864" y="64" name="inst_4403D83A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="704" y="48" name="inst_ABDA15BD" locked="0" code="" scaleX="5.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="-16" y="0" name="inst_FBF5AF1E" locked="0" code="" scaleX="1" scaleY="13" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="1024" y="0" name="inst_CFCB250E" locked="0" code="" scaleX="1" scaleY="13" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Tile_320x240" x="-48" y="48" w="8" h="8" xo="240" yo="144" id="10002661" name="inst_544E371F" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

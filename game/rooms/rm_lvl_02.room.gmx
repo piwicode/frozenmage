@@ -77,7 +77,6 @@
     <instance objName="obj_collision_16x16" x="816" y="144" name="inst_1E989955" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="800" y="144" name="inst_A1B85534" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="784" y="144" name="inst_C4841D8C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_door" x="992" y="192" name="inst_7E8FB1C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="208" y="64" name="inst_192CF40B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="208" y="80" name="inst_5B5E6F56" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="208" y="96" name="inst_BE0D820B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -186,6 +185,8 @@
     <instance objName="obj_collision_16x16" x="208" y="48" name="inst_116856DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="16" y="176" name="inst_923F0BF4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="0" y="176" name="inst_5AA8EF4E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="1024" y="0" name="inst_26BB52ED" locked="0" code="" scaleX="1" scaleY="15" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="-16" y="0" name="inst_A35242BB" locked="0" code="" scaleX="1" scaleY="13" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Tile_320x240" x="48" y="112" w="64" h="16" xo="16" yo="128" id="10001407" name="inst_A50AD450" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
