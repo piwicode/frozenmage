@@ -260,7 +260,7 @@
     <option_html5_usesplash>False</option_html5_usesplash>
     <option_icon>nil</option_icon>
     <option_in_app_purchase_sandbox_mode>0</option_in_app_purchase_sandbox_mode>
-    <option_information>Small platformer made for fun in 5 weeks by two dudes.</option_information>
+    <option_information>Platformer made for fun in 5 weeks by two dudes.</option_information>
     <option_interpolate>False</option_interpolate>
     <option_ios_adcolony_enable_V4VC>false</option_ios_adcolony_enable_V4VC>
     <option_ios_advertising_enable>false</option_ios_advertising_enable>
@@ -471,7 +471,7 @@
     <option_version_build>0</option_version_build>
     <option_version_company>Plab &amp; Nid</option_version_company>
     <option_version_copyright></option_version_copyright>
-    <option_version_description>Small platformer made for fun in 5 weeks by two dudes.</option_version_description>
+    <option_version_description>Platformer made for fun in 5 weeks by two dudes.</option_version_description>
     <option_version_major>1</option_version_major>
     <option_version_minor>4</option_version_minor>
     <option_version_product>Frozen Mage</option_version_product>
@@ -548,7 +548,7 @@
     <option_windows_company_info>Plab &amp; Nid</option_windows_company_info>
     <option_windows_copyright_info></option_windows_copyright_info>
     <option_windows_create_textures_on_demand>False</option_windows_create_textures_on_demand>
-    <option_windows_description_info>Small platformer made for fun in 5 weeks by two dudes.</option_windows_description_info>
+    <option_windows_description_info>Platformer made for fun in 5 weeks by two dudes.</option_windows_description_info>
     <option_windows_enable_steam>0</option_windows_enable_steam>
     <option_windows_game_icon>Configs\Default\windows\runner_icon.ico</option_windows_game_icon>
     <option_windows_license>Configs\Default\windows\License.txt</option_windows_license>
