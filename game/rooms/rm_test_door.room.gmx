@@ -79,12 +79,12 @@
     <instance objName="obj_stone_16" x="232" y="88" name="inst_844FD46D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
-    <tile bgName="Tile_Feu" x="0" y="192" w="248" h="16" xo="0" yo="224" id="10000049" name="inst_4DA4ADAF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Tile_Feu" x="552" y="192" w="248" h="16" xo="0" yo="224" id="10000051" name="inst_7ABAB588" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Tile_Feu" x="776" y="192" w="248" h="16" xo="0" yo="224" id="10000052" name="inst_7E6F60CB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Tile_Feu" x="480" y="192" w="16" h="16" xo="144" yo="144" id="10000053" name="inst_E619E50F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Tile_Feu" x="248" y="192" w="232" h="16" xo="0" yo="224" id="10000054" name="inst_82BEDD44" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="Tile_Feu" x="536" y="192" w="16" h="16" xo="160" yo="64" id="10000055" name="inst_80260B72" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="&lt;undefined&gt;" x="0" y="192" w="248" h="16" xo="0" yo="224" id="10000049" name="inst_4DA4ADAF" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="&lt;undefined&gt;" x="552" y="192" w="248" h="16" xo="0" yo="224" id="10000051" name="inst_7ABAB588" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="&lt;undefined&gt;" x="776" y="192" w="248" h="16" xo="0" yo="224" id="10000052" name="inst_7E6F60CB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="&lt;undefined&gt;" x="480" y="192" w="16" h="16" xo="144" yo="144" id="10000053" name="inst_E619E50F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="&lt;undefined&gt;" x="248" y="192" w="232" h="16" xo="0" yo="224" id="10000054" name="inst_82BEDD44" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="&lt;undefined&gt;" x="536" y="192" w="16" h="16" xo="160" yo="64" id="10000055" name="inst_80260B72" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
