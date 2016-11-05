@@ -76,6 +76,8 @@
       <sprite>sprites\spr_credit_thanks</sprite>
     </sprites>
     <sprite>sprites\sp_star</sprite>
+    <sprite>sprites\sp_no_power</sprite>
+    <sprite>sprites\sp_ice_pow</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background_feu</background>
@@ -236,15 +238,13 @@
       <room>rooms\rm_intro</room>
       <room>rooms\rm_lvl_01a_just_jump</room>
       <room>rooms\rm_lvl_01b_just_jump</room>
-      <room>rooms\rm_lvl_01c_hum</room>
       <room>rooms\rm_lvl_02a_cave_downward_stairs</room>
-      <room>rooms\rm_lvl_02b_cave_block_factory</room>
       <room>rooms\rm_lvl_02c_cave_the_trap</room>
       <room>rooms\rm_lvl_03a_cave_basejump</room>
-      <room>rooms\rm_lvl_04a_ice_walk_on_the_roof</room>
+      <room>rooms\rm_lvl_04a_cave_walk_on_the_roof</room>
+      <room>rooms\rm_lvl_02b_cave_block_factory</room>
       <room>rooms\rm_lvl_05a_ice_behind_the_door</room>
       <room>rooms\rm_lvl_04a_cave_controled_descent</room>
-      <room>rooms\rm_lvl_04b_ice</room>
       <room>rooms\rm_lvl_04b_ice_staff</room>
       <room>rooms\rm_lvl_04c_freeze_the_spoilsport</room>
       <room>rooms\rm_lvl_04cc_ice_freeze_the_water</room>
@@ -253,6 +253,8 @@
       <room>rooms\rm_lvl_05b_cave_ascent</room>
       <room>rooms\rm_lvl_05c_cave_timed_jump</room>
       <room>rooms\rm_lvl_05d_cave_doors_array</room>
+      <room>rooms\rm_lvl_01c_hum</room>
+      <room>rooms\rm_lvl_04b_ice</room>
       <room>rooms\rm_lvl_06a_cave_armagedon</room>
       <room>rooms\rm_lvl_08a_back_home</room>
       <room>rooms\rm_lvl_08b_back_home</room>

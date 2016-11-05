@@ -140,7 +140,6 @@
     <instance objName="obj_collision_16x16" x="656" y="176" name="inst_6C397C98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="656" y="192" name="inst_DF26E79A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="656" y="208" name="inst_779D0EE2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_mage_no_power" x="0" y="-16" name="inst_A5B9CAD6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="448" y="96" name="inst_D6D67AD4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="528" y="96" name="inst_DA495CBD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="872" y="0" name="inst_BA840E2C" locked="0" code="" scaleX="0.5" scaleY="5.86666679382324" colour="4294967295" rotation="0"/>
@@ -152,6 +151,7 @@
     <instance objName="obj_collision_16x16" x="368" y="192" name="inst_535B015B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="384" y="192" name="inst_8ED4D064" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_go_next_level" x="56" y="192" name="inst_2AF9EA1B" locked="0" code="" scaleX="2.25" scaleY="3.5" colour="4294967295" rotation="180"/>
+    <instance objName="obj_mage_ice_power" x="0" y="-16" name="inst_977BFD49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

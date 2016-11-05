@@ -67,6 +67,7 @@
     <instance objName="obj_collision_16x16" x="320" y="0" name="inst_18B0E92B" locked="0" code="" scaleX="1" scaleY="15" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="-16" y="0" name="inst_853764BC" locked="0" code="" scaleX="1" scaleY="15" colour="4294967295" rotation="0"/>
     <instance objName="obj_mage" x="152" y="200" name="inst_0311938F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mage_ice_power" x="0" y="-24" name="inst_6A0774B5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>-1</PhysicsWorld>

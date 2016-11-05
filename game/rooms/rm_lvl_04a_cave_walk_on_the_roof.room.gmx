@@ -31,7 +31,7 @@
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="-1" foreground="0" name="bg_ice" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="bg_grotte" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -138,6 +138,19 @@
     <instance objName="obj_star" x="952" y="96" name="inst_BAEA2B39" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="464" y="208" name="inst_7AD1C477" locked="0" code="" scaleX="3" scaleY="2.13333344459534" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="616" y="208" name="inst_F563FB8A" locked="0" code="" scaleX="2.5" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="448" y="96" name="inst_915AB6FF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="472" y="96" name="inst_4E9FF1FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="464" y="96" name="inst_CA53551A" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="640" y="104" name="inst_90EACC93" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="616" y="104" name="inst_85841C8E" locked="0" code="" scaleX="1.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="488" y="96" name="inst_DC9ECCD5" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="312" y="136" name="inst_CA3E22AA" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="240" y="0" name="inst_9EC0097E" locked="0" code="" scaleX="4.5" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="680" y="-8" name="inst_63117173" locked="0" code="" scaleX="1.5" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="704" y="0" name="inst_719FE457" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="992" y="0" name="inst_BCF0AD10" locked="0" code="" scaleX="2.5" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="1016" y="32" name="inst_2DBDFEA1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="976" y="0" name="inst_A0EF7A82" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
