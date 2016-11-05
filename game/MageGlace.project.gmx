@@ -102,6 +102,7 @@
     <background>background\bg_auto_cave_tile2</background>
     <background>background\bg_auto_ice_tile</background>
     <background>background\bg_auto_ice_tile2</background>
+    <background>background\Tile_Glace</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -250,9 +251,9 @@
       <room>rooms\rm_lvl_03a_cave_basejump</room>
       <room>rooms\rm_lvl_04a_cave_walk_on_the_roof</room>
       <room>rooms\rm_lvl_02b_cave_block_factory</room>
-      <room>rooms\rm_lvl_05a_ice_behind_the_door</room>
+      <room>rooms\rm_lvl_05a_cave_behind_the_door</room>
       <room>rooms\rm_lvl_04a_cave_controled_descent</room>
-      <room>rooms\rm_lvl_04b_ice_staff</room>
+      <room>rooms\rm_lvl_04b_cave_staff</room>
       <room>rooms\rm_lvl_04c_freeze_the_spoilsport</room>
       <room>rooms\rm_lvl_04cc_ice_freeze_the_water</room>
       <room>rooms\rm_lvl_04d_ice_dwarf</room>
@@ -260,8 +261,6 @@
       <room>rooms\rm_lvl_05b_cave_ascent</room>
       <room>rooms\rm_lvl_05c_cave_timed_jump</room>
       <room>rooms\rm_lvl_05d_cave_doors_array</room>
-      <room>rooms\rm_lvl_01c_hum</room>
-      <room>rooms\rm_lvl_04b_ice</room>
       <room>rooms\rm_lvl_06a_cave_armagedon</room>
       <room>rooms\rm_lvl_08a_back_home</room>
       <room>rooms\rm_lvl_08b_back_home</room>
@@ -277,7 +276,9 @@
       <room>rooms\rm_outro</room>
     </rooms>
     <rooms name="game_02">
+      <room>rooms\rm_lvl_04b_ice</room>
       <room>rooms\rm_g2_lvl_intro</room>
+      <room>rooms\rm_lvl_01c_hum</room>
     </rooms>
   </rooms>
   <help>

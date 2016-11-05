@@ -51,17 +51,17 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_credit_thanks" x="832" y="48" name="inst_0E282ACC" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="5"/>
+    <instance objName="obj_credit_thanks" x="864" y="48" name="inst_0E282ACC" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="5"/>
     <instance objName="obj_mage" x="1136" y="160" name="inst_C86A5B63" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16_notile" x="16" y="160" name="inst_96F2C545" locked="0" code="" scaleX="80" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_16x16_notile" x="1248" y="-16" name="inst_4FDBD73B" locked="0" code="" scaleX="2" scaleY="16" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16_notile" x="1152" y="-16" name="inst_4FDBD73B" locked="0" code="" scaleX="2" scaleY="16" colour="4294967295" rotation="0"/>
     <instance objName="obj_game_over" x="1024" y="32" name="inst_CE329887" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_title_autors" x="448" y="80" name="inst_B66B6B4F" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_credit_code" x="576" y="16" name="inst_E5DFE1B1" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_credit_sound" x="448" y="48" name="inst_03D88E0E" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_credit_graphics" x="576" y="48" name="inst_B2B22951" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_credit_design" x="448" y="16" name="inst_8162714C" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_game_title" x="832" y="96" name="inst_5E29A4E0" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_game_title" x="864" y="96" name="inst_5E29A4E0" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="boj_feedback" x="128" y="48" name="inst_EB1C78BD" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_go_next_level" x="112" y="240" name="inst_4782D79F" locked="0" code="" scaleX="10" scaleY="8" colour="4294967295" rotation="180"/>
   </instances>

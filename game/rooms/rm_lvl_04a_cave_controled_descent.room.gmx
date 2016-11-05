@@ -101,7 +101,7 @@
     <instance objName="obj_collision_16x16" x="280" y="-16" name="inst_79BAE605" locked="0" code="" scaleX="1" scaleY="4.26666688919067" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="328" y="-16" name="inst_B3DE68AB" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="632" y="296" name="inst_715121C4" locked="0" code="" scaleX="4.5" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="obj_part_doom" x="0" y="184" name="inst_0F35107B" locked="0" code="" scaleX="12.8000001907349" scaleY="13.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_part_doom" x="0" y="184" name="inst_0F35107B" locked="0" code="" scaleX="12.8000001907349" scaleY="15" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="616" y="280" name="inst_0045C429" locked="0" code="" scaleX="9" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_orc" x="688" y="280" name="inst_E958D93B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="736" y="272" name="inst_73134A9A" locked="0" code="" scaleX="9" scaleY="0.5" colour="4294967295" rotation="0"/>

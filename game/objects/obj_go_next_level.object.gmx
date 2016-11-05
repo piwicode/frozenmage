@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>system = part_system_create();
+            <string>go_to_next_level = false;
+
+system = part_system_create();
 part_system_depth(system, 50);
 
 bubble = part_type_create();
@@ -95,8 +97,10 @@ part_emitter_destroy_all(system);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(0, 0, obj_gui_go_next_level);
-instance_destroy();
+            <string>if (go_to_next_level == false) {
+  instance_create(0, 0, obj_gui_go_next_level);
+  go_to_next_level = true;
+}
 </string>
           </argument>
         </arguments>
