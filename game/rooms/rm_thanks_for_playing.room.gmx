@@ -52,10 +52,10 @@
   </views>
   <instances>
     <instance objName="obj_credit_thanks" x="864" y="48" name="inst_0E282ACC" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="5"/>
-    <instance objName="obj_mage" x="1136" y="160" name="inst_C86A5B63" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mage" x="1104" y="160" name="inst_C86A5B63" locked="0" code="" scaleX="-1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16_notile" x="16" y="160" name="inst_96F2C545" locked="0" code="" scaleX="80" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collision_16x16_notile" x="1152" y="-16" name="inst_4FDBD73B" locked="0" code="" scaleX="2" scaleY="16" colour="4294967295" rotation="0"/>
-    <instance objName="obj_game_over" x="1024" y="32" name="inst_CE329887" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16_notile" x="1136" y="-32" name="inst_4FDBD73B" locked="0" code="" scaleX="2" scaleY="16" colour="4294967295" rotation="0"/>
+    <instance objName="obj_game_over" x="992" y="32" name="inst_CE329887" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_title_autors" x="448" y="80" name="inst_B66B6B4F" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_credit_code" x="576" y="16" name="inst_E5DFE1B1" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_credit_sound" x="448" y="48" name="inst_03D88E0E" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>

@@ -115,7 +115,7 @@
     <instance objName="obj_collision_16x16" x="664" y="232" name="inst_04B42DC5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="472" y="488" name="inst_23FE0691" locked="0" code="" scaleX="22.5" scaleY="9.60000038146973" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="8" y="512" name="inst_A80054D7" locked="0" code="" scaleX="6" scaleY="8" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ice_staff" x="24" y="472" name="inst_0E941BC1" locked="0" code="" scaleX="0.421052634716034" scaleY="0.473684221506119" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ice_staff" x="40" y="472" name="inst_0E941BC1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_plate_close" x="440" y="160" name="inst_99B262FD" locked="0" code="label = 4" scaleX="0.5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_plate_close" x="456" y="160" name="inst_F5E8A1F9" locked="0" code="label = 3&#xA;" scaleX="0.5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="264" y="160" name="inst_D0582AC7" locked="0" code="" scaleX="15" scaleY="0.5" colour="4294967295" rotation="0"/>
@@ -131,7 +131,7 @@
     <instance objName="obj_collision_16x16" x="152" y="296" name="inst_B9276705" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="152" y="312" name="inst_0D4206B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="152" y="328" name="inst_67B167AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_checkpoint" x="40" y="512" name="inst_AEA4B470" locked="0" code="" scaleX="4.19999980926514" scaleY="3.75" colour="4294967295" rotation="0"/>
+    <instance objName="obj_checkpoint" x="56" y="496" name="inst_AEA4B470" locked="0" code="" scaleX="1.625" scaleY="4" colour="4294967295" rotation="0"/>
     <instance objName="obj_water" x="312" y="608" name="inst_7F67897B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_water" x="344" y="608" name="inst_E3D0B0C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_water" x="376" y="608" name="inst_6F996659" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -181,6 +181,13 @@
     <instance objName="obj_collision_16x16" x="768" y="0" name="inst_3CD509BF" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="784" y="0" name="inst_514D68A3" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="800" y="0" name="inst_50A3BD7E" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="32" y="504" name="inst_EAC0D070" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="48" y="496" name="inst_5B6E66DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="48" y="400" name="inst_D15023FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="48" y="416" name="inst_7D13E490" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="64" y="400" name="inst_822AEE94" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="32" y="400" name="inst_D8F644DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_talk" x="224" y="488" name="inst_41789FB3" locked="0" code="text = &quot;Look a magic artefact!#The staff of the perpetual snow.&quot;&#xA;" scaleX="1" scaleY="2.25" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

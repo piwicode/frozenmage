@@ -50,7 +50,7 @@ scr_game_init()
           <argument>
             <kind>1</kind>
             <string>// Full screen when F11 is pressed.
-if (keyboard_check_pressed(vk_f11)) {
+if (keyboard_check_pressed(vk_f11) || keyboard_check_pressed(ord("f"))) {
   var is_fullscreen = !window_get_fullscreen();  // Toggle fullscreen.
   window_set_fullscreen(is_fullscreen);
   window_set_cursor(IIF(is_fullscreen, cr_none, cr_default));

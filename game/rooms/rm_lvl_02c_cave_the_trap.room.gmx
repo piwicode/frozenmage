@@ -122,6 +122,16 @@
     <instance objName="obj_star" x="32" y="88" name="inst_5B39A937" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="0" y="0" name="inst_EE82BA37" locked="0" code="" scaleX="0.5" scaleY="6.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="832" y="-8" name="inst_C5D86E84" locked="0" code="" scaleX="1.5" scaleY="12" colour="4294967295" rotation="0"/>
+    <instance objName="obj_talk" x="328" y="72" name="inst_ADB64247" locked="0" code="text = &quot;The great hall is just behind that door.&quot;&#xA;" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="288" y="0" name="inst_DAF334E8" locked="0" code="" scaleX="2" scaleY="1.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="320" y="0" name="inst_2A57C474" locked="0" code="" scaleX="1" scaleY="2.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="344" y="0" name="inst_354F3623" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="360" y="0" name="inst_EDEB1B78" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="376" y="0" name="inst_2A0854CD" locked="0" code="" scaleX="1" scaleY="5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="392" y="0" name="inst_41415B84" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="392" y="16" name="inst_E2A4A251" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="8" y="0" name="inst_02B96FA2" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="24" y="0" name="inst_BFBF97A8" locked="0" code="" scaleX="1" scaleY="2.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

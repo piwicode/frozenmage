@@ -79,6 +79,12 @@
     <instance objName="obj_collision_16x16" x="96" y="136" name="inst_9018C9D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="160" y="136" name="inst_73AC646A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="176" y="136" name="inst_0C86D646" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="0" y="136" name="inst_CF49EE54" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="0" y="0" name="inst_C731AF01" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="0" y="16" name="inst_45E18315" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="16" y="0" name="inst_62FAF110" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="264" y="0" name="inst_E8D4D165" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="0" y="32" name="inst_2B731CDB" locked="0" code="" scaleX="0.5" scaleY="3.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Tile_Caverne" x="0" y="136" w="48" h="104" xo="208" yo="8" id="10002818" name="inst_63BC915A" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
