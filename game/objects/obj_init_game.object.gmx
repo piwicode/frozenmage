@@ -60,6 +60,11 @@ if (keyboard_check_pressed(vk_f11)) {
 if (keyboard_check_pressed(vk_f4) &amp;&amp; keyboard_check(vk_alt)) {
    game_end();
 }
+
+// Restart level when R is pressed.
+if (keyboard_check_pressed(ord("r"))) {
+   room_restart();
+}
 </string>
           </argument>
         </arguments>

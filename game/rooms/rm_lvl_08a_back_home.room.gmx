@@ -150,7 +150,7 @@
     <instance objName="obj_collision_16x16" x="880" y="0" name="inst_C6FAE733" locked="0" code="" scaleX="2" scaleY="5" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="368" y="192" name="inst_535B015B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="384" y="192" name="inst_8ED4D064" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_go_next_level" x="56" y="192" name="inst_2AF9EA1B" locked="0" code="" scaleX="2.25" scaleY="3.5" colour="4294967295" rotation="180"/>
+    <instance objName="obj_go_next_level" x="56" y="192" name="inst_2AF9EA1B" locked="0" code="" scaleX="2.25" scaleY="6" colour="4294967295" rotation="180"/>
     <instance objName="obj_mage_ice_power" x="0" y="-16" name="inst_977BFD49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
