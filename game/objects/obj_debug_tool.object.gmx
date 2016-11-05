@@ -59,21 +59,17 @@ if(exit_game_ctrl) {
 }
 
 // Level navigation: F5 to F7
-var restart_level_ctrl = scr_input_pressed(vk_f5, gp_start);
+
 var go_previous_level_ctrl = scr_input_pressed(vk_f6, gp_shoulderl);
 var go_next_level_ctrl = scr_input_pressed(vk_f7, gp_shoulderr);
 
-if(restart_level_ctrl) room_restart();
 if (go_previous_level_ctrl &amp;&amp; room_previous(room) != -1) {
   room_goto(room_previous(room));
 }
 if (go_next_level_ctrl &amp;&amp; room_next(room) != -1) {
   room_goto(room_next(room));
 }
-// Exit the game when escape is pressed.
-if (keyboard_check_pressed(vk_escape)) {
-   game_end();
-}
+
 
 </string>
           </argument>

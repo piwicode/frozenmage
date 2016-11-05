@@ -50,19 +50,19 @@ scr_game_init()
           <argument>
             <kind>1</kind>
             <string>// Full screen when F11 is pressed.
-if (keyboard_check_pressed(vk_f11) || keyboard_check_pressed(ord("f"))) {
+if (keyboard_check_pressed(vk_f11) || keyboard_check_pressed(ord("F"))) {
   var is_fullscreen = !window_get_fullscreen();  // Toggle fullscreen.
   window_set_fullscreen(is_fullscreen);
   window_set_cursor(IIF(is_fullscreen, cr_none, cr_default));
 }
 
 // Exit the game when ALT + F4 is pressed.
-if (keyboard_check_pressed(vk_f4) &amp;&amp; keyboard_check(vk_alt)) {
+if ((keyboard_check_pressed(vk_f4) &amp;&amp; keyboard_check(vk_alt)) || keyboard_check_pressed(vk_escape)) {
    game_end();
 }
 
 // Restart level when R is pressed.
-if (keyboard_check_pressed(ord("r"))) {
+if (keyboard_check_pressed(vk_f5) || keyboard_check_pressed(ord("R"))) {
    room_restart();
 }
 </string>

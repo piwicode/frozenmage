@@ -74,7 +74,7 @@
     <instance objName="obj_collision_16x16" x="536" y="192" name="inst_92EB58AD" locked="0" code="" scaleX="35" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_go_next_level" x="936" y="0" name="inst_D35239F7" locked="0" code="" scaleX="2.75" scaleY="6" colour="4294967295" rotation="0"/>
     <instance objName="obj_talk" x="584" y="144" name="inst_FD2C0C0A" locked="0" code="text = &quot;After 42 years of study,#I'll finally have my mage degree.&quot;&#xA;" scaleX="2.25" scaleY="1.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_talk" x="32" y="160" name="inst_FA2008B0" locked="0" code="text = &quot;The day for my final exam finally come.&quot;&#xA;" scaleX="2.5" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_talk" x="32" y="160" name="inst_FA2008B0" locked="0" code="text = &quot;The day of my exam has finally come.&quot;&#xA;" scaleX="2.5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_mage_no_power" x="0" y="-16" name="inst_5728D567" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="-16" y="0" name="inst_0F200741" locked="0" code="" scaleX="1" scaleY="13" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="744" y="736" name="inst_1291DEBC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
