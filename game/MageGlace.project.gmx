@@ -62,7 +62,7 @@
     <sprites name="dialog">
       <sprite>sprites\sp_dlg_mage</sprite>
       <sprite>sprites\sp_dlg_parchment</sprite>
-      <sprite>sprites\spr_game_title</sprite>
+      <sprite>sprites\spr_title_game_name</sprite>
       <sprite>sprites\spr_key_space</sprite>
       <sprite>sprites\spr_key_ctrl</sprite>
       <sprite>sprites\spr_key_arrows</sprite>
