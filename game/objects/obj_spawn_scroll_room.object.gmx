@@ -54,6 +54,7 @@ do_restart_room = true;
 case spawn_state.idle:
 break;
 case spawn_state.do_respawn:
+  audio_play_sound(snd_respawn, 20/*priority*/, false);
   state = spawn_state.scrolling;  
   restart_count_down = respawn_delay;
 break;

@@ -52,7 +52,7 @@
   </views>
   <instances>
     <instance objName="obj_mage_no_power" x="24" y="-64" name="inst_5728D567" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_mage" x="24" y="184" name="inst_864B298C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mage" x="24" y="200" name="inst_864B298C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_door" x="240" y="136" name="inst_8C48F012" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="1024" y="-40" name="inst_A5486247" locked="0" code="" scaleX="0.5" scaleY="15.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_collision_16x16" x="0" y="200" name="inst_2EEE815F" locked="0" code="" scaleX="32" scaleY="0.5" colour="4294967295" rotation="0"/>
@@ -89,7 +89,7 @@
     <instance objName="obj_collision_16x16" x="976" y="0" name="inst_F8CD4BB6" locked="0" code="" scaleX="3" scaleY="5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
-    <tile bgName="Tile_320x240" x="-32" y="192" w="16" h="16" xo="0" yo="0" id="10001689" name="inst_AEEF7F37" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="&lt;undefined&gt;" x="-32" y="192" w="16" h="16" xo="0" yo="0" id="10001689" name="inst_AEEF7F37" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

@@ -56,6 +56,7 @@
     <instance objName="obj_hi_gamepad" x="64" y="-32" name="inst_137A0DC5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_autotile" x="96" y="-32" name="inst_1253F69C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_part_global_system" x="128" y="-32" name="inst_9139E735" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_google_analytics" x="160" y="-32" name="inst_CC8F8B98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

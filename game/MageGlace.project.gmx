@@ -62,7 +62,7 @@
     <sprites name="dialog">
       <sprite>sprites\sp_dlg_mage</sprite>
       <sprite>sprites\sp_dlg_parchment</sprite>
-      <sprite>sprites\spr_game_title</sprite>
+      <sprite>sprites\spr_title_game_name</sprite>
       <sprite>sprites\spr_key_space</sprite>
       <sprite>sprites\spr_key_ctrl</sprite>
       <sprite>sprites\spr_key_arrows</sprite>
@@ -76,16 +76,13 @@
       <sprite>sprites\spr_credit_thanks</sprite>
     </sprites>
     <sprite>sprites\sp_star</sprite>
+    <sprite>sprites\sp_no_power</sprite>
+    <sprite>sprites\sp_ice_pow</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background_feu</background>
-    <background>background\Tile_Feu</background>
-    <background>background\Tile_Glace</background>
-    <background>background\Tile_320x240</background>
     <background>background\bg_grotte</background>
     <background>background\bg_ice</background>
-    <background>background\bg_auto_tile</background>
-    <background>background\bg_auto_tile2</background>
     <background>background\Background_01_320x240</background>
     <background>background\Background_01_640x480</background>
     <background>background\Background_02_320x240</background>
@@ -96,6 +93,13 @@
     <background>background\Background_04_320x240</background>
     <background>background\Tile_Caverne</background>
     <background>background\Tile_Montagne</background>
+    <background>background\Decos_back</background>
+    <background>background\bg_auto_tile</background>
+    <background>background\bg_auto_tile2</background>
+    <background>background\bg_auto_cave_tile</background>
+    <background>background\bg_auto_cave_tile2</background>
+    <background>background\bg_auto_ice_tile</background>
+    <background>background\bg_auto_ice_tile2</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -224,7 +228,6 @@
     <room>rooms\rm_init</room>
     <room>rooms\rm_lvl_02</room>
     <room>rooms\rm_lvl_03</room>
-    <room>rooms\rm_template</room>
     <rooms name="test">
       <room>rooms\rm_test_game_rules</room>
       <room>rooms\rm_test_collision_resolution</room>
@@ -237,24 +240,26 @@
       <room>rooms\rm_intro</room>
       <room>rooms\rm_lvl_01a_just_jump</room>
       <room>rooms\rm_lvl_01b_just_jump</room>
-      <room>rooms\rm_lvl_02a_downward_stairs</room>
-      <room>rooms\rm_lvl_02b_block_factory</room>
-      <room>rooms\rm_lvl_02c_the_trap</room>
-      <room>rooms\rm_lvl_03a_basejump</room>
-      <room>rooms\rm_lvl_04a_walk_on_the_roof</room>
-      <room>rooms\rm_lvl_05a_behind_the_door</room>
-      <room>rooms\rm_lvl_04aaa</room>
+      <room>rooms\rm_lvl_02a_cave_downward_stairs</room>
+      <room>rooms\rm_lvl_02c_cave_the_trap</room>
+      <room>rooms\rm_lvl_03a_cave_basejump</room>
+      <room>rooms\rm_lvl_04a_cave_walk_on_the_roof</room>
+      <room>rooms\rm_lvl_02b_cave_block_factory</room>
+      <room>rooms\rm_lvl_05a_ice_behind_the_door</room>
+      <room>rooms\rm_lvl_04a_cave_controled_descent</room>
       <room>rooms\rm_lvl_04b_ice_staff</room>
-      <room>rooms\rm_lvl_04c</room>
-      <room>rooms\rm_lvl_04cc</room>
-      <room>rooms\rm_lvl_04d_dwarf</room>
-      <room>rooms\rm_lvl_04e</room>
-      <room>rooms\rm_lvl_05b</room>
-      <room>rooms\rm_lvl_05c</room>
-      <room>rooms\rm_lvl_05d</room>
-      <room>rooms\rm_lvl_06a</room>
-      <room>rooms\rm_lvl_08a</room>
-      <room>rooms\rm_lvl_08b</room>
+      <room>rooms\rm_lvl_04c_freeze_the_spoilsport</room>
+      <room>rooms\rm_lvl_04cc_ice_freeze_the_water</room>
+      <room>rooms\rm_lvl_04d_ice_dwarf</room>
+      <room>rooms\rm_lvl_04e_ice_drop_the_dude</room>
+      <room>rooms\rm_lvl_05b_cave_ascent</room>
+      <room>rooms\rm_lvl_05c_cave_timed_jump</room>
+      <room>rooms\rm_lvl_05d_cave_doors_array</room>
+      <room>rooms\rm_lvl_01c_hum</room>
+      <room>rooms\rm_lvl_04b_ice</room>
+      <room>rooms\rm_lvl_06a_cave_armagedon</room>
+      <room>rooms\rm_lvl_08a_back_home</room>
+      <room>rooms\rm_lvl_08b_back_home</room>
       <room>rooms\rm_outro</room>
     </rooms>
     <rooms name="old_levels">

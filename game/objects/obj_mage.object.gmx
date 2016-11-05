@@ -41,26 +41,19 @@ y_ctrl = 0;
 is_walking = false;
 previous_is_walking = false;
 walking_sound = 0;
+last_bullet = noone;
+last_bullet_ctrl_countdown = 0;
+last_bullet_ctrl_xdir = 0;
+bullet_ctrl_permissiveness = 8;
 
 walk_speed = 2.5  // maximum horizontal speed reached when walking.
 walk_accel = 0.15;  // time it takes to reach the 0 speed.
 brake_accel = 0.25;  // time it takes to reach the max speed.
 push_speed = 1; // constant horizontal speed, when pushing a block.
-jump_initial_speed = 4.7 ; // pixel per frame.
+jump_initial_speed = 4.3 ; // pixel per frame.
 jump_released_speed = 2; // pixel per frame.
 jump_ctrl_permissiveness = 20; // Number of frames the jump initial key press can trigger the jump action.
 jump_ctrl_countdown = 0;  // frames. 
-
-if(string_copy(room_get_name(room),0, 6) == "rm_niv" or true ) {
-  walk_speed = 2.5  // maximum horizontal speed reached when walking.
-  walk_accel = 0.15;  // time it takes to reach the 0 speed.
-  brake_accel = 0.25;  // time it takes to reach the max speed.
-  push_speed = 1; // constant horizontal speed, when pushing a block.
-  jump_initial_speed = 4.3 ; // pixel per frame.
-  jump_released_speed = 2; // pixel per frame.
-  jump_ctrl_permissiveness = 20; // Number of frames the jump initial key press can trigger the jump action.
-  jump_ctrl_countdown = 0;  // frames. 
-}
 
 var step_length_in_px = 90;
 const_image_speed_walk = 14 / (step_length_in_px * 2) * walk_speed // frame per tick
@@ -137,21 +130,39 @@ var y_fire = bbox_top * .75 + bbox_bottom * .25;
 
 aim_direction = radtodeg(arctan2(-y_ctrl *.5, image_xscale));
 
+// Make possible to control the direction of a bullet after the fire key has been pressed.
+// We want to make possible to press the up and down control before or after fire has been
+// pressed. But releaseing the vertical control does not affect the direction.
+// Measure the durection since last bullet emission.
+last_bullet_ctrl_countdown = max(last_bullet_ctrl_countdown -1, 0);
+if (last_bullet_ctrl_countdown) { // The delay has not expired.
+  if (y_ctrl != 0) { // There is an explicit vertical contol pressed.
+     aim_direction = radtodeg(arctan2(-y_ctrl *.5, last_bullet_ctrl_xdir));
+     with (last_bullet) {
+       direction = other.aim_direction;
+       image_angle = other.aim_direction;     
+     }
+  }
+}
+
+
 // Use fire_pressed_start to change the aim style.
 if (fire_pressed_ctrl) {
-  audio_play_sound(snd_spell, 50, false);
   if(global.mage_level == mage_power.ice) {
-    with (instance_create(x_fire, y_fire, obj_spark)) {
-      direction = other.aim_direction;
-      image_angle = other.aim_direction
-      speed = max_speed;
-    }
+    audio_play_sound(snd_spell, 50, false);
+    last_bullet = instance_create(x_fire, y_fire, obj_spark);   
+    last_bullet_ctrl_xdir = image_xscale;
+    last_bullet_ctrl_countdown = bullet_ctrl_permissiveness;
   } else if(global.mage_level == mage_power.fire) {
-    with (instance_create(x_fire, y_fire, obj_fireball)) {
-      direction = aim_direction;
-      image_angle = aim_direction
-      speed = max_speed;
-    }
+    audio_play_sound(snd_spell, 50, false);
+    last_bullet = instance_create(x_fire, y_fire, obj_fireball);
+    last_bullet_ctrl_xdir = image_xscale;
+    last_bullet_ctrl_countdown = bullet_ctrl_permissiveness;
+  }
+  with (last_bullet) {
+    direction = other.aim_direction;
+    image_angle = other.aim_direction;
+    speed = max_speed;
   }
 }
 
