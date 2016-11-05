@@ -140,6 +140,9 @@
     <instance objName="obj_collision_16x16" x="864" y="40" name="inst_4F9F7451" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_go_next_level" x="72" y="192" name="inst_687501CC" locked="0" code="" scaleX="3.25" scaleY="6" colour="4294967295" rotation="180"/>
     <instance objName="obj_mage_ice_power" x="0" y="-16" name="inst_652988A1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="648" y="208" name="inst_4117D58A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="456" y="224" name="inst_2932640F" locked="0" code="" scaleX="13" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collision_16x16" x="440" y="208" name="inst_E89CF765" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="Tile_Montagne" x="-96" y="120" w="384" h="104" xo="8" yo="0" id="10002811" name="inst_3ADB5369" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
