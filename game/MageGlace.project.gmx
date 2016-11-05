@@ -74,10 +74,12 @@
       <sprite>sprites\spr_design</sprite>
       <sprite>sprites\spr_graphics</sprite>
       <sprite>sprites\spr_credit_thanks</sprite>
+      <sprite>sprites\sp_feedback</sprite>
     </sprites>
     <sprite>sprites\sp_star</sprite>
     <sprite>sprites\sp_no_power</sprite>
     <sprite>sprites\sp_ice_pow</sprite>
+    <sprite>sprites\sp_game_over</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background_feu</background>
@@ -184,6 +186,7 @@
       <object>objects\obj_debug_tool</object>
       <object>objects\obj_hi_gamepad</object>
       <object>objects\obj_autotile</object>
+      <object>objects\browse_and_leave</object>
     </objects>
     <object>objects\obj_ice_staff</object>
     <object>objects\obj_wind_staff</object>
@@ -211,7 +214,7 @@
       <object>objects\obj_key_ctrl</object>
       <object>objects\obj_key_space</object>
       <object>objects\obj_pad</object>
-      <object>objects\obj_par_control</object>
+      <object>objects\obj_effect_fade_in</object>
       <object>objects\obj_title_presents</object>
       <object>objects\obj_title_autors</object>
       <object>objects\obj_credit_code</object>
@@ -219,7 +222,9 @@
       <object>objects\obj_credit_graphics</object>
       <object>objects\obj_credit_design</object>
       <object>objects\obj_credit_thanks</object>
+      <object>objects\boj_feedback</object>
       <object>objects\obj_par_credit</object>
+      <object>objects\obj_game_over</object>
     </objects>
     <object>objects\obj_star</object>
     <object>objects\obj_google_analytics</object>
@@ -260,7 +265,8 @@
       <room>rooms\rm_lvl_06a_cave_armagedon</room>
       <room>rooms\rm_lvl_08a_back_home</room>
       <room>rooms\rm_lvl_08b_back_home</room>
-      <room>rooms\rm_outro</room>
+      <room>rooms\rm_thanks_for_playing</room>
+      <room>rooms\rm_browse_and_leave</room>
     </rooms>
     <rooms name="old_levels">
       <room>rooms\rm_niv_01a</room>
@@ -268,6 +274,7 @@
       <room>rooms\rm_niv_01c</room>
       <room>rooms\rm_niv_02a</room>
       <room>rooms\rm_niv_02b</room>
+      <room>rooms\rm_outro</room>
     </rooms>
     <rooms name="game_02">
       <room>rooms\rm_g2_lvl_intro</room>

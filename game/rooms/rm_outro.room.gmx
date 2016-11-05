@@ -59,7 +59,6 @@
     <instance objName="obj_par_credit" x="576" y="-1384" name="inst_28475EE8" locked="0" code="" scaleX="5.5" scaleY="100" colour="4294967295" rotation="-10"/>
     <instance objName="obj_par_credit" x="-344" y="-1352" name="inst_CB00B8DD" locked="0" code="" scaleX="5.5" scaleY="100" colour="4294967295" rotation="10"/>
     <instance objName="obj_par_credit" x="-64" y="200" name="inst_DF6AFD69" locked="0" code="" scaleX="26.1299991607666" scaleY="2.66666674613953" colour="4294967295" rotation="0"/>
-    <instance objName="obj_credit_thanks" x="-8" y="-912" name="inst_0B7F9C5B" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_game_title" x="144" y="72" name="inst_345988F2" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_go_next_level" x="288" y="0" name="inst_FFD29178" locked="0" code="" scaleX="1.75" scaleY="6.45161294937134" colour="4294967295" rotation="0"/>
     <instance objName="obj_go_next_level" x="40" y="200" name="inst_33507A84" locked="0" code="" scaleX="1.75" scaleY="6.45161294937134" colour="4294967295" rotation="180"/>

@@ -82,7 +82,8 @@ door_instances = ds_list_create();
             <kind>1</kind>
             <string>// Detect that an entity is pressing the plate.
 previous_is_pressed = is_pressed;
-is_pressed = place_meeting(x, y - abs(bbox_top - bbox_bottom) - 2, obj_entity);
+is_pressed = place_meeting(x, y - abs(bbox_top - bbox_bottom) - 2, obj_entity) or 
+             place_meeting(x, y - abs(bbox_top - bbox_bottom) - 2, obj_spark);
 
 if(is_pressed != previous_is_pressed) {
   scr_play_at_position(IIF(is_pressed, snd_plate_down, snd_plate_up))
