@@ -79,9 +79,6 @@
   </sprites>
   <backgrounds name="background">
     <background>background\background_feu</background>
-    <background>background\Tile_Feu</background>
-    <background>background\Tile_Glace</background>
-    <background>background\Tile_320x240</background>
     <background>background\bg_grotte</background>
     <background>background\bg_ice</background>
     <background>background\bg_auto_tile</background>
