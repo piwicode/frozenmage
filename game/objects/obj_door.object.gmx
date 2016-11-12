@@ -43,8 +43,8 @@ image_angle = (image_angle + 360) % 360;
 is_horizontal = (image_angle == 90 || image_angle == 270);
 movment_sign = IIF(image_angle == 0 || image_angle == 90, 1 , -1);
 
-p_amplitude = 48;  // Amplitude of the movement.
-p_closed = IIF(is_horizontal, x, y);  // param value when closed.
+p_amplitude = 48.;  // Amplitude of the movement.
+p_closed = floor(IIF(is_horizontal, x, y));  // param value when closed.
 p_opened = p_closed - p_amplitude * movment_sign;  // param value when closed.
 
 // Object state variables
@@ -93,6 +93,7 @@ if (do_close &amp;&amp; !do_open &amp;&amp; state != door_state.closed) {
 if (do_open &amp;&amp; state != door_state.opened) {
   state = door_state.triggered_openning;
 }
+
 if (do_open) {
   remaining_open_time = stay_openned_duration;
 }
@@ -103,7 +104,7 @@ switch(state) {
     pp = Approach(pp, p_opened, p_amplitude / triggered_openning_duration);    
   case door_state.opened:
     remaining_open_time = max(0, remaining_open_time - 1);
-    if(!remaining_open_time) {
+    if (!remaining_open_time) {
       state = door_state.auto_closing;
     }
     break;
@@ -115,7 +116,7 @@ switch(state) {
   break;  
 }
 
-// Move the door avoidint collisions with a solid object.
+// Move the door avoiding collisions with a solid object.
 var ps = pp - p;
 repeat(abs(ps)) {
  if(scr_door_place_meeting(p + sign(ps), obj_entity)) {   
@@ -137,10 +138,16 @@ if (is_horizontal) { x = p; } else { y = p; }
 
 // Update the state.
 if (pp == p_closed &amp;&amp; state != door_state.closed) {
+  // Float equality test is perfomed with an epsilon,
+  // if they are close then may sure they are equal.
+  pp = p_closed; 
   state = door_state.closed;
-
 }
+
 if (pp == p_opened &amp;&amp; state == door_state.triggered_openning) {
+  // Float equality test is perfomed with an epsilon,
+  // if they are close then may sure they are equal.
+  pp = p_opened;
   state = door_state.opened;
 }
 
@@ -161,6 +168,9 @@ if(state != previous_state) {
   }
 }
 
+show_debug_message(
+  "[" + string(p_opened) + "," + string(p_closed) + "]" +
+  string(y) + " " + string(p) + " " + string(pp))
 
 </string>
           </argument>
