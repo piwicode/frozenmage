@@ -41,10 +41,41 @@ if (file_exists(client_id_file_name)) {
 }
 
 tracking_id = "UA-86788013-2";
-
+collect_url = "https://www.google-analytics.com/collect";
 // Capture the start time for the very first room displayed.
 from_time = get_timer();
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="10">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>var payload =
+  "v=1&amp;t=pageview" + 
+  "&amp;an=" + game_display_name +
+  "&amp;av=" + GM_version + // game version
+  "&amp;tid=" + tracking_id +
+  "&amp;cid=" + client_id +
+  "&amp;dh=/" + room_get_name(room) + "/star"
+
+http_post_string(collect_url, payload);
 </string>
           </argument>
         </arguments>
@@ -83,8 +114,7 @@ var payload =
   "&amp;ea=" + room_get_name(room) +
   "&amp;ev=" + string(time_spent);
 
-var url = "https://www.google-analytics.com/collect";
-http_post_string(url, payload);
+http_post_string(collect_url, payload);
 
 // Surprisingly room start is not called on room restart, but room end is.
 // We want to reset the from_time so that a time span is not reported 

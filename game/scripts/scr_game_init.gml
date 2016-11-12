@@ -1,5 +1,6 @@
 /// scr_game_init()
-// Pixel art parameters.
+
+// Game resolution parameters, and image scaling factor.
 global.game_res_height = 200;
 global.game_res_width = 320;
 global.game_res_scale = 4;
@@ -30,8 +31,11 @@ if(false) { // Deactivate bugy rescaling code.
   global.Yoffset=(global.monitor_height - scaled_height) / 2;
 }
 
+// Add debug controls when the debug configuration is selected, otherwise add analytics.
+instance_create(0, -32, IIF(DEBUG_CONFIG, obj_debug_tool, obj_google_analytics));
+
 // Now persistent objects are created, go to the first level, or the test room.
-room_goto(IIF(debug_mode, rm_lvl_00_intro, rm_lvl_00_intro));  // Go to the test rooms
+room_goto(IIF(debug_mode, rm_lvl_00_intro, rm_lvl_00_intro));  // Go to the test rooms.
 
 enum mage_power {
  none = 0,

@@ -2,6 +2,7 @@
 <assets>
   <Configs name="configs">
     <Config>Configs\Default</Config>
+    <Config>Configs\Debug</Config>
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
