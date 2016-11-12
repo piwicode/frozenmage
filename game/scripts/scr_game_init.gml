@@ -38,7 +38,7 @@ if(false) { // Deactivate bugy rescaling code.
 instance_create(0, -32, IIF(DEBUG_CONFIG, obj_debug_tool, obj_google_analytics));
 
 // Now persistent objects are created, go to the first level, or the test room.
-room_goto(IIF(debug_mode, rm_lvl_00_intro, rm_lvl_00_intro));  // Go to the test rooms.
+room_goto(START_ROOM);  // Go to the test rooms.
 
 enum mage_power {
  none = 0,

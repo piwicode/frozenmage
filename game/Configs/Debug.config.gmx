@@ -653,8 +653,9 @@
     <option_xbone_title_id></option_xbone_title_id>
   </Options>
   <ConfigConstants>
-    <constants number="1">
+    <constants number="2">
       <constant name="DEBUG_CONFIG">1</constant>
+      <constant name="START_ROOM">rm_lvl_00_intro</constant>
     </constants>
   </ConfigConstants>
 </Config>

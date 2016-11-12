@@ -3,6 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
     <Config>Configs\Debug</Config>
+    <Config>Configs\DebugRoom</Config>
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
@@ -242,7 +243,6 @@
       <room>rooms\rm_test_collision</room>
       <room>rooms\rm_test_door</room>
       <room>rooms\rm_test_ice_collision</room>
-      <room>rooms\rm_palette</room>
     </rooms>
     <rooms name="game">
       <room>rooms\rm_lvl_00_intro</room>
