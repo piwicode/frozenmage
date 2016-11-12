@@ -14,7 +14,7 @@
     <TextureGroup1>0</TextureGroup1>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>37</width>
-  <height>37</height>
+  <width>40</width>
+  <height>40</height>
   <data>images\bg_auto_cave_tile2.png</data>
 </background>

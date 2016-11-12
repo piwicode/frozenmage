@@ -31,8 +31,8 @@ for(var xx = 0; xx < room_width ; xx += tile_size) {
       var b = collision_point(xxx, yyy + tile_size, object, false, true) == noone;
       var tileset = choose(bg1, bg1, bg2)
       tile_add(tileset,
-               tile_padding + (t + 2 * r) * (tile_size + tile_padding),
-               tile_padding + (b + 2 * l) * (tile_size + tile_padding),
+               tile_padding + (t + 2 * r) * (tile_size + tile_padding * 2),
+               tile_padding + (b + 2 * l) * (tile_size + tile_padding * 2),
                tile_size, tile_size, xx, yy, tile_depth);
     }
   }
