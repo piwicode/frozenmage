@@ -109,13 +109,13 @@ case block_state.about_to_fall:
   exit;
 
 case block_state.free:  
-  if (xs != 0) {
+
+  scr_move();
+  if (delta_x != 0) {
     with (instance_place(x, y - 1, obj_par_block)) {
-      xs += other.xs;
+      xs += other.delta_x;
     }
   }
-  scr_move();
-
   // When falling on top of something.
   if (abs(delta_ys) &gt; 1) {
     with (instance_place(x, y + 2, obj_mage)) { do_die = 1; }

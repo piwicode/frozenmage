@@ -2,9 +2,8 @@
 
 // Capture the speed before and after collision test
 // to detect the shock intensity if any.
-delta_xs = xs;
-delta_ys = ys;
-
+delta_xs = xs; delta_ys = ys;
+delta_x = -x; delta_y = -y;
 // Apply the acceleration to the current speed.
 ys += yss;
 
@@ -128,3 +127,4 @@ x = floor(xx); y = floor(yy);
 // Measure the speed variation over this frame, and
 // deduce the intencity of the shock.
 delta_xs -= xs; delta_ys -= ys;
+delta_x += x; delta_y += y;
