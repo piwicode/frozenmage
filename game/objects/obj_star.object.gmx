@@ -74,9 +74,13 @@ image_angle += angular_speed * sin(time * 2 * pi / rotation_period)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_destroy()
+            <string>instance_destroy();
 scr_emit_magic_burst(1, 20);
-scr_play_at_position(snd_pick_star, 1, false)
+scr_play_at_position(snd_pick_star, 1, false);
+with(obj_google_analytics) {
+  event_user(0);
+  break;
+}
 </string>
           </argument>
         </arguments>
