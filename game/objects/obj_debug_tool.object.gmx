@@ -96,8 +96,7 @@ if (go_next_level_ctrl &amp;&amp; room_next(room) != -1) {
             <string>display_set_gui_size(window_get_width(), window_get_height())
 draw_set_colour(IIF(fps == room_speed, c_white, c_red)); 
 draw_text(0, 24, "FPS = " + string(fps) + " - " + room_get_name(room));
-//file_text_read_string
-//file_exists
+
 </string>
           </argument>
         </arguments>

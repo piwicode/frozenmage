@@ -178,7 +178,8 @@ if (y &gt; room_height + 64) {
 }
 
 if (do_die) {
-  scr_emit_magic_burst(40, 40);  
+  scr_emit_magic_burst(40, 40); 
+  global.death_count++;
   instance_destroy();
   // Request player respawn.
   with(obj_spawn) {

@@ -229,6 +229,7 @@
       <object>objects\obj_game_over</object>
     </objects>
     <object>objects\obj_star</object>
+    <object>objects\obj_run_statistics</object>
     <object>objects\obj_google_analytics</object>
   </objects>
   <rooms name="rooms">

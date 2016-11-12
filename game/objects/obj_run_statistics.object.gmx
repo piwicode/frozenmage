@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
+    <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,10 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!DEBUG_CONFIG) {
-  url_open("https://piwicode.github.io/frozenmage#lastly");
-  game_end();
-}
+            <string>draw_set_colour(c_white); 
+var nb_secs = (get_timer() - global.game_start_timer) / 1000 / 1000;
+var nb_min = round(nb_secs / 60);
+nb_secs -= nb_min * 60;
+draw_text(
+  x, y,
+  "You died " + string(global.death_count) + " times#" +
+  "in " + string(nb_min) + " minutes and " + string(nb_secs) + " seconds"
+);
 </string>
           </argument>
         </arguments>

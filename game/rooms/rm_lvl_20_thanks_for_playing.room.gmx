@@ -64,6 +64,7 @@
     <instance objName="obj_game_title" x="864" y="96" name="inst_5E29A4E0" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="boj_feedback" x="128" y="48" name="inst_EB1C78BD" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_go_next_level" x="112" y="240" name="inst_4782D79F" locked="0" code="" scaleX="10" scaleY="8" colour="4294967295" rotation="180"/>
+    <instance objName="obj_run_statistics" x="1008" y="80" name="inst_B7BF822E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

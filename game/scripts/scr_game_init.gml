@@ -44,3 +44,6 @@ enum mage_power {
  fire = 3,
 }
 global.mage_level = mage_power.none;
+global.death_count = 0;
+global.game_start_timer = get_timer();
+
