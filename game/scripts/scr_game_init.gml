@@ -1,5 +1,8 @@
 /// scr_game_init()
 
+// Disable approximate equality test.
+math_set_epsilon(0)
+  
 // Game resolution parameters, and image scaling factor.
 global.game_res_height = 200;
 global.game_res_width = 320;

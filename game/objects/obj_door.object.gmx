@@ -138,16 +138,10 @@ if (is_horizontal) { x = p; } else { y = p; }
 
 // Update the state.
 if (pp == p_closed &amp;&amp; state != door_state.closed) {
-  // Float equality test is perfomed with an epsilon,
-  // if they are close then may sure they are equal.
-  pp = p_closed; 
   state = door_state.closed;
 }
 
 if (pp == p_opened &amp;&amp; state == door_state.triggered_openning) {
-  // Float equality test is perfomed with an epsilon,
-  // if they are close then may sure they are equal.
-  pp = p_opened;
   state = door_state.opened;
 }
 
