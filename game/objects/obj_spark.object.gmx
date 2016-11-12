@@ -81,11 +81,15 @@ instance_destroy();
 
 // TODO compute proper positionning.
 with (other) {
-  // When freezing an icecube, reset the timer and annimation position.
+  // When freezing an icecube, reset the timer and animation position.
   if (object_index == obj_icecube) {
      image_index = 0;
      alarm[0] = frozen_duration;
-  }  
+  }
+  if(object_is_ancestor(object_index, obj_par_block)){
+    state = block_state.free;
+  }
+  
   if (is_freezable) {
     scr_freeze()
   }  
