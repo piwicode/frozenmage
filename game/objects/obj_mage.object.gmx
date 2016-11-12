@@ -262,20 +262,15 @@ is_standing = place_meeting(floor(x), floor(y) + 1, obj_solid)
 
 // The mage walks horizontaly except when aiming.
 var target_xs = x_ctrl * walk_speed;
-if(fire_check_ctrl) {
-  if(is_standing) { // When aiming and on the ground stop moving.
-    target_xs = 0; // Inhibit walk.
-  } // When aiming and in the air keep moving until reaching the ground.
-} else {
-  // When trying to move in the opposite direction of the current movement.
-  var accel = IIF(xs * (target_xs - xs) &lt; 0, brake_accel, walk_accel);
-  // Apply the acceleration toward the intended direction.
-  xs = Approach(xs, target_xs, accel);
-}
+// When trying to move in the opposite direction of the current movement.
+var accel = IIF(xs * (target_xs - xs) &lt; 0, brake_accel, walk_accel);
+// Apply the acceleration toward the intended direction.
+xs = Approach(xs, target_xs, accel);
+
 
 // ## Jump
 // It's possible to press the jumb ctrl a few frames before reaching a platform.
-// Keeping hte jump pressed for a few frames makes the character jump higher.
+// Keeping the jump pressed for a few frames makes the character jump higher.
 if (jump_pressed_ctrl) { jump_ctrl_countdown = jump_ctrl_permissiveness; }
 if (!jump_held_ctrl) { jump_ctrl_countdown = 0; ys = max(ys, -jump_released_speed);}
 if (jump_ctrl_countdown &amp;&amp; is_standing) {
