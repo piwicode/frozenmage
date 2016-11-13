@@ -123,33 +123,32 @@ switch(state) {
 
 ps = pp - p;
 repeat(abs(ps)) {
- if(scr_door_place_meeting(p + sign(ps), obj_entity)) {
-
   for(var i = array_length_1d(pusheable) - 1; i &gt;= 0 ; i--) {  
-     with (scr_door_instance_place(p + sign(ps), pusheable[i])) {
-       if(other.is_horizontal) {
-         xs += sign(other.ps); 
-       } else {
-         ys = sign(other.ps)  - yss;
-       }
-     }
-   }
- 
-   // Vertical top down doors kills what it falls on.
-   if (is_horizontal == false &amp;&amp; sign(ps) &gt; 0) {
-     with(scr_door_instance_place(p + sign(ps), obj_orc)) {
-       do_die = 1;
-     }
-     with(scr_door_instance_place(p + sign(ps), obj_mage)) {
-       if (is_standing) {
-         do_die = 1;
-       }
-     }
-   }
+    with (scr_door_instance_place(p + sign(ps), pusheable[i])) {
+      var prev_xs = xs, prev_ys = ys; 
+      xst = 0; yst = 0;
+      xs = 0; ys = -yss;
+      if(other.is_horizontal) {
+        xs = sign(other.ps);
+      } else {
+        ys = sign(other.ps) - yss;
+      }
+      scr_move();
+      xs = prev_xs;
+      ys = prev_ys;       
+      if (object_is_ancestor(object_index, obj_par_block) == false) {
+        if (x_colide || y_colide) {
+          do_die = 1;
+        }
+      }
+    }
+  }
+
+  if(scr_door_place_meeting(p + sign(ps), obj_entity)) {
    pp = p; // Stop the door in place.
    break;
- }
- p += sign(ps)
+  }
+  p += sign(ps)
 }
 
 // Update the object position in game.

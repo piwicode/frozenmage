@@ -5,6 +5,8 @@ xst = 0; yst = 0; // Reminder speed from the last step.
 // x = floor(xx) and y = floor(yy)
 xx = x; yy = y;
 
+x_colide = false; y_colide = false;
+
 // Acceleration: gravity is a vertical acceleration toward the bottom.
 yss = 0.25;
 
@@ -15,3 +17,4 @@ max_speed = 30;
 const_aim_x_friction = .5;
 
 do_die = 0;
+

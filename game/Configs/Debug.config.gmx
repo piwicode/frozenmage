@@ -655,7 +655,7 @@
   <ConfigConstants>
     <constants number="2">
       <constant name="DEBUG_CONFIG">1</constant>
-      <constant name="START_ROOM">rm_lvl_00_intro</constant>
+      <constant name="START_ROOM">rm_lvl_aaa</constant>
     </constants>
   </ConfigConstants>
 </Config>

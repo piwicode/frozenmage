@@ -1,4 +1,7 @@
-// scr_auto_tile
+// scr_auto_tile()
+// Make sure the generated level is stable.
+random_set_seed(room);
+
 var tile_size = 8
 var tile_padding = 1
 // scr_auto_tile()

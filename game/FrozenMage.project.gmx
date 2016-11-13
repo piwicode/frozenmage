@@ -267,6 +267,7 @@
       <room>rooms\rm_lvl_19_back_home</room>
       <room>rooms\rm_lvl_20_thanks_for_playing</room>
       <room>rooms\rm_browse_and_leave</room>
+      <room>rooms\rm_lvl_aaa</room>
     </rooms>
     <rooms name="old_levels">
       <room>rooms\rm_niv_01a</room>
