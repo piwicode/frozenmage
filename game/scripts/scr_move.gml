@@ -41,3 +41,8 @@ x = floor(xx); y = floor(yy);
 delta_xs += xs; delta_ys += ys;
 delta_x += x; delta_y += y;
 
+if (delta_x != 0) {
+  with (instance_place(x, y - 1, obj_par_block)) {
+    scr_push(other.delta_x, 0);
+  }
+}

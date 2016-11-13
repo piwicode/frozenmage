@@ -293,8 +293,9 @@ var x_push = xs; // Horizontal displacement transmited to a pusheable object.
 if xs != 0 &amp;&amp; place_meeting(floor(xx + sign(x_push)), floor(yy), obj_par_block) { 
   // A block is being pushed.
   xs = sign(x_ctrl) * push_speed;
-  var block = instance_place(floor(xx + sign(x_push)), floor(yy), obj_par_block);
-  block.xs = xs; // Set the horizontal speed of the block.
+  with(instance_place(floor(xx + sign(x_push)), floor(yy), obj_par_block)) {
+   scr_push(other.xs, ys);
+  }
 }
 
 </string>

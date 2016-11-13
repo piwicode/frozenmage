@@ -122,20 +122,13 @@ switch(state) {
 // Move the door avoiding collisions with a solid object.
 
 ps = pp - p;
+xs = IIF(is_horizontal, ps, 0);
+ys = IIF(is_horizontal, 0, ps);
+delta_x = -x;
 repeat(abs(ps)) {
   for(var i = array_length_1d(pusheable) - 1; i &gt;= 0 ; i--) {  
     with (scr_door_instance_place(p + sign(ps), pusheable[i])) {
-      var prev_xs = xs, prev_ys = ys; 
-      xst = 0; yst = 0;
-      xs = 0; ys = -yss;
-      if(other.is_horizontal) {
-        xs = sign(other.ps);
-      } else {
-        ys = sign(other.ps) - yss;
-      }
-      scr_move();
-      xs = prev_xs;
-      ys = prev_ys;       
+      scr_push(sign(other.xs), sign(other.ys));      
       if (object_is_ancestor(object_index, obj_par_block) == false) {
         if (x_colide || y_colide) {
           do_die = 1;
@@ -153,6 +146,13 @@ repeat(abs(ps)) {
 
 // Update the object position in game.
 if (is_horizontal) { x = p; } else { y = p; }
+// Push what is on top of it.
+delta_x += x;
+if (delta_x != 0) {
+  with (instance_place(x, y - 1, obj_par_block)) {
+    scr_push(other.delta_x, 0);
+  }
+}
 
 // Update the state.
 if (pp == p_closed &amp;&amp; (state == door_state.auto_closing ||  state == door_state.triggered_closing)) {

@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>draw_set_colour(c_white); 
 var nb_secs = (get_timer() - global.game_start_timer) / 1000 / 1000;
-var nb_min = round(nb_secs / 60);
+var nb_min = floor(nb_secs / 60);
 nb_secs -= nb_min * 60;
 draw_text(
   x, y,
