@@ -45,7 +45,6 @@ movment_sign = IIF(image_angle == 0 || image_angle == 90, 1, -1);
 
 p_amplitude = 48.;  // Amplitude of the movement.
 p_closed = floor(IIF(is_horizontal, x, y));  // param value when closed.
-p_opened = p_closed - p_amplitude * movment_sign;  // param value when closed.
 
 // Object state variables
 current_sound = 0;
@@ -87,7 +86,13 @@ pusheable[2] = obj_mage;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Process plate inputs.
+            <string>// Compute parameters derived from object serrings.
+// The object settings can be changed by the creation code, and then
+// derived parameters cannot be computed during the create event.
+p_opened = p_closed - p_amplitude * movment_sign;  // param value when closed.
+
+
+// Process plate inputs.
 previous_state = state;
 if (do_close &amp;&amp; !do_open &amp;&amp; state != door_state.closed) {
   state = door_state.triggered_closing;
@@ -150,6 +155,9 @@ if (is_horizontal) { x = p; } else { y = p; }
 delta_x += x;
 if (delta_x != 0) {
   with (instance_place(x, y - 1, obj_par_block)) {
+    scr_push(other.delta_x, 0);
+  }
+  with (instance_place(x, y - 1, obj_mage)) {
     scr_push(other.delta_x, 0);
   }
 }
